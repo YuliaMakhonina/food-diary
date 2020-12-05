@@ -1,0 +1,11 @@
+{
+  "app": {
+    "port": 30000
+  },
+  "db": {
+    "port": 15432,
+    "user": "docker",
+    "pass": "docker",
+    "name": "food-diary-test"
+  }
+}
