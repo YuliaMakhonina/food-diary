@@ -1,8 +1,4 @@
 {
   "extends": "./tsconfig.json",
-  "exclude": ["node_modules", "test", "dist", "**/*spec.ts"],
-  "typeRoots": [
-    "node_modules/@types",
-    "src/types"
-  ]
+  "exclude": ["node_modules", "src/test", "dist", "**/*spec.ts"]
 }

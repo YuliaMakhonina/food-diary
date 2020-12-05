@@ -1,9 +1,6 @@
 import { Module } from '@nestjs/common';
 import * as knex from 'knex';
-
-if (!process.env.DB_NAME) {
-  throw new Error('DB_NAME is not set');
-}
+import * as config from 'config';
 
 const knexFactory = {
   provide: 'knex',
@@ -11,9 +8,10 @@ const knexFactory = {
     return knex({
       client: 'postgresql',
       connection: {
-        database: process.env.DB_NAME,
-        user: process.env.DB_USER,
-        password: process.env.DB_PASS,
+        port: config.get('db.port'),
+        database: config.get('db.name'),
+        user: config.get('db.user'),
+        password: config.get('db.pass'),
       },
       pool: {
         min: 2,
