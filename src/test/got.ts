@@ -6,13 +6,17 @@ export const testGot = got.extend({
   hooks: {
     beforeError: [
       error => {
-        const {response} = error;
-        if (response && response.body && response.body) {
-          error.message = `(${response.statusCode}) ${JSON.parse(response.body as string).message.join(', ')}`;
+        const { response } = error;
+        if (response && response.body) {
+          const json = JSON.parse(response.body as string);
+
+          error.message = `(${response.statusCode}) ${json.error}: ${
+            Array.isArray(json.message) ? json.message.join(', ') : json.message
+          }`;
         }
 
         return error;
-      }
-    ]
-  }
+      },
+    ],
+  },
 });
