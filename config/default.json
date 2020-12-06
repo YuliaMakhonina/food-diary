@@ -1,0 +1,11 @@
+{
+  "app": {
+    "port": 3000
+  },
+  "db": {
+    "port": 5432,
+    "user": "food-diary",
+    "pass": "food-diary",
+    "name": "food-diary"
+  }
+}
