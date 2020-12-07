@@ -1,8 +1,8 @@
 import { Inject, Injectable } from '@nestjs/common';
-import Knex, { QueryBuilder } from 'knex';
+import Knex from 'knex';
 import * as bcrypt from 'bcrypt';
-import * as jwt from 'jsonwebtoken';
-import { v4 as uuidv4 } from 'uuid';
+import * as config from 'config';
+import { TokenService } from '../token/token.service';
 
 export interface User {
   id: number;
@@ -12,69 +12,59 @@ export interface User {
 
 @Injectable()
 export class AuthService {
-  private secretKey: string = 'food-diary-secret-number-one';
-
-  constructor(@Inject('knex') private knex: Knex) {}
+  constructor(
+    @Inject('knex') private knex: Knex,
+    private tokenService: TokenService,
+  ) {}
 
   async registration(email: string, password: string): Promise<string> {
-    let passwordHashed = await bcrypt.hash(password, 1);
+    const passwordHashed = await bcrypt.hash(
+      password,
+      config.get('app.bcryptCircles'),
+    );
     await this.knex('users').insert({
-      uuid: uuidv4(),
       email: email,
       password: passwordHashed,
     });
-    let userIdQuery = await this.knex
+    const userIdQuery = await this.knex
       .select('uuid')
       .from('users')
       .where('email', email);
-    let userId = userIdQuery.toString();
-    let token = await jwt.sign(
-      { iss: userId, exp: Math.floor(Date.now() / 1000) + 60 * 60 },
-      this.secretKey,
-      { algorithm: 'HS512' },
+    return await this.tokenService.createAccessTokenString(
+      userIdQuery.toString(),
     );
-    console.log(token);
-    return token;
   }
 
   async userExists(email: string): Promise<boolean> {
-    let userLogin = await this.knex
+    const userLogin = await this.knex
       .select('uuid')
       .from('users')
       .where('email', email);
 
-    if (userLogin.length > 0) {
-      return true;
-    }
-    return false;
+    return userLogin.length > 0;
   }
 
   async authorisation(
     email: string,
     password: string,
   ): Promise<string | undefined> {
-    let user = await this.knex
+    const user = await this.knex
       .first('uuid', 'password')
       .from('users')
       .where('email', email);
     if (!user) {
       return undefined;
     }
-    if (bcrypt.compare(password, user.password)) {
-      return await jwt.sign(
-        {
-          iss: user.uuid.toString(),
-          exp: Math.floor(Date.now() / 1000) + 60 * 60,
-        },
-        this.secretKey,
-        { algorithm: 'HS512' },
+    if (await bcrypt.compare(password, user.password)) {
+      return await this.tokenService.createAccessTokenString(
+        user.uuid.toString(),
       );
     }
     return undefined;
   }
 
   async getUserEmail(userId: string): Promise<string> {
-    let user: User = await this.knex
+    const user: User = await this.knex
       .first()
       .from('users')
       .where('uuid', userId);

@@ -1,11 +1,9 @@
 import {
   Controller,
-  Get,
   Post,
   Res,
   Body,
   Req,
-  BadGatewayException,
   UnauthorizedException,
 } from '@nestjs/common';
 import { AuthService } from './auth.service';
@@ -20,21 +18,20 @@ export class AuthController {
 
   @Post('auth/register')
   async registration(@Body() data: CreateUserDto, @Res() res: Response) {
-    if (await this.authService.userExists(data.email)) {
+    if (await this.authService.userExists(data.email.toLowerCase())) {
       throw new BadRequestException('wrong_data', 'this user already exists');
     }
     let accessToken = await this.authService.registration(
-      data.email,
+      data.email.toLowerCase(),
       data.password,
     );
     res.send({ access_token: accessToken });
   }
 
-  // TODO Extract separate class
   @Post('/auth/login')
   async authorisation(@Body() data: AuthUserDto, @Res() res: Response) {
     let accessToken = await this.authService.authorisation(
-      data.email,
+      data.email.toLowerCase(),
       data.password,
     );
     if (accessToken) {

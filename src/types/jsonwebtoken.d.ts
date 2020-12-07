@@ -5,5 +5,5 @@ declare module 'jsonwebtoken' {
     token: string,
     secretOrPublicKey: string | Buffer,
     options?: VerifyOptions,
-  ): { iss?: string };
+  ): { sub?: string };
 }

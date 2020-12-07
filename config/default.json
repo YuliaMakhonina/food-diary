@@ -1,11 +1,15 @@
 {
   "app": {
-    "port": 3000
+    "port": 3000,
+    "secretKey": "food-diary-secret-number-one",
+    "bcryptCircles": 1,
+    "algorithm": "HS512",
+    "tokenExpire": 3600
   },
   "db": {
-    "port": 5432,
-    "user": "food-diary",
-    "pass": "food-diary",
+    "port": 15432,
+    "user": "docker",
+    "pass": "docker",
     "name": "food-diary"
   }
 }
