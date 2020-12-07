@@ -21,7 +21,7 @@ export class AuthController {
     if (await this.authService.userExists(data.email.toLowerCase())) {
       throw new BadRequestException('wrong_data', 'this user already exists');
     }
-    let accessToken = await this.authService.registration(
+    const accessToken = await this.authService.registration(
       data.email.toLowerCase(),
       data.password,
     );
@@ -30,7 +30,7 @@ export class AuthController {
 
   @Post('/auth/login')
   async authorisation(@Body() data: AuthUserDto, @Res() res: Response) {
-    let accessToken = await this.authService.authorisation(
+    const accessToken = await this.authService.authorisation(
       data.email.toLowerCase(),
       data.password,
     );
@@ -44,7 +44,7 @@ export class AuthController {
   @Post('/auth/me')
   async authMe(@Req() req: Request, @Res() res: Response) {
     if (req.userId) {
-      let userEmail = await this.authService.getUserEmail(req.userId);
+      const userEmail = await this.authService.getUserEmail(req.userId);
       res.send({ email: userEmail });
     } else {
       throw new UnauthorizedException();

@@ -5,7 +5,7 @@ import * as config from 'config';
   const client = new Client({
     port: config.get('db.port'),
     user: config.get('db.user'),
-    password: config.get('db.pass')
+    password: config.get('db.pass'),
   });
 
   await client.connect();

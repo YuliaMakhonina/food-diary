@@ -24,7 +24,16 @@ describe('AuthController', () => {
       ).rejects.toThrowError('email must be an email');
     });
 
-    it.todo('reponds with error if email is invalid');
+    it('responds with error if email is invalid', async () => {
+      await expect(
+        testGot.post('auth/register', {
+          json: {
+            email: faker.internet.userName(),
+            password: faker.internet.password(),
+          },
+        }),
+      ).rejects.toThrowError('email must be an email');
+    });
 
     it('responds with access_token if provided data correct', async () => {
       const res = await testGot
