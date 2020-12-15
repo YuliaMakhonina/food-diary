@@ -3,12 +3,7 @@ import Knex from 'knex';
 import * as bcrypt from 'bcrypt';
 import * as config from 'config';
 import { TokenService } from '../token/token.service';
-
-export interface User {
-  id: number;
-  email: string;
-  password: string;
-}
+import * as uuid from 'uuid';
 
 @Injectable()
 export class AuthService {
@@ -27,11 +22,11 @@ export class AuthService {
       password: passwordHashed,
     });
     const userIdQuery = await this.knex
-      .select('uuid')
+      .first('uuid')
       .from('users')
       .where('email', email);
     return await this.tokenService.createAccessTokenString(
-      userIdQuery.toString(),
+      userIdQuery.uuid.toString(),
     );
   }
 
@@ -55,6 +50,7 @@ export class AuthService {
     if (!user) {
       return undefined;
     }
+    console.log(user.uuid);
     if (await bcrypt.compare(password, user.password)) {
       return await this.tokenService.createAccessTokenString(
         user.uuid.toString(),
@@ -64,8 +60,9 @@ export class AuthService {
   }
 
   async getUserEmail(userId: string): Promise<string> {
-    const user: User = await this.knex
-      .first()
+    console.log(userId);
+    const user = await this.knex
+      .first('email')
       .from('users')
       .where('uuid', userId);
     return user.email;

@@ -10,6 +10,7 @@ import { Response, Request, NextFunction } from 'express';
 import * as jwt from 'jsonwebtoken';
 import * as bodyParser from 'body-parser';
 import * as config from 'config';
+import { isJWT } from 'class-validator';
 
 export async function bootstrap() {
   const app = await NestFactory.create(AppModule);
@@ -46,16 +47,21 @@ async function getUserIdMiddleware(
     return;
   }
   if (!req.body.access_token) {
-    throw new BadRequestException();
+    next(new BadRequestException('wrong_data', 'access_token was not passed'));
   }
+  if (!isJWT(req.body.access_token)) {
+    next(new BadRequestException('wrong_data', 'invalid token'));
+  }
+
   try {
     const token = await jwt.verify(
       req.body.access_token,
       config.get('app.secretKey'),
     );
+    console.log(token.sub);
     req.userId = token.sub;
     next();
   } catch (err) {
-    throw new GatewayTimeoutException(err);
+    next(new GatewayTimeoutException('wrong_data', 'token expired'));
   }
 }
