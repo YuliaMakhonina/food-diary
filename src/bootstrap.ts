@@ -58,7 +58,6 @@ async function getUserIdMiddleware(
       req.body.access_token,
       config.get('app.secretKey'),
     );
-    console.log(token.sub);
     req.userId = token.sub;
     next();
   } catch (err) {
