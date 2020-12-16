@@ -68,4 +68,54 @@ describe('AuthController', () => {
       ).rejects.toThrowError('user already exists');
     });
   });
+
+  describe('login', () => {
+    it('responds error if wrong login', async () => {
+      await expect(
+        testGot.post('auth/login', {
+          json: {
+            email: faker.internet.email(),
+            password: faker.internet.password(),
+          },
+        }),
+      ).rejects.toThrowError('wrong login or password');
+    });
+
+    it('responds error if wrong password', async () => {
+      const email = faker.internet.email();
+      await testGot.post('auth/register', {
+        json: {
+          email: email,
+          password: faker.internet.password(),
+        },
+      });
+      await expect(
+        testGot.post('auth/login', {
+          json: {
+            email: email,
+            password: faker.internet.password(),
+          },
+        }),
+      ).rejects.toThrowError('wrong login or password');
+    });
+  });
+
+  describe('me', () => {
+    it('responds an error if wrong access_token (is not JWT)', async () => {
+      await expect(
+        testGot.post('auth/me', {
+          json: {
+            access_token: faker.internet.password(),
+          },
+        }),
+      ).rejects.toThrowError('invalid token');
+    });
+    it('responds an error if access_token was not passed', async () => {
+      await expect(
+        testGot.post('auth/me', {
+          json: {},
+        }),
+      ).rejects.toThrowError('access_token was not passed');
+    });
+  });
 });

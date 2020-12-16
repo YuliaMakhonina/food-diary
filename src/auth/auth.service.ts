@@ -4,12 +4,6 @@ import * as bcrypt from 'bcrypt';
 import * as config from 'config';
 import { TokenService } from '../token/token.service';
 
-export interface User {
-  id: number;
-  email: string;
-  password: string;
-}
-
 @Injectable()
 export class AuthService {
   constructor(
@@ -26,12 +20,12 @@ export class AuthService {
       email: email,
       password: passwordHashed,
     });
-    const userIdQuery = await this.knex
-      .select('uuid')
+    const user = await this.knex
+      .first('uuid')
       .from('users')
       .where('email', email);
     return await this.tokenService.createAccessTokenString(
-      userIdQuery.toString(),
+      user.uuid.toString(),
     );
   }
 
@@ -64,8 +58,8 @@ export class AuthService {
   }
 
   async getUserEmail(userId: string): Promise<string> {
-    const user: User = await this.knex
-      .first()
+    const user = await this.knex
+      .first('email')
       .from('users')
       .where('uuid', userId);
     return user.email;

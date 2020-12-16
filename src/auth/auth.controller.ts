@@ -47,7 +47,7 @@ export class AuthController {
       const userEmail = await this.authService.getUserEmail(req.userId);
       res.send({ email: userEmail });
     } else {
-      throw new UnauthorizedException();
+      throw new UnauthorizedException('wrong_token', 'no user ID');
     }
   }
 }
