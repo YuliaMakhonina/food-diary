@@ -104,7 +104,7 @@ describe('AuthController', () => {
     it('responds an error if wrong access_token (is not JWT)', async () => {
       await expect(
         testGot.post('auth/me', {
-          json: {
+          headers: {
             access_token: faker.internet.password(),
           },
         }),
@@ -113,7 +113,7 @@ describe('AuthController', () => {
     it('responds an error if access_token was not passed', async () => {
       await expect(
         testGot.post('auth/me', {
-          json: {},
+          headers: {},
         }),
       ).rejects.toThrowError('access_token was not passed');
     });

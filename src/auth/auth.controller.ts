@@ -16,7 +16,7 @@ import { AuthUserDto } from './dto/auth.user.dto';
 export class AuthController {
   constructor(private authService: AuthService) {}
 
-  @Post('auth/register')
+  @Post('/auth/register')
   async registration(@Body() data: CreateUserDto, @Res() res: Response) {
     if (await this.authService.userExists(data.email.toLowerCase())) {
       throw new BadRequestException('wrong_data', 'this user already exists');
