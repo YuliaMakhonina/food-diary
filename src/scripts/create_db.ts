@@ -12,5 +12,6 @@ import * as config from 'config';
   await client.query(`CREATE DATABASE "${config.get('db.name')}"`);
   await client.end();
 })().catch(err => {
+  // eslint-disable-next-line no-console
   console.error(err);
 });

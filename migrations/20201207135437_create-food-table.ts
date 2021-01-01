@@ -8,21 +8,28 @@ export async function up(knex: Knex): Promise<void> {
       .defaultTo(knex.raw('(gen_random_uuid())'));
     table.string('name').notNullable();
     table.boolean('system').notNullable();
-    table.integer('calories').notNullable();
     table
-      .integer('proteins')
+      .float('calories')
       .notNullable()
       .defaultTo(0);
     table
-      .integer('fats')
+      .float('proteins')
       .notNullable()
       .defaultTo(0);
     table
-      .integer('carbs')
+      .float('fats')
       .notNullable()
       .defaultTo(0);
     table
-      .integer('sugar')
+      .float('carbs')
+      .notNullable()
+      .defaultTo(0);
+    table
+      .float('sugar')
+      .notNullable()
+      .defaultTo(0);
+    table
+      .float('fiber')
       .notNullable()
       .defaultTo(0);
   });
