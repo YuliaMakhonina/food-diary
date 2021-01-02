@@ -1,54 +1,27 @@
-import { testGot } from '../test/got';
-
 import * as faker from 'faker';
+import { registerUser } from '../test/test.helpers';
 
 describe('FeelingsController', () => {
   describe('add', () => {
     it('responds with bad data error if feeling name not provided', async () => {
-      const registerResponse = await testGot
-        .post('auth/register', {
-          json: {
-            email: faker.internet.email(),
-            password: faker.internet.password(),
-          },
-        })
-        .json<{ access_token: string }>();
+      const authorizedGot = await registerUser();
       await expect(
-        testGot.post('feelings/add', {
-          headers: {
-            access_token: registerResponse.access_token,
-          },
-          json: {
-            calories: 45.0,
-          },
+        authorizedGot.post('feelings/add', {
+          json: {},
         }),
       ).rejects.toThrowError('feeling_name should not be empty');
     });
 
     it('responds an error if this feeling is already in users list', async () => {
-      const registerResponse = await testGot
-        .post('auth/register', {
-          json: {
-            email: faker.internet.email(),
-            password: faker.internet.password(),
-          },
-        })
-        .json<{ access_token: string }>();
-
+      const authorizedGot = await registerUser();
       const randomName = faker.internet.userName();
-      await testGot.post('feelings/add', {
-        headers: {
-          access_token: registerResponse.access_token,
-        },
+      await authorizedGot.post('feelings/add', {
         json: {
           feeling_name: randomName,
         },
       });
       await expect(
-        testGot.post('feelings/add', {
-          headers: {
-            access_token: registerResponse.access_token,
-          },
+        authorizedGot.post('feelings/add', {
           json: {
             feeling_name: randomName,
           },
@@ -57,20 +30,9 @@ describe('FeelingsController', () => {
     });
 
     it('responds feeling uuid if provided data correct', async () => {
-      const registerResponse = await testGot
-        .post('auth/register', {
-          json: {
-            email: faker.internet.email(),
-            password: faker.internet.password(),
-          },
-        })
-        .json<{ access_token: string }>();
-
-      const res = await testGot
+      const authorizedGot = await registerUser();
+      const res = await authorizedGot
         .post('feelings/add', {
-          headers: {
-            access_token: registerResponse.access_token,
-          },
           json: {
             feeling_name: faker.internet.userName(),
           },
