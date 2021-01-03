@@ -32,6 +32,12 @@ export async function up(knex: Knex): Promise<void> {
       .float('fiber')
       .notNullable()
       .defaultTo(0);
+    table.uuid('user_id');
+    table
+      .foreign('user_id')
+      .references('users.uuid')
+      .onUpdate('CASCADE')
+      .onDelete('CASCADE');
   });
 }
 

@@ -46,16 +46,16 @@ async function getUserIdMiddleware(
     next();
     return;
   }
-  if (!req.body.access_token) {
+  if (!req.header('access_token')) {
     next(new BadRequestException('wrong_data', 'access_token was not passed'));
   }
-  if (!isJWT(req.body.access_token)) {
+  if (!isJWT(req.header('access_token'))) {
     next(new BadRequestException('wrong_data', 'invalid token'));
   }
 
   try {
     const token = await jwt.verify(
-      req.body.access_token,
+      req.header('access_token'),
       config.get('app.secretKey'),
     );
     req.userId = token.sub;

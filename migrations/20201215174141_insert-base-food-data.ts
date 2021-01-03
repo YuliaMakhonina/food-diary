@@ -11,6 +11,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 2,
       carbs: 11.12,
       system: true,
+      user_id: null,
     },
     {
       name: 'Абрикосы (консервированные)',
@@ -21,6 +22,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 2.7,
       carbs: 21.31,
       system: true,
+      user_id: null,
     },
     {
       name: 'Абрикосы сушёные (низкое содержание воды)',
@@ -31,6 +33,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 82.89,
       system: true,
+      user_id: null,
     },
     {
       name: 'Авокадо (свежее)',
@@ -41,6 +44,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 6.7,
       carbs: 8.53,
       system: true,
+      user_id: null,
     },
     {
       name: 'Айва (свежая)',
@@ -51,6 +55,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1.9,
       carbs: 15.3,
       system: true,
+      user_id: null,
     },
     {
       name: 'Амарант (зёрна приготовленные)',
@@ -61,6 +66,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 2.1,
       carbs: 18.69,
       system: true,
+      user_id: null,
     },
     {
       name: 'Ананас (свежий)',
@@ -71,6 +77,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1.4,
       carbs: 13.12,
       system: true,
+      user_id: null,
     },
     {
       name: 'Ананасы (консервированные)',
@@ -81,6 +88,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1.3,
       carbs: 15.56,
       system: true,
+      user_id: null,
     },
     {
       name: 'Антильский абрикос (свежий)',
@@ -91,6 +99,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 3,
       carbs: 12.5,
       system: true,
+      user_id: null,
     },
     {
       name: 'Анчоусы (консервированные, в масле)',
@@ -101,6 +110,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Анчоусы (сырые)',
@@ -111,6 +121,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Апельсины (свежие)',
@@ -121,6 +132,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 2.4,
       carbs: 11.75,
       system: true,
+      user_id: null,
     },
     {
       name: 'Арахис (жареный)',
@@ -131,6 +143,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 8.4,
       carbs: 21.26,
       system: true,
+      user_id: null,
     },
     {
       name: 'Арахис (сырой)',
@@ -141,6 +154,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 8.5,
       carbs: 16.13,
       system: true,
+      user_id: null,
     },
     {
       name: 'Арахисовая паста',
@@ -151,6 +165,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 5,
       carbs: 22.31,
       system: true,
+      user_id: null,
     },
     {
       name: 'Арбуз (свежий)',
@@ -161,6 +176,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0.4,
       carbs: 7.55,
       system: true,
+      user_id: null,
     },
     {
       name: 'Артишоки (варёные)',
@@ -171,6 +187,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 5.7,
       carbs: 11.95,
       system: true,
+      user_id: null,
     },
     {
       name: 'Артишоки (замороженные)',
@@ -181,6 +198,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 3.9,
       carbs: 7.75,
       system: true,
+      user_id: null,
     },
     {
       name: 'Артишоки (свежие)',
@@ -191,6 +209,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 5.4,
       carbs: 10.51,
       system: true,
+      user_id: null,
     },
     {
       name: 'Артишоки испанские (варёные)',
@@ -201,6 +220,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1.7,
       carbs: 5.33,
       system: true,
+      user_id: null,
     },
     {
       name: 'Артишоки испанские (свежие)',
@@ -211,6 +231,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1.6,
       carbs: 4.07,
       system: true,
+      user_id: null,
     },
     {
       name: 'Аспартам (заменитель сахара)',
@@ -221,6 +242,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 89.08,
       system: true,
+      user_id: null,
     },
     {
       name: 'Базилик (свежий)',
@@ -231,6 +253,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1.6,
       carbs: 2.65,
       system: true,
+      user_id: null,
     },
     {
       name: 'Базилик (сухой)',
@@ -241,6 +264,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 37.7,
       carbs: 47.75,
       system: true,
+      user_id: null,
     },
     {
       name: 'Баклажан (приготовленный)',
@@ -251,6 +275,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 2.5,
       carbs: 8.73,
       system: true,
+      user_id: null,
     },
     {
       name: 'Баклажан (свежий)',
@@ -261,6 +286,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 3,
       carbs: 5.88,
       system: true,
+      user_id: null,
     },
     {
       name: 'Бамбуковые побеги (консервированные)',
@@ -271,6 +297,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1.4,
       carbs: 3.22,
       system: true,
+      user_id: null,
     },
     {
       name: 'Бамбуковые побеги (варёные)',
@@ -281,6 +308,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1,
       carbs: 1.92,
       system: true,
+      user_id: null,
     },
     {
       name: 'Бамбуковые побеги (в сыром виде)',
@@ -291,6 +319,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 2.2,
       carbs: 5.2,
       system: true,
+      user_id: null,
     },
     {
       name: 'Бамия (в сыром виде)',
@@ -301,6 +330,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 3.2,
       carbs: 7.45,
       system: true,
+      user_id: null,
     },
     {
       name: 'Бананы (свежие)',
@@ -311,6 +341,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 2.6,
       carbs: 22.84,
       system: true,
+      user_id: null,
     },
     {
       name: 'Бананы (сушёные)',
@@ -321,6 +352,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 9.9,
       carbs: 88.28,
       system: true,
+      user_id: null,
     },
     {
       name: 'Баранина (приготовленная)',
@@ -331,6 +363,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Баранина (сырая)',
@@ -341,6 +374,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Барбадосская вишня (свежая)',
@@ -351,6 +385,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1.1,
       carbs: 7.69,
       system: true,
+      user_id: null,
     },
     {
       name: 'Батат (печёный)',
@@ -361,6 +396,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 3.3,
       carbs: 20.71,
       system: true,
+      user_id: null,
     },
     {
       name: 'Батат (в сыром виде)',
@@ -371,6 +407,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 3,
       carbs: 20.12,
       system: true,
+      user_id: null,
     },
     {
       name: 'Бедро индейки (филе) (запечённое)',
@@ -381,6 +418,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Бедро индейки (филе) (сырое)',
@@ -391,6 +429,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0.15,
       system: true,
+      user_id: null,
     },
     {
       name: 'Белок куриного яйца (в виде порошка)',
@@ -401,6 +440,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 7.8,
       system: true,
+      user_id: null,
     },
     {
       name: 'Белокопытник (в сыром виде)',
@@ -411,6 +451,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 3.61,
       system: true,
+      user_id: null,
     },
     {
       name: 'Белокопытник (отваренный)',
@@ -421,6 +462,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 2.16,
       system: true,
+      user_id: null,
     },
     {
       name: 'Белый или жёлтый грейпфрут (свежий)',
@@ -431,6 +473,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1.1,
       carbs: 8.41,
       system: true,
+      user_id: null,
     },
     {
       name: 'Блины',
@@ -441,6 +484,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1.3,
       carbs: 36.7,
       system: true,
+      user_id: null,
     },
     {
       name: 'Бобы (консервированные, зрелые)',
@@ -451,6 +495,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 3.7,
       carbs: 12.41,
       system: true,
+      user_id: null,
     },
     {
       name: 'Бобы (варёные, зрелые)',
@@ -461,6 +506,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 5.4,
       carbs: 19.65,
       system: true,
+      user_id: null,
     },
     {
       name: 'Бобы (в сыром виде, зрелые)',
@@ -471,6 +517,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 25,
       carbs: 58.29,
       system: true,
+      user_id: null,
     },
     {
       name: 'Бобы зелёные (варёные)',
@@ -481,6 +528,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 3.6,
       carbs: 10.1,
       system: true,
+      user_id: null,
     },
     {
       name: 'Бобы зелёные (свежие)',
@@ -491,6 +539,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 4.2,
       carbs: 11.7,
       system: true,
+      user_id: null,
     },
     {
       name: 'Ботва репы (свежая)',
@@ -501,6 +550,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 3.2,
       carbs: 7.13,
       system: true,
+      user_id: null,
     },
     {
       name: 'Ботва свекольная (в свежем виде)',
@@ -511,6 +561,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 3.7,
       carbs: 4.33,
       system: true,
+      user_id: null,
     },
     {
       name: 'Бразильский орех',
@@ -521,6 +572,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 7.5,
       carbs: 11.74,
       system: true,
+      user_id: null,
     },
     {
       name: 'Брокколи (варёная)',
@@ -531,6 +583,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 3.3,
       carbs: 7.18,
       system: true,
+      user_id: null,
     },
     {
       name: 'Брокколи (замороженная)',
@@ -541,6 +594,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 3,
       carbs: 5.35,
       system: true,
+      user_id: null,
     },
     {
       name: 'Брокколи (свежая)',
@@ -551,6 +605,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 2.6,
       carbs: 6.64,
       system: true,
+      user_id: null,
     },
     {
       name: 'Брокколи китайская (приготовленная)',
@@ -561,6 +616,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 2.5,
       carbs: 3.81,
       system: true,
+      user_id: null,
     },
     {
       name: 'Брокколи китайская (свежая)',
@@ -571,6 +627,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 2.6,
       carbs: 4.67,
       system: true,
+      user_id: null,
     },
     {
       name: 'Брокколи рааб (приготовленная)',
@@ -581,6 +638,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 2.8,
       carbs: 3.12,
       system: true,
+      user_id: null,
     },
     {
       name: 'Брокколи рааб (свежая)',
@@ -591,6 +649,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 2.7,
       carbs: 2.85,
       system: true,
+      user_id: null,
     },
     {
       name: 'Брюква (в сыром виде)',
@@ -601,6 +660,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 2.3,
       carbs: 8.62,
       system: true,
+      user_id: null,
     },
     {
       name: 'Брюссельская капуста (варёная)',
@@ -611,6 +671,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 2.6,
       carbs: 7.1,
       system: true,
+      user_id: null,
     },
     {
       name: 'Брюссельская капуста (замороженная)',
@@ -621,6 +682,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 3.8,
       carbs: 7.86,
       system: true,
+      user_id: null,
     },
     {
       name: 'Брюссельская капуста (свежая)',
@@ -631,6 +693,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 3.8,
       carbs: 8.95,
       system: true,
+      user_id: null,
     },
     {
       name: 'Бузина (свежая)',
@@ -641,6 +704,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 7,
       carbs: 18.4,
       system: true,
+      user_id: null,
     },
     {
       name: 'Буковый орешек',
@@ -651,6 +715,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 33.5,
       system: true,
+      user_id: null,
     },
     {
       name: 'Булгур (варёный на воде, каша)',
@@ -661,6 +726,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 4.5,
       carbs: 18.58,
       system: true,
+      user_id: null,
     },
     {
       name: 'Булгур (сухой, крупа)',
@@ -671,6 +737,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 12.5,
       carbs: 75.87,
       system: true,
+      user_id: null,
     },
     {
       name: 'Булочки (из сладкого дрожжевого теста)',
@@ -681,6 +748,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 2.3,
       carbs: 56.38,
       system: true,
+      user_id: null,
     },
     {
       name: 'Ваниль (экстракт)',
@@ -691,6 +759,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 12.65,
       system: true,
+      user_id: null,
     },
     {
       name: 'Васаби (корень в сыром виде)',
@@ -701,6 +770,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 7.8,
       carbs: 23.54,
       system: true,
+      user_id: null,
     },
     {
       name: 'Ветчина',
@@ -711,6 +781,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1.3,
       carbs: 3.83,
       system: true,
+      user_id: null,
     },
     {
       name: 'Вигна (приготовленная, варёная)',
@@ -721,6 +792,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 9.18,
       system: true,
+      user_id: null,
     },
     {
       name: 'Вигна (в сыром виде)',
@@ -731,6 +803,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 8.35,
       system: true,
+      user_id: null,
     },
     {
       name: 'Вино (столовое)',
@@ -741,6 +814,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 2.72,
       system: true,
+      user_id: null,
     },
     {
       name: 'Вино белое (столовое)',
@@ -751,6 +825,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 2.6,
       system: true,
+      user_id: null,
     },
     {
       name: 'Вино десертное сладкое',
@@ -761,6 +836,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 13.69,
       system: true,
+      user_id: null,
     },
     {
       name: 'Вино десертное сухое',
@@ -771,6 +847,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 11.67,
       system: true,
+      user_id: null,
     },
     {
       name: 'Вино красное (столовое)',
@@ -781,6 +858,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 2.61,
       system: true,
+      user_id: null,
     },
     {
       name: 'Вино розовое',
@@ -791,6 +869,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 3.8,
       system: true,
+      user_id: null,
     },
     {
       name: 'Виноград (красный или зелёный) (свежий)',
@@ -801,6 +880,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0.9,
       carbs: 18.1,
       system: true,
+      user_id: null,
     },
     {
       name: 'Виноград (мускатные сорта) (свежий)',
@@ -811,6 +891,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 3.9,
       carbs: 13.93,
       system: true,
+      user_id: null,
     },
     {
       name: 'Виноградные листья (свежие)',
@@ -821,6 +902,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 11,
       carbs: 17.31,
       system: true,
+      user_id: null,
     },
     {
       name: 'Виски (43 градуса алкоголя)',
@@ -831,6 +913,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0.1,
       system: true,
+      user_id: null,
     },
     {
       name: 'Вишня (замороженная)',
@@ -841,6 +924,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1.6,
       carbs: 11.02,
       system: true,
+      user_id: null,
     },
     {
       name: 'Вишня (свежая)',
@@ -851,6 +935,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1.6,
       carbs: 12.18,
       system: true,
+      user_id: null,
     },
     {
       name: 'Вода',
@@ -861,6 +946,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Водка (40 градусов алкоголя)',
@@ -871,6 +957,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Водоросли вакаме (в сыром виде)',
@@ -881,6 +968,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0.5,
       carbs: 9.14,
       system: true,
+      user_id: null,
     },
     {
       name: 'Водоросли нори (в сыром виде)',
@@ -891,6 +979,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0.3,
       carbs: 5.11,
       system: true,
+      user_id: null,
     },
     {
       name: 'Воздушная пшеница (готовая к употреблению)',
@@ -901,6 +990,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 4.4,
       carbs: 79.6,
       system: true,
+      user_id: null,
     },
     {
       name: 'Воздушный рис (готовый к употреблению)',
@@ -911,6 +1001,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1.7,
       carbs: 89.8,
       system: true,
+      user_id: null,
     },
     {
       name: 'Вырезка свиная (сырая)',
@@ -921,6 +1012,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Гамбургер (Макдоналдс)',
@@ -931,6 +1023,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1.3,
       carbs: 30.28,
       system: true,
+      user_id: null,
     },
     {
       name: 'Гвоздика (пряность) (приправа в виде порошка)',
@@ -941,6 +1034,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 33.9,
       carbs: 65.53,
       system: true,
+      user_id: null,
     },
     {
       name: 'Глютен (клейковина пшеничная) (в сухом виде)',
@@ -951,6 +1045,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0.6,
       carbs: 13.79,
       system: true,
+      user_id: null,
     },
     {
       name: 'Говядина (приготовленная, мясо без жира)',
@@ -961,6 +1056,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Говядина (сырая, мясо без жира)',
@@ -971,6 +1067,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0.05,
       system: true,
+      user_id: null,
     },
     {
       name: 'Говяжий мозг (жареный)',
@@ -981,6 +1078,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Говяжий мозг (сырой)',
@@ -991,6 +1089,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 1.05,
       system: true,
+      user_id: null,
     },
     {
       name: 'Говяжий огузок, кострец (сырой)',
@@ -1001,6 +1100,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 1.32,
       system: true,
+      user_id: null,
     },
     {
       name: 'Говяжий рубец (отварной)',
@@ -1011,6 +1111,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 1.99,
       system: true,
+      user_id: null,
     },
     {
       name: 'Говяжий рубец (сырой)',
@@ -1021,6 +1122,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Говяжий толстый край (сырой)',
@@ -1031,6 +1133,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 1.31,
       system: true,
+      user_id: null,
     },
     {
       name: 'Говяжий тонкий край (Стриплойн) (сырой)',
@@ -1041,6 +1144,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0.6,
       system: true,
+      user_id: null,
     },
     {
       name: 'Говяжий язык (отварной)',
@@ -1051,6 +1155,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Говяжий язык (сырой)',
@@ -1061,6 +1166,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 3.68,
       system: true,
+      user_id: null,
     },
     {
       name: 'Говяжье лёгкое (отварное или тушёное)',
@@ -1071,6 +1177,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Говяжье лёгкое (сырое)',
@@ -1081,6 +1188,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Говяжье сердце (отварное)',
@@ -1091,6 +1199,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0.15,
       system: true,
+      user_id: null,
     },
     {
       name: 'Говяжье сердце (сырое)',
@@ -1101,6 +1210,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0.14,
       system: true,
+      user_id: null,
     },
     {
       name: 'Говяжьи почки (варёные)',
@@ -1111,6 +1221,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Говяжьи почки (сырые)',
@@ -1121,6 +1232,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0.29,
       system: true,
+      user_id: null,
     },
     {
       name: 'Говяжьи рёбра (сырые)',
@@ -1131,6 +1243,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Говяжья вырезка (Тендерлойн) (сырая)',
@@ -1141,6 +1254,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Говяжья голяшка (сырая)',
@@ -1151,6 +1265,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Говяжья грудинка (сырая)',
@@ -1161,6 +1276,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Говяжья лопатка (сырая)',
@@ -1171,6 +1287,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Говяжья пашина, брюшина, фланк (в сыром виде)',
@@ -1181,6 +1298,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Говяжья печень (тушёная или жареная)',
@@ -1191,6 +1309,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 5.13,
       system: true,
+      user_id: null,
     },
     {
       name: 'Говяжья печень (сырая)',
@@ -1201,6 +1320,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 3.89,
       system: true,
+      user_id: null,
     },
     {
       name: 'Говяжья тушёнка (консервированная)',
@@ -1211,6 +1331,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Говяжья шея (Чак Ай Ролл) (сырая)',
@@ -1221,6 +1342,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Голень индейки (запечённая, без кожи)',
@@ -1231,6 +1353,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Голень индейки (сырая, без кожи)',
@@ -1241,6 +1364,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0.14,
       system: true,
+      user_id: null,
     },
     {
       name: 'Голубика (замороженная)',
@@ -1251,6 +1375,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 2.7,
       carbs: 12.17,
       system: true,
+      user_id: null,
     },
     {
       name: 'Голубика (свежая)',
@@ -1261,6 +1386,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 2.4,
       carbs: 14.49,
       system: true,
+      user_id: null,
     },
     {
       name: 'Голубиный горох (варёный)',
@@ -1271,6 +1397,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 6.7,
       carbs: 23.25,
       system: true,
+      user_id: null,
     },
     {
       name: 'Голубиный горох (сухой)',
@@ -1281,6 +1408,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 15,
       carbs: 62.78,
       system: true,
+      user_id: null,
     },
     {
       name: 'Горбуша (запечённая)',
@@ -1291,6 +1419,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Горбуша (сырая)',
@@ -1301,6 +1430,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Горбыль (жареный)',
@@ -1311,6 +1441,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0.4,
       carbs: 7.54,
       system: true,
+      user_id: null,
     },
     {
       name: 'Горбыль (сырой)',
@@ -1321,6 +1452,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Горох (сухой, зрелый)',
@@ -1331,6 +1463,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 25.5,
       carbs: 63.74,
       system: true,
+      user_id: null,
     },
     {
       name: 'Горох (варёный на воде, зрелый)',
@@ -1341,6 +1474,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 8.3,
       carbs: 21.1,
       system: true,
+      user_id: null,
     },
     {
       name: 'Горох пророщенный (в свежем виде)',
@@ -1351,6 +1485,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 27.11,
       system: true,
+      user_id: null,
     },
     {
       name: 'Горчица (столовая, пастообразная)',
@@ -1361,6 +1496,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 4,
       carbs: 5.83,
       system: true,
+      user_id: null,
     },
     {
       name: 'Гранат (свежий)',
@@ -1371,6 +1507,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 4,
       carbs: 18.7,
       system: true,
+      user_id: null,
     },
     {
       name: 'Грейпфрут (свежий)',
@@ -1381,6 +1518,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1.6,
       carbs: 10.66,
       system: true,
+      user_id: null,
     },
     {
       name: 'Грецкий орех',
@@ -1391,6 +1529,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 6.7,
       carbs: 13.71,
       system: true,
+      user_id: null,
     },
     {
       name: 'Гречка (варёная на воде, гречневая каша)',
@@ -1401,6 +1540,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 2.7,
       carbs: 19.94,
       system: true,
+      user_id: null,
     },
     {
       name: 'Гречка (крупа гречневая сухая (коричневая))',
@@ -1411,6 +1551,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 10.3,
       carbs: 74.95,
       system: true,
+      user_id: null,
     },
     {
       name: 'Гречка зелёная (сухая)',
@@ -1421,6 +1562,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 10,
       carbs: 71.5,
       system: true,
+      user_id: null,
     },
     {
       name: 'Гриб древесный (сырой)',
@@ -1431,6 +1573,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 6.75,
       system: true,
+      user_id: null,
     },
     {
       name: 'Грибы вешенки (сырые)',
@@ -1441,6 +1584,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 2.3,
       carbs: 6.09,
       system: true,
+      user_id: null,
     },
     {
       name: 'Грибы лисички (сырые)',
@@ -1451,6 +1595,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 3.8,
       carbs: 6.86,
       system: true,
+      user_id: null,
     },
     {
       name: 'Грибы майтаке (сырые)',
@@ -1461,6 +1606,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 2.7,
       carbs: 6.97,
       system: true,
+      user_id: null,
     },
     {
       name: 'Грибы портобелло (жареные)',
@@ -1471,6 +1617,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 2.2,
       carbs: 4.44,
       system: true,
+      user_id: null,
     },
     {
       name: 'Грибы портобелло (сырые)',
@@ -1481,6 +1628,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1.3,
       carbs: 3.87,
       system: true,
+      user_id: null,
     },
     {
       name: 'Грибы сморчки (сырые)',
@@ -1491,6 +1639,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 2.8,
       carbs: 5.1,
       system: true,
+      user_id: null,
     },
     {
       name: 'Грибы соломенные (консервированные)',
@@ -1501,6 +1650,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 2.5,
       carbs: 4.64,
       system: true,
+      user_id: null,
     },
     {
       name: 'Грибы шиитаке (приготовленные)',
@@ -1511,6 +1661,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 2.1,
       carbs: 14.39,
       system: true,
+      user_id: null,
     },
     {
       name: 'Грибы шиитаке (сушёные)',
@@ -1521,6 +1672,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 11.5,
       carbs: 75.37,
       system: true,
+      user_id: null,
     },
     {
       name: 'Грибы шиитаке (сырые)',
@@ -1531,6 +1683,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 2.5,
       carbs: 6.79,
       system: true,
+      user_id: null,
     },
     {
       name: 'Грибы эноки (сырые)',
@@ -1541,6 +1694,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 2.7,
       carbs: 7.81,
       system: true,
+      user_id: null,
     },
     {
       name: 'Грудинка свиная (в сыром виде)',
@@ -1551,6 +1705,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Грудка индейки (филе) (варёная)',
@@ -1561,6 +1716,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Грудка индейки (филе) (сырая)',
@@ -1571,6 +1727,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0.14,
       system: true,
+      user_id: null,
     },
     {
       name: 'Групер (запечённый)',
@@ -1581,6 +1738,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Групер (сырой)',
@@ -1591,6 +1749,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Груша (консервированная)',
@@ -1601,6 +1760,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 2.7,
       carbs: 19.08,
       system: true,
+      user_id: null,
     },
     {
       name: 'Груша (свежая)',
@@ -1611,6 +1771,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 3.1,
       carbs: 15.23,
       system: true,
+      user_id: null,
     },
     {
       name: 'Груша (сушёная, вяленая)',
@@ -1621,6 +1782,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 7.5,
       carbs: 69.7,
       system: true,
+      user_id: null,
     },
     {
       name: 'Груша Конференция (свежая)',
@@ -1631,6 +1793,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 3.1,
       carbs: 16.1,
       system: true,
+      user_id: null,
     },
     {
       name: 'Гуава (свежая)',
@@ -1641,6 +1804,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 5.4,
       carbs: 14.32,
       system: true,
+      user_id: null,
     },
     {
       name: 'Гусь (запечённый)',
@@ -1651,6 +1815,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Дайкон (свежий)',
@@ -1661,6 +1826,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1.6,
       carbs: 4.1,
       system: true,
+      user_id: null,
     },
     {
       name: 'Джамболан (свежий)',
@@ -1671,6 +1837,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 15.56,
       system: true,
+      user_id: null,
     },
     {
       name: 'Джекфрут (свежий)',
@@ -1681,6 +1848,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1.5,
       carbs: 23.25,
       system: true,
+      user_id: null,
     },
     {
       name: 'Джин (45 градусов алкоголя)',
@@ -1691,6 +1859,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Дуриан (свежий)',
@@ -1701,6 +1870,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 3.8,
       carbs: 27.09,
       system: true,
+      user_id: null,
     },
     {
       name: 'Дыня (свежая)',
@@ -1711,6 +1881,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0.8,
       carbs: 9.09,
       system: true,
+      user_id: null,
     },
     {
       name: 'Дыня Канталупа (свежая)',
@@ -1721,6 +1892,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0.9,
       carbs: 8.16,
       system: true,
+      user_id: null,
     },
     {
       name: 'Ежевика (замороженная)',
@@ -1731,6 +1903,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 5,
       carbs: 15.67,
       system: true,
+      user_id: null,
     },
     {
       name: 'Ежевика (свежая)',
@@ -1741,6 +1914,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 5.3,
       carbs: 9.61,
       system: true,
+      user_id: null,
     },
     {
       name: 'Жевательная резинка',
@@ -1751,6 +1925,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 2.4,
       carbs: 96.7,
       system: true,
+      user_id: null,
     },
     {
       name: 'Желток куриного яйца (в виде порошка)',
@@ -1761,6 +1936,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0.66,
       system: true,
+      user_id: null,
     },
     {
       name: 'Желтохвост (лакедра) (запечённый)',
@@ -1771,6 +1947,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Желтохвост (лакедра) (сырой)',
@@ -1781,6 +1958,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Желудки индейки (тушёные)',
@@ -1791,6 +1969,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Желудки индейки (сырые)',
@@ -1801,6 +1980,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Жеруха (в сыром виде)',
@@ -1811,6 +1991,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0.5,
       carbs: 1.29,
       system: true,
+      user_id: null,
     },
     {
       name: 'Жир бараний (сырой)',
@@ -1821,6 +2002,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Жир говяжий (сырой)',
@@ -1831,6 +2013,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Жир гусиный (сырой)',
@@ -1841,6 +2024,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Жир индейки (сырой)',
@@ -1851,6 +2035,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Жир куриный (сырой)',
@@ -1861,6 +2046,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Жир лосося (сырой)',
@@ -1871,6 +2057,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Жир печени трески (сырой)',
@@ -1881,6 +2068,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Жир сардин (сырой)',
@@ -1891,6 +2079,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Жир свиной (сало свиное) (сырой)',
@@ -1901,6 +2090,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Жир сельди (сырой)',
@@ -1911,6 +2101,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Жир утиный (сырой)',
@@ -1921,6 +2112,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Заменители яиц (в виде порошка)',
@@ -1931,6 +2123,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 21.8,
       system: true,
+      user_id: null,
     },
     {
       name: 'Зелёные соевые бобы (отваренные)',
@@ -1941,6 +2134,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 4.2,
       carbs: 11.05,
       system: true,
+      user_id: null,
     },
     {
       name: 'Зелёные соевые бобы (свежие)',
@@ -1951,6 +2145,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 4.2,
       carbs: 11.05,
       system: true,
+      user_id: null,
     },
     {
       name: 'Зелёный горошек (консервированный)',
@@ -1961,6 +2156,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 4.1,
       carbs: 12.58,
       system: true,
+      user_id: null,
     },
     {
       name: 'Зелёный горошек (отварной)',
@@ -1971,6 +2167,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 5.5,
       carbs: 15.63,
       system: true,
+      user_id: null,
     },
     {
       name: 'Зелёный горошек (замороженный)',
@@ -1981,6 +2178,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 4.5,
       carbs: 13.62,
       system: true,
+      user_id: null,
     },
     {
       name: 'Зелёный горошек (свежий)',
@@ -1991,6 +2189,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 5.7,
       carbs: 14.45,
       system: true,
+      user_id: null,
     },
     {
       name: 'Зёрна кукурузы (сухие)',
@@ -2001,6 +2200,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 7.3,
       carbs: 74.26,
       system: true,
+      user_id: null,
     },
     {
       name: 'Зефир (маршмеллоу) в шоколаде',
@@ -2011,6 +2211,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 2,
       carbs: 67.7,
       system: true,
+      user_id: null,
     },
     {
       name: 'Зефир (маршмэллоу)',
@@ -2021,6 +2222,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0.1,
       carbs: 81.3,
       system: true,
+      user_id: null,
     },
     {
       name: 'Зира (семена кумина)',
@@ -2031,6 +2233,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 10.5,
       carbs: 44.24,
       system: true,
+      user_id: null,
     },
     {
       name: 'Зубатка (запечённая)',
@@ -2041,6 +2244,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Зубатка (сырая)',
@@ -2051,6 +2255,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Изюм (без косточек)',
@@ -2061,6 +2266,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 4,
       carbs: 79.52,
       system: true,
+      user_id: null,
     },
     {
       name: 'Икра красная или чёрная (приготовленная, термически обработанная)',
@@ -2071,6 +2277,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 1.92,
       system: true,
+      user_id: null,
     },
     {
       name: 'Икра красная или чёрная (сырая)',
@@ -2081,6 +2288,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 1.5,
       system: true,
+      user_id: null,
     },
     {
       name: 'Имбирь (маринованный)',
@@ -2091,6 +2299,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 2.6,
       carbs: 4.83,
       system: true,
+      user_id: null,
     },
     {
       name: 'Индейка (запечённая, мясо и кожа целой тушки)',
@@ -2101,6 +2310,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0.06,
       system: true,
+      user_id: null,
     },
     {
       name: 'Индейка (сырая, мясо и кожа целой тушки)',
@@ -2111,6 +2321,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0.13,
       system: true,
+      user_id: null,
     },
     {
       name: 'Инжир (свежий)',
@@ -2121,6 +2332,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 2.9,
       carbs: 19.18,
       system: true,
+      user_id: null,
     },
     {
       name: 'Инжир (сушёный)',
@@ -2131,6 +2343,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 9.8,
       carbs: 63.87,
       system: true,
+      user_id: null,
     },
     {
       name: 'Ирис',
@@ -2141,6 +2354,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 90.4,
       system: true,
+      user_id: null,
     },
     {
       name: 'Ирландский мох (в сыром виде)',
@@ -2151,6 +2365,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1.3,
       carbs: 12.29,
       system: true,
+      user_id: null,
     },
     {
       name: 'Йогурт',
@@ -2161,6 +2376,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 12.29,
       system: true,
+      user_id: null,
     },
     {
       name: 'Кабачки молодые (в сыром виде)',
@@ -2171,6 +2387,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1.1,
       carbs: 3.11,
       system: true,
+      user_id: null,
     },
     {
       name: 'Кабачковая икра (кабачок консервированный)',
@@ -2181,6 +2398,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 6.85,
       system: true,
+      user_id: null,
     },
     {
       name: 'Кабачок (жареный или запечённый, без масла)',
@@ -2191,6 +2409,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1,
       carbs: 2.69,
       system: true,
+      user_id: null,
     },
     {
       name: 'Кабачок (замороженный)',
@@ -2201,6 +2420,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1.3,
       carbs: 3.58,
       system: true,
+      user_id: null,
     },
     {
       name: 'Кабачок (в сыром виде)',
@@ -2211,6 +2431,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1,
       carbs: 3.11,
       system: true,
+      user_id: null,
     },
     {
       name: 'Какао-порошок',
@@ -2221,6 +2442,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 37,
       carbs: 57.9,
       system: true,
+      user_id: null,
     },
     {
       name: 'Кальмар (приготовленный, жареный)',
@@ -2231,6 +2453,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 7.79,
       system: true,
+      user_id: null,
     },
     {
       name: 'Кальмар (сырой)',
@@ -2241,6 +2464,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 3.08,
       system: true,
+      user_id: null,
     },
     {
       name: 'Камбала (жареная)',
@@ -2251,6 +2475,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Камбала (сырая)',
@@ -2261,6 +2486,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Камчатский краб (варёный)',
@@ -2271,6 +2497,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Камчатский краб (сырой)',
@@ -2281,6 +2508,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Каперсы (маринованные)',
@@ -2291,6 +2519,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 3.2,
       carbs: 4.89,
       system: true,
+      user_id: null,
     },
     {
       name: 'Капуста (варёная, белокачанная)',
@@ -2301,6 +2530,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1.9,
       carbs: 5.51,
       system: true,
+      user_id: null,
     },
     {
       name: 'Капуста (свежая, белокачанная)',
@@ -2311,6 +2541,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 2.5,
       carbs: 5.8,
       system: true,
+      user_id: null,
     },
     {
       name: 'Капуста квашеная',
@@ -2321,6 +2552,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 2.9,
       carbs: 4.28,
       system: true,
+      user_id: null,
     },
     {
       name: 'Капуста квашеная (кимчи)',
@@ -2331,6 +2563,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1.6,
       carbs: 2.4,
       system: true,
+      user_id: null,
     },
     {
       name: 'Капуста красная (свежая)',
@@ -2341,6 +2574,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 2.1,
       carbs: 7.37,
       system: true,
+      user_id: null,
     },
     {
       name: 'Капуста кудрявая (в сыром виде)',
@@ -2351,6 +2585,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 3.6,
       carbs: 8.75,
       system: true,
+      user_id: null,
     },
     {
       name: 'Капуста листовая (приготовленная, отваренная)',
@@ -2361,6 +2596,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 4,
       carbs: 5.65,
       system: true,
+      user_id: null,
     },
     {
       name: 'Капуста листовая (свежая)',
@@ -2371,6 +2607,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 4,
       carbs: 5.42,
       system: true,
+      user_id: null,
     },
     {
       name: 'Капуста пекинская (свежая)',
@@ -2381,6 +2618,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1,
       carbs: 2.18,
       system: true,
+      user_id: null,
     },
     {
       name: 'Капуста савойская (свежая)',
@@ -2391,6 +2629,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 3.1,
       carbs: 6.1,
       system: true,
+      user_id: null,
     },
     {
       name: 'Каракатица (приготовленная)',
@@ -2401,6 +2640,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 1.64,
       system: true,
+      user_id: null,
     },
     {
       name: 'Каракатица (сырая)',
@@ -2411,6 +2651,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0.82,
       system: true,
+      user_id: null,
     },
     {
       name: 'Карамель',
@@ -2421,6 +2662,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 77,
       system: true,
+      user_id: null,
     },
     {
       name: 'Карбонат свиной (в сыром виде)',
@@ -2431,6 +2673,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Кардамон',
@@ -2441,6 +2684,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 28,
       carbs: 68.47,
       system: true,
+      user_id: null,
     },
     {
       name: 'Каркаде (цветок, свежий)',
@@ -2451,6 +2695,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 11.31,
       system: true,
+      user_id: null,
     },
     {
       name: 'Карп (запечённый)',
@@ -2461,6 +2706,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Карп (сырой)',
@@ -2471,6 +2717,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Картофель (запечённый в кожуре)',
@@ -2481,6 +2728,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 2.2,
       carbs: 21.15,
       system: true,
+      user_id: null,
     },
     {
       name: 'Картофель (запечённый)',
@@ -2491,6 +2739,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1.5,
       carbs: 21.55,
       system: true,
+      user_id: null,
     },
     {
       name: 'Картофель (варёный в мундире)',
@@ -2501,6 +2750,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1.8,
       carbs: 20.13,
       system: true,
+      user_id: null,
     },
     {
       name: 'Картофель (варёный)',
@@ -2511,6 +2761,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1.8,
       carbs: 20.01,
       system: true,
+      user_id: null,
     },
     {
       name: 'Картофель (сырой)',
@@ -2521,6 +2772,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 2.1,
       carbs: 17.49,
       system: true,
+      user_id: null,
     },
     {
       name: 'Картофель (замороженный)',
@@ -2531,6 +2783,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1.2,
       carbs: 17.47,
       system: true,
+      user_id: null,
     },
     {
       name: 'Картофель (жареный)',
@@ -2541,6 +2794,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 3.2,
       carbs: 35.11,
       system: true,
+      user_id: null,
     },
     {
       name: 'Картофель красный (в сыром виде)',
@@ -2551,6 +2805,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1.7,
       carbs: 15.9,
       system: true,
+      user_id: null,
     },
     {
       name: 'Картофель фри',
@@ -2561,6 +2816,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 2,
       carbs: 25.55,
       system: true,
+      user_id: null,
     },
     {
       name: 'Картофельное пюре (с молоком и маслом, приготовленное)',
@@ -2571,6 +2827,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1.5,
       carbs: 16.81,
       system: true,
+      user_id: null,
     },
     {
       name: 'Картофельные хлопья (в сухом виде (пюре быстрого приготовления))',
@@ -2581,6 +2838,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 6.6,
       carbs: 81.17,
       system: true,
+      user_id: null,
     },
     {
       name: 'Каша овсяная (овсянка) (на воде, приготовленная)',
@@ -2591,6 +2849,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1.7,
       carbs: 12,
       system: true,
+      user_id: null,
     },
     {
       name: 'Каша пшеничная (на воде, варёная)',
@@ -2601,6 +2860,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1.6,
       carbs: 13.7,
       system: true,
+      user_id: null,
     },
     {
       name: 'Каштан (очищенный, свежий)',
@@ -2611,6 +2871,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 44.17,
       system: true,
+      user_id: null,
     },
     {
       name: 'Кедровый орех (без скорлупы)',
@@ -2621,6 +2882,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 3.7,
       carbs: 13.08,
       system: true,
+      user_id: null,
     },
     {
       name: 'Кекс шоколадный (с шоколадной глазурью)',
@@ -2631,6 +2893,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 2.2,
       carbs: 52.84,
       system: true,
+      user_id: null,
     },
     {
       name: 'Кервель ажурный (сушёный)',
@@ -2641,6 +2904,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 11.3,
       carbs: 49.1,
       system: true,
+      user_id: null,
     },
     {
       name: 'Кета (запечённая)',
@@ -2651,6 +2915,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Кета (сырая)',
@@ -2661,6 +2926,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Кетчуп',
@@ -2671,6 +2937,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0.3,
       carbs: 27.4,
       system: true,
+      user_id: null,
     },
     {
       name: 'Кефаль (запечённая)',
@@ -2681,6 +2948,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Кефаль (сырая)',
@@ -2691,6 +2959,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Кефир',
@@ -2701,6 +2970,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 4.48,
       system: true,
+      user_id: null,
     },
     {
       name: 'Кешью (жареный)',
@@ -2711,6 +2981,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 3,
       carbs: 32.69,
       system: true,
+      user_id: null,
     },
     {
       name: 'Кешью (сырой)',
@@ -2721,6 +2992,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 3.3,
       carbs: 30.19,
       system: true,
+      user_id: null,
     },
     {
       name: 'Кивано (свежая)',
@@ -2731,6 +3003,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 7.56,
       system: true,
+      user_id: null,
     },
     {
       name: 'Киви (свежий)',
@@ -2741,6 +3014,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 3,
       carbs: 14.66,
       system: true,
+      user_id: null,
     },
     {
       name: 'Кижуч (запечённый)',
@@ -2751,6 +3025,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Кижуч (сырой)',
@@ -2761,6 +3036,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Кинза (листья кориандра) (свежие)',
@@ -2771,6 +3047,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 2.8,
       carbs: 3.67,
       system: true,
+      user_id: null,
     },
     {
       name: 'Киноа (варёное на воде)',
@@ -2781,6 +3058,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 2.8,
       carbs: 21.3,
       system: true,
+      user_id: null,
     },
     {
       name: 'Киноа (крупа сухая)',
@@ -2791,6 +3069,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 7,
       carbs: 64.16,
       system: true,
+      user_id: null,
     },
     {
       name: 'Кипрей (листья кипрея) (свежий)',
@@ -2801,6 +3080,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 10.6,
       carbs: 19.22,
       system: true,
+      user_id: null,
     },
     {
       name: 'Клементин (свежий)',
@@ -2811,6 +3091,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1.7,
       carbs: 12.02,
       system: true,
+      user_id: null,
     },
     {
       name: 'Клубника (замороженная)',
@@ -2821,6 +3102,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 2.1,
       carbs: 9.13,
       system: true,
+      user_id: null,
     },
     {
       name: 'Клубника (свежая)',
@@ -2831,6 +3113,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 2,
       carbs: 7.68,
       system: true,
+      user_id: null,
     },
     {
       name: 'Клюква (свежая)',
@@ -2841,6 +3124,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 3.6,
       carbs: 11.97,
       system: true,
+      user_id: null,
     },
     {
       name: 'Клюква (сушёная)',
@@ -2851,6 +3135,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 5.3,
       carbs: 82.8,
       system: true,
+      user_id: null,
     },
     {
       name: 'Кожа индейки (в сыром виде)',
@@ -2861,6 +3146,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0.16,
       system: true,
+      user_id: null,
     },
     {
       name: 'Козлобородник (корень козлобородника) (в сыром виде)',
@@ -2871,6 +3157,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 3.3,
       carbs: 18.6,
       system: true,
+      user_id: null,
     },
     {
       name: 'Козлятина (приготовленная)',
@@ -2881,6 +3168,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Козлятина (сырая)',
@@ -2891,6 +3179,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Кокосовая вода (свежая)',
@@ -2901,6 +3190,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1.1,
       carbs: 3.71,
       system: true,
+      user_id: null,
     },
     {
       name: 'Кокосовая стружка (неподслащённая)',
@@ -2911,6 +3201,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 16.3,
       carbs: 23.65,
       system: true,
+      user_id: null,
     },
     {
       name: 'Кокосовое молоко (свежее)',
@@ -2921,6 +3212,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 2.2,
       carbs: 5.54,
       system: true,
+      user_id: null,
     },
     {
       name: 'Кокосовое молоко консервированное',
@@ -2931,6 +3223,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 2.81,
       system: true,
+      user_id: null,
     },
     {
       name: 'Коктейльная вишня (консервированная)',
@@ -2941,6 +3234,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 3.2,
       carbs: 41.97,
       system: true,
+      user_id: null,
     },
     {
       name: 'Кола',
@@ -2951,6 +3245,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 10.36,
       system: true,
+      user_id: null,
     },
     {
       name: 'Кола (без кофеина)',
@@ -2961,6 +3256,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 10.58,
       system: true,
+      user_id: null,
     },
     {
       name: 'Колбаса варёная',
@@ -2971,6 +3267,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 6.31,
       system: true,
+      user_id: null,
     },
     {
       name: 'Колбаса докторская',
@@ -2981,6 +3278,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 3.05,
       system: true,
+      user_id: null,
     },
     {
       name: 'Колбаса копчёная',
@@ -2991,6 +3289,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 3.72,
       system: true,
+      user_id: null,
     },
     {
       name: 'Колбаса кровяная',
@@ -3001,6 +3300,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 1.29,
       system: true,
+      user_id: null,
     },
     {
       name: 'Колбаса Пепперони',
@@ -3011,6 +3311,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 1.18,
       system: true,
+      user_id: null,
     },
     {
       name: 'Кольраби (свежая)',
@@ -3021,6 +3322,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 3.6,
       carbs: 6.2,
       system: true,
+      user_id: null,
     },
     {
       name: 'Кольраби (капуста) (варёная)',
@@ -3031,6 +3333,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1.1,
       carbs: 6.69,
       system: true,
+      user_id: null,
     },
     {
       name: 'Конина (приготовленная)',
@@ -3041,6 +3344,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Конина (сырая)',
@@ -3051,6 +3355,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Конфеты Skittles',
@@ -3061,6 +3366,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 90.78,
       system: true,
+      user_id: null,
     },
     {
       name: 'Корейка свиная (запечённая)',
@@ -3071,6 +3377,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Корейка свиная (в сыром виде)',
@@ -3081,6 +3388,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Корень имбиря (в сыром виде)',
@@ -3091,6 +3399,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 2,
       carbs: 17.77,
       system: true,
+      user_id: null,
     },
     {
       name: 'Корень лопуха (отваренный)',
@@ -3101,6 +3410,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1.8,
       carbs: 21.15,
       system: true,
+      user_id: null,
     },
     {
       name: 'Корень лопуха (в сыром виде)',
@@ -3111,6 +3421,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 3.3,
       carbs: 17.34,
       system: true,
+      user_id: null,
     },
     {
       name: 'Корень сельдерея (отваренный)',
@@ -3121,6 +3432,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1.2,
       carbs: 5.9,
       system: true,
+      user_id: null,
     },
     {
       name: 'Корень сельдерея (в сыром виде)',
@@ -3131,6 +3443,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1.8,
       carbs: 9.2,
       system: true,
+      user_id: null,
     },
     {
       name: 'Корень цикория (в сыром виде)',
@@ -3141,6 +3454,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1.5,
       carbs: 17.51,
       system: true,
+      user_id: null,
     },
     {
       name: 'Коржи бисквитные для торта',
@@ -3151,6 +3465,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 48.5,
       system: true,
+      user_id: null,
     },
     {
       name: 'Коржи шоколадные для торта',
@@ -3161,6 +3476,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1.6,
       carbs: 53.4,
       system: true,
+      user_id: null,
     },
     {
       name: 'Кориандр (кинза) (лист высушенный)',
@@ -3171,6 +3487,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 10.4,
       carbs: 52.1,
       system: true,
+      user_id: null,
     },
     {
       name: 'Корица (порошок)',
@@ -3181,6 +3498,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 53.1,
       carbs: 80.59,
       system: true,
+      user_id: null,
     },
     {
       name: 'Корюшка (жареная)',
@@ -3191,6 +3509,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Корюшка (сырая)',
@@ -3201,6 +3520,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Кофе зерновой (сваренный)',
@@ -3211,6 +3531,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0.23,
       system: true,
+      user_id: null,
     },
     {
       name: 'Кофе растворимый (приготовленный)',
@@ -3221,6 +3542,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0.34,
       system: true,
+      user_id: null,
     },
     {
       name: 'Кофе с молоком и сахаром',
@@ -3231,6 +3553,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 12.6,
       system: true,
+      user_id: null,
     },
     {
       name: 'Кофе эспрессо (в готовом виде)',
@@ -3241,6 +3564,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 1.67,
       system: true,
+      user_id: null,
     },
     {
       name: 'Краб (варёный)',
@@ -3251,6 +3575,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Краб (мясо краба) (сырой)',
@@ -3261,6 +3586,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0.04,
       system: true,
+      user_id: null,
     },
     {
       name: 'Крабовые палочки (сурими) (готовые к употреблению)',
@@ -3271,6 +3597,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 9.13,
       system: true,
+      user_id: null,
     },
     {
       name: 'Крахмал картофельный',
@@ -3281,6 +3608,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 5.9,
       carbs: 83.1,
       system: true,
+      user_id: null,
     },
     {
       name: 'Крахмал кукурузный',
@@ -3291,6 +3619,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0.9,
       carbs: 91.27,
       system: true,
+      user_id: null,
     },
     {
       name: 'Креветки (варёные)',
@@ -3301,6 +3630,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0.2,
       system: true,
+      user_id: null,
     },
     {
       name: 'Креветки (сырые)',
@@ -3311,6 +3641,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Крекер',
@@ -3321,6 +3652,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 6.9,
       carbs: 70.73,
       system: true,
+      user_id: null,
     },
     {
       name: 'Крендельки (без соли)',
@@ -3331,6 +3663,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 2.8,
       carbs: 79.2,
       system: true,
+      user_id: null,
     },
     {
       name: 'Кресс-салат (свежий)',
@@ -3341,6 +3674,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1.1,
       carbs: 5.5,
       system: true,
+      user_id: null,
     },
     {
       name: 'Крольчатина (приготовленная)',
@@ -3351,6 +3685,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Крольчатина (сырая)',
@@ -3361,6 +3696,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Крупа амарантовая (сухая (семена))',
@@ -3371,6 +3707,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 6.7,
       carbs: 65.25,
       system: true,
+      user_id: null,
     },
     {
       name: 'Крупа кукурузная (на воде, каша приготовленная)',
@@ -3381,6 +3718,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0.7,
       carbs: 13.86,
       system: true,
+      user_id: null,
     },
     {
       name: 'Крупа кукурузная (сухая)',
@@ -3391,6 +3729,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 3.9,
       carbs: 79.91,
       system: true,
+      user_id: null,
     },
     {
       name: 'Крупа пшеничная (сухая)',
@@ -3401,6 +3740,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 9.5,
       carbs: 75.2,
       system: true,
+      user_id: null,
     },
     {
       name: 'Крупа теф (в сухом виде)',
@@ -3411,6 +3751,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 8,
       carbs: 73.13,
       system: true,
+      user_id: null,
     },
     {
       name: 'Крупа ячневая (в сухом виде)',
@@ -3421,6 +3762,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 17.3,
       carbs: 73.48,
       system: true,
+      user_id: null,
     },
     {
       name: 'Крыжовник (свежий)',
@@ -3431,6 +3773,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 4.3,
       carbs: 10.18,
       system: true,
+      user_id: null,
     },
     {
       name: 'Кукуруза (консервированная)',
@@ -3441,6 +3784,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 2,
       carbs: 14.34,
       system: true,
+      user_id: null,
     },
     {
       name: 'Кукуруза (замороженная)',
@@ -3451,6 +3795,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 2.1,
       carbs: 20.71,
       system: true,
+      user_id: null,
     },
     {
       name: 'Кукуруза (в сыром виде)',
@@ -3461,6 +3806,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 2,
       carbs: 18.7,
       system: true,
+      user_id: null,
     },
     {
       name: 'Кукуруза (варёная)',
@@ -3471,6 +3817,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 2.4,
       carbs: 20.98,
       system: true,
+      user_id: null,
     },
     {
       name: 'Кумкват (свежий)',
@@ -3481,6 +3828,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 6.5,
       carbs: 15.9,
       system: true,
+      user_id: null,
     },
     {
       name: 'Кунжут (необжаренный)',
@@ -3491,6 +3839,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 11.6,
       carbs: 11.73,
       system: true,
+      user_id: null,
     },
     {
       name: 'Кунжут (обжаренный)',
@@ -3501,6 +3850,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 16.9,
       carbs: 26.04,
       system: true,
+      user_id: null,
     },
     {
       name: 'Курага',
@@ -3511,6 +3861,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 7.3,
       carbs: 62.64,
       system: true,
+      user_id: null,
     },
     {
       name: 'Куриная голень (жареная, мясо с кожей)',
@@ -3521,6 +3872,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0.1,
       carbs: 1.63,
       system: true,
+      user_id: null,
     },
     {
       name: 'Куриная голень (запечённая, мясо с кожей)',
@@ -3531,6 +3883,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Куриная голень (тушёная или варёная, мясо с кожей)',
@@ -3541,6 +3894,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Куриная голень (сырая, мясо с кожей)',
@@ -3551,6 +3905,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0.11,
       system: true,
+      user_id: null,
     },
     {
       name: 'Куриная голень (без кожи) (жареная)',
@@ -3561,6 +3916,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Куриная голень (без кожи) (тушёная или варёная)',
@@ -3571,6 +3927,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Куриная грудка (варёная или тушёная, без кожи)',
@@ -3581,6 +3938,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Куриная грудка (запечённая, без кожи)',
@@ -3591,6 +3949,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Куриная грудка (сырая, с кожей)',
@@ -3601,6 +3960,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Куриная кожа (отварная)',
@@ -3611,6 +3971,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Куриная кожа (сырая)',
@@ -3621,6 +3982,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Куриная печень (жареная)',
@@ -3631,6 +3993,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 1.11,
       system: true,
+      user_id: null,
     },
     {
       name: 'Куриная печень (тушёная или варёная)',
@@ -3641,6 +4004,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0.87,
       system: true,
+      user_id: null,
     },
     {
       name: 'Куриная печень (сырая)',
@@ -3651,6 +4015,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0.73,
       system: true,
+      user_id: null,
     },
     {
       name: 'Куриная спинка (приготовленная, мясо с кожей)',
@@ -3661,6 +4026,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Куриная спинка (сырая, мясо с кожей)',
@@ -3671,6 +4037,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Куриная спинка (без кожи) (сырая)',
@@ -3681,6 +4048,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Куриные бёдра (жареные, мясо с кожей)',
@@ -3691,6 +4059,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0.1,
       carbs: 3.18,
       system: true,
+      user_id: null,
     },
     {
       name: 'Куриные бёдра (запечённые, мясо с кожей)',
@@ -3701,6 +4070,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Куриные бёдра (варёные или тушёные, мясо с кожей)',
@@ -3711,6 +4081,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Куриные бёдра (сырые, мясо с кожей)',
@@ -3721,6 +4092,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0.25,
       system: true,
+      user_id: null,
     },
     {
       name: 'Куриные бёдра без кожи (варёные или тушёные)',
@@ -3731,6 +4103,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Куриные жулудки (варёные или тушёные)',
@@ -3741,6 +4114,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Куриные жулудки (сырые)',
@@ -3751,6 +4125,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Куриные крылышки (жареные)',
@@ -3761,6 +4136,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0.1,
       carbs: 2.39,
       system: true,
+      user_id: null,
     },
     {
       name: 'Куриные крылышки (запечённые)',
@@ -3771,6 +4147,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Куриные крылышки (варёные или тушёные)',
@@ -3781,6 +4158,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Куриные крылышки (сырые)',
@@ -3791,6 +4169,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Куриные лапки (приготовленные)',
@@ -3801,6 +4180,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0.2,
       system: true,
+      user_id: null,
     },
     {
       name: 'Куриные ножки (жареные, мясо с кожей)',
@@ -3811,6 +4191,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0.1,
       carbs: 2.5,
       system: true,
+      user_id: null,
     },
     {
       name: 'Куриные ножки (запечённые, мясо с кожей)',
@@ -3821,6 +4202,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Куриные ножки (варёные или тушёные, мясо с кожей)',
@@ -3831,6 +4213,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Куриные ножки (окорочка) (сырые, мясо с кожей)',
@@ -3841,6 +4224,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0.17,
       system: true,
+      user_id: null,
     },
     {
       name: 'Куриные сердца (приготовленные)',
@@ -3851,6 +4235,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0.1,
       system: true,
+      user_id: null,
     },
     {
       name: 'Куриные сердца (сырые)',
@@ -3861,6 +4246,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0.71,
       system: true,
+      user_id: null,
     },
     {
       name: 'Куриный фарш (сырой)',
@@ -3871,6 +4257,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0.04,
       system: true,
+      user_id: null,
     },
     {
       name: 'Курица (жареная)',
@@ -3881,6 +4268,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0.1,
       carbs: 1.69,
       system: true,
+      user_id: null,
     },
     {
       name: 'Курица (запечённая)',
@@ -3891,6 +4279,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Курица (варёная или тушёная)',
@@ -3901,6 +4290,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Курица (сырое куриное мясо)',
@@ -3911,6 +4301,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Куркума (приправа в виде порошка)',
@@ -3921,6 +4312,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 22.7,
       carbs: 67.14,
       system: true,
+      user_id: null,
     },
     {
       name: 'Кускус (варёный на воде)',
@@ -3931,6 +4323,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1.4,
       carbs: 23.22,
       system: true,
+      user_id: null,
     },
     {
       name: 'Кускус (крупа сухая)',
@@ -3941,6 +4334,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 5,
       carbs: 77.43,
       system: true,
+      user_id: null,
     },
     {
       name: 'Лаваш',
@@ -3951,6 +4345,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 2.2,
       carbs: 55.7,
       system: true,
+      user_id: null,
     },
     {
       name: 'Лавровый лист',
@@ -3961,6 +4356,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 26.3,
       carbs: 74.97,
       system: true,
+      user_id: null,
     },
     {
       name: 'Лайм (свежий)',
@@ -3971,6 +4367,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 2.8,
       carbs: 10.54,
       system: true,
+      user_id: null,
     },
     {
       name: 'Лапша (макароны, паста) (варёная)',
@@ -3981,6 +4378,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1.8,
       carbs: 30.86,
       system: true,
+      user_id: null,
     },
     {
       name: 'Лапша (макароны, паста) (в сухом виде)',
@@ -3991,6 +4389,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 3.2,
       carbs: 74.67,
       system: true,
+      user_id: null,
     },
     {
       name: 'Лапша гречневая (соба) (варёная)',
@@ -4001,6 +4400,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 21.44,
       system: true,
+      user_id: null,
     },
     {
       name: 'Лапша гречневая (соба) (в сухом виде)',
@@ -4011,6 +4411,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 74.62,
       system: true,
+      user_id: null,
     },
     {
       name: 'Лапша домашняя (варёная)',
@@ -4021,6 +4422,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 23.54,
       system: true,
+      user_id: null,
     },
     {
       name: 'Лапша из цельнозерновой пшеницы (варёные)',
@@ -4031,6 +4433,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 3.9,
       carbs: 30.07,
       system: true,
+      user_id: null,
     },
     {
       name: 'Лапша из цельнозерновой пшеницы (в сухом виде)',
@@ -4041,6 +4444,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 9.2,
       carbs: 73.37,
       system: true,
+      user_id: null,
     },
     {
       name: 'Лапша кукурузная (варёная)',
@@ -4051,6 +4455,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 4.8,
       carbs: 27.91,
       system: true,
+      user_id: null,
     },
     {
       name: 'Лапша кукурузная (в сухом виде)',
@@ -4061,6 +4466,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 11,
       carbs: 79.26,
       system: true,
+      user_id: null,
     },
     {
       name: 'Лапша пшеничная (удон) (варёная)',
@@ -4071,6 +4477,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 27.54,
       system: true,
+      user_id: null,
     },
     {
       name: 'Лапша пшеничная (удон) (в сухом виде)',
@@ -4081,6 +4488,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 4.3,
       carbs: 74.1,
       system: true,
+      user_id: null,
     },
     {
       name: 'Лапша рисовая (варёная)',
@@ -4091,6 +4499,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1,
       carbs: 24.01,
       system: true,
+      user_id: null,
     },
     {
       name: 'Лапша рисовая (в сухом виде)',
@@ -4101,6 +4510,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1.6,
       carbs: 80.18,
       system: true,
+      user_id: null,
     },
     {
       name: 'Лапша яичная (в сухом виде)',
@@ -4111,6 +4521,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 3.3,
       carbs: 71.27,
       system: true,
+      user_id: null,
     },
     {
       name: 'Лапша яичная (варёная)',
@@ -4121,6 +4532,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1.2,
       carbs: 25.16,
       system: true,
+      user_id: null,
     },
     {
       name: 'Лебеда (свежая)',
@@ -4131,6 +4543,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 4,
       carbs: 7.3,
       system: true,
+      user_id: null,
     },
     {
       name: 'Лемонграсс (свежий)',
@@ -4141,6 +4554,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 25.31,
       system: true,
+      user_id: null,
     },
     {
       name: 'Лепёшка наан (индийская пшеничная лепёшка)',
@@ -4151,6 +4565,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 2.2,
       carbs: 50.43,
       system: true,
+      user_id: null,
     },
     {
       name: 'Лепёшка паратха',
@@ -4161,6 +4576,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 9.6,
       carbs: 45.35,
       system: true,
+      user_id: null,
     },
     {
       name: 'Лимон (свежий, без кожуры)',
@@ -4171,6 +4587,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 2.8,
       carbs: 9.32,
       system: true,
+      user_id: null,
     },
     {
       name: 'Листовая горчица (свежая)',
@@ -4181,6 +4598,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 3.2,
       carbs: 4.67,
       system: true,
+      user_id: null,
     },
     {
       name: 'Листья амаранта (свежие)',
@@ -4191,6 +4609,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 4.02,
       system: true,
+      user_id: null,
     },
     {
       name: 'Листья одуванчика (свежие)',
@@ -4201,6 +4620,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 3.5,
       carbs: 9.2,
       system: true,
+      user_id: null,
     },
     {
       name: 'Листья тыквы (свежие)',
@@ -4211,6 +4631,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 2.33,
       system: true,
+      user_id: null,
     },
     {
       name: 'Листья цикория (свежие)',
@@ -4221,6 +4642,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 4,
       carbs: 4.7,
       system: true,
+      user_id: null,
     },
     {
       name: 'Личи (свежие)',
@@ -4231,6 +4653,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1.3,
       carbs: 16.53,
       system: true,
+      user_id: null,
     },
     {
       name: 'Лобстеры (омары, лангусты) (варёные)',
@@ -4241,6 +4664,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Лобстеры (омары, лангусты) (сырые)',
@@ -4251,6 +4675,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Логанова ягода (замороженная)',
@@ -4261,6 +4686,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 5.3,
       carbs: 13.02,
       system: true,
+      user_id: null,
     },
     {
       name: 'Лонган (свежий)',
@@ -4271,6 +4697,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1.1,
       carbs: 15.14,
       system: true,
+      user_id: null,
     },
     {
       name: 'Лопатка свиная (в сыром виде)',
@@ -4281,6 +4708,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Лосятина (приготовленная)',
@@ -4291,6 +4719,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Лосятина (сырая)',
@@ -4301,6 +4730,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Лук зелёный (свежий)',
@@ -4311,6 +4741,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1.8,
       carbs: 5.74,
       system: true,
+      user_id: null,
     },
     {
       name: 'Лук репчатый (варёный)',
@@ -4321,6 +4752,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1.4,
       carbs: 10.15,
       system: true,
+      user_id: null,
     },
     {
       name: 'Лук репчатый (свежий)',
@@ -4331,6 +4763,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1.7,
       carbs: 9.34,
       system: true,
+      user_id: null,
     },
     {
       name: 'Лук репчатый (жареный)',
@@ -4341,6 +4774,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1.7,
       carbs: 7.86,
       system: true,
+      user_id: null,
     },
     {
       name: 'Лук репчатый красный (сладкий) (свежий)',
@@ -4351,6 +4785,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0.9,
       carbs: 7.55,
       system: true,
+      user_id: null,
     },
     {
       name: 'Лук-батун (свежий)',
@@ -4361,6 +4796,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 2.4,
       carbs: 6.5,
       system: true,
+      user_id: null,
     },
     {
       name: 'Лук-порей (приготовленный)',
@@ -4371,6 +4807,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1,
       carbs: 7.62,
       system: true,
+      user_id: null,
     },
     {
       name: 'Лук-порей (свежий)',
@@ -4381,6 +4818,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1.8,
       carbs: 14.15,
       system: true,
+      user_id: null,
     },
     {
       name: 'Лук-шалот (свежий)',
@@ -4391,6 +4829,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 3.2,
       carbs: 16.8,
       system: true,
+      user_id: null,
     },
     {
       name: 'Луковые кольца',
@@ -4401,6 +4840,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 2.7,
       carbs: 43.58,
       system: true,
+      user_id: null,
     },
     {
       name: 'Луковый порошок',
@@ -4411,6 +4851,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 15.2,
       carbs: 79.12,
       system: true,
+      user_id: null,
     },
     {
       name: 'Луциан (берикс) (запечённый)',
@@ -4421,6 +4862,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Луциан (берикс) (сырой)',
@@ -4431,6 +4873,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Люпин (бобы люпина) (приготовленные)',
@@ -4441,6 +4884,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 2.8,
       carbs: 9.88,
       system: true,
+      user_id: null,
     },
     {
       name: 'Люпин (бобы люпина) (сухие)',
@@ -4451,6 +4895,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 18.9,
       carbs: 40.37,
       system: true,
+      user_id: null,
     },
     {
       name: 'Лягушачьи лапки (сырые)',
@@ -4461,6 +4906,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Майонез',
@@ -4471,6 +4917,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0.57,
       system: true,
+      user_id: null,
     },
     {
       name: 'Майоран (специя в виде порошка)',
@@ -4481,6 +4928,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 40.3,
       carbs: 60.56,
       system: true,
+      user_id: null,
     },
     {
       name: 'Малина (свежая)',
@@ -4491,6 +4939,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 6.5,
       carbs: 11.94,
       system: true,
+      user_id: null,
     },
     {
       name: 'Манго (сушёное)',
@@ -4501,6 +4950,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 2.4,
       carbs: 78.58,
       system: true,
+      user_id: null,
     },
     {
       name: 'Манго (свежее)',
@@ -4511,6 +4961,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1.6,
       carbs: 14.98,
       system: true,
+      user_id: null,
     },
     {
       name: 'Мангольд (свежий)',
@@ -4521,6 +4972,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1.6,
       carbs: 3.74,
       system: true,
+      user_id: null,
     },
     {
       name: 'Мангостин (консервированный)',
@@ -4531,6 +4983,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1.8,
       carbs: 17.91,
       system: true,
+      user_id: null,
     },
     {
       name: 'Мандарины (свежие)',
@@ -4541,6 +4994,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1.8,
       carbs: 13.34,
       system: true,
+      user_id: null,
     },
     {
       name: 'Маниок (в сыром виде)',
@@ -4551,6 +5005,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1.8,
       carbs: 38.06,
       system: true,
+      user_id: null,
     },
     {
       name: 'Манка (крупа манная сухая)',
@@ -4561,6 +5016,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1.9,
       carbs: 78,
       system: true,
+      user_id: null,
     },
     {
       name: 'Манная каша (на воде)',
@@ -4571,6 +5027,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0.8,
       carbs: 10.92,
       system: true,
+      user_id: null,
     },
     {
       name: 'Маракуйя (свежая)',
@@ -4581,6 +5038,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 10.4,
       carbs: 23.38,
       system: true,
+      user_id: null,
     },
     {
       name: 'Маргарин',
@@ -4591,6 +5049,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0.75,
       system: true,
+      user_id: null,
     },
     {
       name: 'Мармелад',
@@ -4601,6 +5060,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1,
       carbs: 69.95,
       system: true,
+      user_id: null,
     },
     {
       name: 'Марь белая (отваренная)',
@@ -4611,6 +5071,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 2.1,
       carbs: 5,
       system: true,
+      user_id: null,
     },
     {
       name: 'Маслины (консервированные)',
@@ -4621,6 +5082,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 2.5,
       carbs: 5.61,
       system: true,
+      user_id: null,
     },
     {
       name: 'Масло абрикосовое',
@@ -4631,6 +5093,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Масло авокадо',
@@ -4641,6 +5104,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Масло арахисовое',
@@ -4651,6 +5115,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Масло бабассу',
@@ -4661,6 +5126,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Масло виноградных косточек',
@@ -4671,6 +5137,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Масло горчичное',
@@ -4681,6 +5148,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Масло грецкого ореха',
@@ -4691,6 +5159,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Масло зародышей пшеницы',
@@ -4701,6 +5170,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Масло какао',
@@ -4711,6 +5181,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Масло канолы',
@@ -4721,6 +5192,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Масло кокосовое',
@@ -4731,6 +5203,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Масло кукурузное',
@@ -4741,6 +5214,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Масло кунжутное',
@@ -4751,6 +5225,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Масло льняное',
@@ -4761,6 +5236,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Масло маковое',
@@ -4771,6 +5247,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Масло миндальное',
@@ -4781,6 +5258,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Масло овса',
@@ -4791,6 +5269,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Масло оливковое',
@@ -4801,6 +5280,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Масло пальмовое',
@@ -4811,6 +5291,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Масло подсолнечное',
@@ -4821,6 +5302,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Масло рисовых отрубей',
@@ -4831,6 +5313,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Масло сафлоровое',
@@ -4841,6 +5324,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Масло сливочное',
@@ -4851,6 +5335,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Масло соевое',
@@ -4861,6 +5346,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Масло фундука',
@@ -4871,6 +5357,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Масло хлопковое',
@@ -4881,6 +5368,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Масло ши (карите)',
@@ -4891,6 +5379,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Масляная рыба (эсколар) (копчёная)',
@@ -4901,6 +5390,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Масляная рыба (эсколар) (сырая)',
@@ -4911,6 +5401,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Махи-махи (корифена) (запечённая)',
@@ -4921,6 +5412,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Махи-махи (корифена) (сырая)',
@@ -4931,6 +5423,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Маш (варёный)',
@@ -4941,6 +5434,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 7.6,
       carbs: 19.15,
       system: true,
+      user_id: null,
     },
     {
       name: 'Маш (сухой)',
@@ -4951,6 +5445,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 16.3,
       carbs: 62.62,
       system: true,
+      user_id: null,
     },
     {
       name: 'Маш пророщенный (в свежем виде)',
@@ -4961,6 +5456,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1.8,
       carbs: 5.94,
       system: true,
+      user_id: null,
     },
     {
       name: 'Мёд',
@@ -4971,6 +5467,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0.2,
       carbs: 82.4,
       system: true,
+      user_id: null,
     },
     {
       name: 'Медвежатина (приготовленная)',
@@ -4981,6 +5478,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Медвежатина (сырая)',
@@ -4991,6 +5489,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Медуза (сушёная)',
@@ -5001,6 +5500,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Меласса',
@@ -5011,6 +5511,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 74.73,
       system: true,
+      user_id: null,
     },
     {
       name: 'Менёк (запечённый)',
@@ -5021,6 +5522,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Менёк (сырой)',
@@ -5031,6 +5533,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Мерланг (запечённый)',
@@ -5041,6 +5544,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Мерланг (сырой)',
@@ -5051,6 +5555,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Мидии (отварные)',
@@ -5061,6 +5566,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 7.39,
       system: true,
+      user_id: null,
     },
     {
       name: 'Мидии (сырые)',
@@ -5071,6 +5577,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 3.69,
       system: true,
+      user_id: null,
     },
     {
       name: 'Миндаль (свежий)',
@@ -5081,6 +5588,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 12.5,
       carbs: 21.55,
       system: true,
+      user_id: null,
     },
     {
       name: 'Миндаль (жареный)',
@@ -5091,6 +5599,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 10.9,
       carbs: 21.01,
       system: true,
+      user_id: null,
     },
     {
       name: 'Минтай (запечённый)',
@@ -5101,6 +5610,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Минтай (сырой)',
@@ -5111,6 +5621,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Моллюски (варёные)',
@@ -5121,6 +5632,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 5.13,
       system: true,
+      user_id: null,
     },
     {
       name: 'Моллюски (сырые)',
@@ -5131,6 +5643,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 3.57,
       system: true,
+      user_id: null,
     },
     {
       name: 'Молоко (цельное коровье 3,7% жирности)',
@@ -5141,6 +5654,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 4.65,
       system: true,
+      user_id: null,
     },
     {
       name: 'Молоко грудное женское',
@@ -5151,6 +5665,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 6.89,
       system: true,
+      user_id: null,
     },
     {
       name: 'Молоко козье',
@@ -5161,6 +5676,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 4.45,
       system: true,
+      user_id: null,
     },
     {
       name: 'Молоко коровье (2% жирности)',
@@ -5171,6 +5687,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 4.8,
       system: true,
+      user_id: null,
     },
     {
       name: 'Молоко овечье',
@@ -5181,6 +5698,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 5.36,
       system: true,
+      user_id: null,
     },
     {
       name: 'Молоко сгущённое',
@@ -5191,6 +5709,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 54.4,
       system: true,
+      user_id: null,
     },
     {
       name: 'Молоко сухое',
@@ -5201,6 +5720,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 38.42,
       system: true,
+      user_id: null,
     },
     {
       name: 'Молочная рыба (ханос) (запечённая)',
@@ -5211,6 +5731,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Молочная рыба (ханос) (сырая)',
@@ -5221,6 +5742,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Молочная сыворотка',
@@ -5231,6 +5753,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 5.12,
       system: true,
+      user_id: null,
     },
     {
       name: 'Мольва (запечённая)',
@@ -5241,6 +5764,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Мольва (сырая)',
@@ -5251,6 +5775,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Морковь (сушёная)',
@@ -5261,6 +5786,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 23.6,
       carbs: 79.57,
       system: true,
+      user_id: null,
     },
     {
       name: 'Морковь (консервированная)',
@@ -5271,6 +5797,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1.5,
       carbs: 5.54,
       system: true,
+      user_id: null,
     },
     {
       name: 'Морковь (варёная)',
@@ -5281,6 +5808,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 3,
       carbs: 8.22,
       system: true,
+      user_id: null,
     },
     {
       name: 'Морковь (замороженная)',
@@ -5291,6 +5819,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 3.3,
       carbs: 7.9,
       system: true,
+      user_id: null,
     },
     {
       name: 'Морковь (сырая, свежая)',
@@ -5301,6 +5830,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 2.8,
       carbs: 9.58,
       system: true,
+      user_id: null,
     },
     {
       name: 'Мороженое',
@@ -5311,6 +5841,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0.7,
       carbs: 23.6,
       system: true,
+      user_id: null,
     },
     {
       name: 'Мороженое шоколадное',
@@ -5321,6 +5852,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1.2,
       carbs: 28.2,
       system: true,
+      user_id: null,
     },
     {
       name: 'Морс клюквенный (без сахара)',
@@ -5331,6 +5863,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0.1,
       carbs: 12.2,
       system: true,
+      user_id: null,
     },
     {
       name: 'Морская капуста (в сыром виде)',
@@ -5341,6 +5874,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1.3,
       carbs: 9.57,
       system: true,
+      user_id: null,
     },
     {
       name: 'Морские ушки (приготовленные)',
@@ -5351,6 +5885,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 11.05,
       system: true,
+      user_id: null,
     },
     {
       name: 'Морские ушки (сырые)',
@@ -5361,6 +5896,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 6.01,
       system: true,
+      user_id: null,
     },
     {
       name: 'Морской гребешок (приготовленный)',
@@ -5371,6 +5907,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 5.41,
       system: true,
+      user_id: null,
     },
     {
       name: 'Морской гребешок (сырой)',
@@ -5381,6 +5918,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 3.18,
       system: true,
+      user_id: null,
     },
     {
       name: 'Морской чёрт (приготовленный)',
@@ -5391,6 +5929,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Морской чёрт (сырой)',
@@ -5401,6 +5940,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Мука арахисовая',
@@ -5411,6 +5951,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 15.8,
       carbs: 31.27,
       system: true,
+      user_id: null,
     },
     {
       name: 'Мука арроурут',
@@ -5421,6 +5962,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 3.4,
       carbs: 88.15,
       system: true,
+      user_id: null,
     },
     {
       name: 'Мука гречневая',
@@ -5431,6 +5973,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 10,
       carbs: 70.59,
       system: true,
+      user_id: null,
     },
     {
       name: 'Мука из бурого риса',
@@ -5441,6 +5984,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 4.6,
       carbs: 76.48,
       system: true,
+      user_id: null,
     },
     {
       name: 'Мука из тритикале',
@@ -5451,6 +5995,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 14.6,
       carbs: 73.14,
       system: true,
+      user_id: null,
     },
     {
       name: 'Мука кукурузная',
@@ -5461,6 +6006,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1.9,
       carbs: 82.75,
       system: true,
+      user_id: null,
     },
     {
       name: 'Мука кукурузная белая (маса)',
@@ -5471,6 +6017,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 6.4,
       carbs: 76.59,
       system: true,
+      user_id: null,
     },
     {
       name: 'Мука кукурузная белая цельнозерновая',
@@ -5481,6 +6028,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 7.3,
       carbs: 76.85,
       system: true,
+      user_id: null,
     },
     {
       name: 'Мука кукурузная жёлтая цельнозерновая',
@@ -5491,6 +6039,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 7.3,
       carbs: 76.85,
       system: true,
+      user_id: null,
     },
     {
       name: 'Мука кунжутная',
@@ -5501,6 +6050,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 26.62,
       system: true,
+      user_id: null,
     },
     {
       name: 'Мука нутовая',
@@ -5511,6 +6061,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 10.8,
       carbs: 57.82,
       system: true,
+      user_id: null,
     },
     {
       name: 'Мука овсяная',
@@ -5521,6 +6072,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 6.5,
       carbs: 65.7,
       system: true,
+      user_id: null,
     },
     {
       name: 'Мука подсолнечная',
@@ -5531,6 +6083,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 5.2,
       carbs: 35.83,
       system: true,
+      user_id: null,
     },
     {
       name: 'Мука пшеничная (универсальная)',
@@ -5541,6 +6094,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 2.7,
       carbs: 76.31,
       system: true,
+      user_id: null,
     },
     {
       name: 'Мука пшеничная второго сорта',
@@ -5551,6 +6105,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 2.4,
       carbs: 72.2,
       system: true,
+      user_id: null,
     },
     {
       name: 'Мука пшеничная высшего сорта',
@@ -5561,6 +6116,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 2.4,
       carbs: 76.22,
       system: true,
+      user_id: null,
     },
     {
       name: 'Мука пшеничная обойная',
@@ -5571,6 +6127,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 2.4,
       carbs: 69.88,
       system: true,
+      user_id: null,
     },
     {
       name: 'Мука пшеничная первого сорта',
@@ -5581,6 +6138,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 2.4,
       carbs: 73.81,
       system: true,
+      user_id: null,
     },
     {
       name: 'Мука пшённая',
@@ -5591,6 +6149,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 3.5,
       carbs: 75.12,
       system: true,
+      user_id: null,
     },
     {
       name: 'Мука ржаная',
@@ -5601,6 +6160,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 8,
       carbs: 76.68,
       system: true,
+      user_id: null,
     },
     {
       name: 'Мука рисовая',
@@ -5611,6 +6171,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 2.4,
       carbs: 80.13,
       system: true,
+      user_id: null,
     },
     {
       name: 'Мука соевая',
@@ -5621,6 +6182,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 9.6,
       carbs: 31.92,
       system: true,
+      user_id: null,
     },
     {
       name: 'Мука сорго',
@@ -5631,6 +6193,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1.9,
       carbs: 76.85,
       system: true,
+      user_id: null,
     },
     {
       name: 'Мука сорго цельнозерновая',
@@ -5641,6 +6204,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 6.6,
       carbs: 76.64,
       system: true,
+      user_id: null,
     },
     {
       name: 'Мука цельнозерновая (пшеничная)',
@@ -5651,6 +6215,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 10.7,
       carbs: 71.97,
       system: true,
+      user_id: null,
     },
     {
       name: 'Мука ячменная',
@@ -5661,6 +6226,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 10.1,
       carbs: 74.52,
       system: true,
+      user_id: null,
     },
     {
       name: 'Мука ячменная солодовая',
@@ -5671,6 +6237,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 7.1,
       carbs: 78.3,
       system: true,
+      user_id: null,
     },
     {
       name: 'Мускатный орех (пряность, молотый)',
@@ -5681,6 +6248,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 20.2,
       carbs: 50.5,
       system: true,
+      user_id: null,
     },
     {
       name: 'Мушмула (свежая)',
@@ -5691,6 +6259,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1.7,
       carbs: 12.14,
       system: true,
+      user_id: null,
     },
     {
       name: 'Мюсли (в сухом виде (с сухофруктами и орехами))',
@@ -5701,6 +6270,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 7.7,
       carbs: 74.9,
       system: true,
+      user_id: null,
     },
     {
       name: 'Мюсли запечённые (гранола) (в сухом виде, хрустящие, с мёдом)',
@@ -5711,6 +6281,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 8.9,
       carbs: 53.88,
       system: true,
+      user_id: null,
     },
     {
       name: 'Мякоть кокоса (свежая)',
@@ -5721,6 +6292,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 9,
       carbs: 15.23,
       system: true,
+      user_id: null,
     },
     {
       name: 'Мясо акулы (жареное)',
@@ -5731,6 +6303,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 6.39,
       system: true,
+      user_id: null,
     },
     {
       name: 'Мясо акулы (сырое)',
@@ -5741,6 +6314,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Мясо антилопы (приготовленное)',
@@ -5751,6 +6325,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Мясо антилопы (сырое)',
@@ -5761,6 +6336,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Мясо бизона (приготовленное)',
@@ -5771,6 +6347,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Мясо бизона (сырое)',
@@ -5781,6 +6358,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0.05,
       system: true,
+      user_id: null,
     },
     {
       name: 'Мясо бифало (приготовленное)',
@@ -5791,6 +6369,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Мясо бифало (сырое)',
@@ -5801,6 +6380,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Мясо бобра (приготовленное)',
@@ -5811,6 +6391,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Мясо бобра (сырое)',
@@ -5821,6 +6402,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Мясо гусиное (сырое)',
@@ -5831,6 +6413,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Мясо дикого кабана (приготовленное)',
@@ -5841,6 +6424,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Мясо дикого кабана (сырое)',
@@ -5851,6 +6435,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Мясо индейки (индюшатина) (запечённое, мясо целой тушки)',
@@ -5861,6 +6446,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Мясо индейки (индюшатина) (сырое, мясо целой тушки)',
@@ -5871,6 +6457,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0.14,
       system: true,
+      user_id: null,
     },
     {
       name: 'Мясо свиное без жира (филе) (сырое)',
@@ -5881,6 +6468,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Мясо фазана (сырое)',
@@ -5891,6 +6479,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Мята (свежая)',
@@ -5901,6 +6490,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 6.8,
       carbs: 8.41,
       system: true,
+      user_id: null,
     },
     {
       name: 'Мята (сушёная)',
@@ -5911,6 +6501,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 29.8,
       carbs: 52.04,
       system: true,
+      user_id: null,
     },
     {
       name: 'Мята перечная (свежая)',
@@ -5921,6 +6512,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 8,
       carbs: 14.89,
       system: true,
+      user_id: null,
     },
     {
       name: 'Налим (запечённый)',
@@ -5931,6 +6523,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Налим (сырой)',
@@ -5941,6 +6534,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Наранхилья (замороженная)',
@@ -5951,6 +6545,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1.1,
       carbs: 5.9,
       system: true,
+      user_id: null,
     },
     {
       name: 'Нектарины (свежие)',
@@ -5961,6 +6556,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1.7,
       carbs: 10.55,
       system: true,
+      user_id: null,
     },
     {
       name: 'Нерка (запечённая)',
@@ -5971,6 +6567,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Нерка (сырая)',
@@ -5981,6 +6578,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Нут (варёный)',
@@ -5991,6 +6589,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 7.6,
       carbs: 27.42,
       system: true,
+      user_id: null,
     },
     {
       name: 'Нут (сухой)',
@@ -6001,6 +6600,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 12.2,
       carbs: 62.95,
       system: true,
+      user_id: null,
     },
     {
       name: 'Нутряной свиной жир (в сыром виде)',
@@ -6011,6 +6611,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Овсянка (крупа овсяная в сухом виде)',
@@ -6021,6 +6622,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 10.6,
       carbs: 66.27,
       system: true,
+      user_id: null,
     },
     {
       name: 'Овсяные хлопья (сухие (быстрого приготовления))',
@@ -6031,6 +6633,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 10.1,
       carbs: 67.7,
       system: true,
+      user_id: null,
     },
     {
       name: 'Огурцы (свежие)',
@@ -6041,6 +6644,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0.5,
       carbs: 3.63,
       system: true,
+      user_id: null,
     },
     {
       name: 'Огурцы солёные (маринованные)',
@@ -6051,6 +6655,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1.2,
       carbs: 2.26,
       system: true,
+      user_id: null,
     },
     {
       name: 'Окунь морской (красный) (запечённый)',
@@ -6061,6 +6666,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Окунь морской (красный) (сырой)',
@@ -6071,6 +6677,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Окунь речной (запечённый)',
@@ -6081,6 +6688,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Окунь речной (сырой)',
@@ -6091,6 +6699,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Оленина (приготовленная)',
@@ -6101,6 +6710,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Оленина (сырая)',
@@ -6111,6 +6721,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Оливки зелёные (консервированные)',
@@ -6121,6 +6732,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 3.3,
       carbs: 3.84,
       system: true,
+      user_id: null,
     },
     {
       name: 'Омлет яичный',
@@ -6131,6 +6743,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0.64,
       system: true,
+      user_id: null,
     },
     {
       name: 'Омуль (запечённый)',
@@ -6141,6 +6754,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Омуль (сырой)',
@@ -6151,6 +6765,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Опунция (листья) (в сыром виде)',
@@ -6161,6 +6776,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 2.2,
       carbs: 3.33,
       system: true,
+      user_id: null,
     },
     {
       name: 'Опунция (плоды) (свежая)',
@@ -6171,6 +6787,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 3.6,
       carbs: 9.57,
       system: true,
+      user_id: null,
     },
     {
       name: 'Орегано (душица, высушенная)',
@@ -6181,6 +6798,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 42.5,
       carbs: 68.92,
       system: true,
+      user_id: null,
     },
     {
       name: 'Орех макадамия (жареный)',
@@ -6191,6 +6809,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 8,
       carbs: 13.38,
       system: true,
+      user_id: null,
     },
     {
       name: 'Орех макадамия',
@@ -6201,6 +6820,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 8.6,
       carbs: 13.82,
       system: true,
+      user_id: null,
     },
     {
       name: 'Орех пили',
@@ -6211,6 +6831,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 3.98,
       system: true,
+      user_id: null,
     },
     {
       name: 'Орех серый',
@@ -6221,6 +6842,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 4.7,
       carbs: 12.05,
       system: true,
+      user_id: null,
     },
     {
       name: 'Осётр (запечённый)',
@@ -6231,6 +6853,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Осётр (сырой)',
@@ -6241,6 +6864,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Осьминог (варёный)',
@@ -6251,6 +6875,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 4.4,
       system: true,
+      user_id: null,
     },
     {
       name: 'Осьминог (сырой)',
@@ -6261,6 +6886,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 2.2,
       system: true,
+      user_id: null,
     },
     {
       name: 'Отруби кукурузные (необработанные термически)',
@@ -6271,6 +6897,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 79,
       carbs: 85.64,
       system: true,
+      user_id: null,
     },
     {
       name: 'Отруби овсяные (необработанные термически)',
@@ -6281,6 +6908,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 15.4,
       carbs: 66.22,
       system: true,
+      user_id: null,
     },
     {
       name: 'Отруби пшеничные (необработанные термически)',
@@ -6291,6 +6919,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 42.8,
       carbs: 64.51,
       system: true,
+      user_id: null,
     },
     {
       name: 'Отруби рисовые (необработанные термически)',
@@ -6301,6 +6930,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 21,
       carbs: 49.69,
       system: true,
+      user_id: null,
     },
     {
       name: 'Пажитник (семена)',
@@ -6311,6 +6941,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 24.6,
       carbs: 58.35,
       system: true,
+      user_id: null,
     },
     {
       name: 'Палтус (запечённый)',
@@ -6321,6 +6952,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Палтус (сырой)',
@@ -6331,6 +6963,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Папайя (свежая)',
@@ -6341,6 +6974,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1.7,
       carbs: 10.82,
       system: true,
+      user_id: null,
     },
     {
       name: 'Папоротник (побеги) (в сыром виде)',
@@ -6351,6 +6985,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 5.54,
       system: true,
+      user_id: null,
     },
     {
       name: 'Паприка (специя, в виде порошка)',
@@ -6361,6 +6996,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 34.9,
       carbs: 53.99,
       system: true,
+      user_id: null,
     },
     {
       name: 'Пастернак (корень в сыром виде)',
@@ -6371,6 +7007,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 4.9,
       carbs: 17.99,
       system: true,
+      user_id: null,
     },
     {
       name: 'Патиссон (приготовленный)',
@@ -6381,6 +7018,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1.9,
       carbs: 3.3,
       system: true,
+      user_id: null,
     },
     {
       name: 'Патиссон (в сыром виде)',
@@ -6391,6 +7029,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1.2,
       carbs: 3.84,
       system: true,
+      user_id: null,
     },
     {
       name: 'Паштет печёночный',
@@ -6401,6 +7040,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 1.5,
       system: true,
+      user_id: null,
     },
     {
       name: 'Пекан',
@@ -6411,6 +7051,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 9.6,
       carbs: 13.86,
       system: true,
+      user_id: null,
     },
     {
       name: 'Перец белый (молотый)',
@@ -6421,6 +7062,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 26.2,
       carbs: 68.61,
       system: true,
+      user_id: null,
     },
     {
       name: 'Перец болгарский (замороженный, зелёный)',
@@ -6431,6 +7073,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1.6,
       carbs: 4.45,
       system: true,
+      user_id: null,
     },
     {
       name: 'Перец болгарский (зелёный, свежий)',
@@ -6441,6 +7084,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1.7,
       carbs: 4.64,
       system: true,
+      user_id: null,
     },
     {
       name: 'Перец болгарский жёлтый (свежий)',
@@ -6451,6 +7095,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0.9,
       carbs: 6.32,
       system: true,
+      user_id: null,
     },
     {
       name: 'Перец болгарский красный (замороженный)',
@@ -6461,6 +7106,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1.6,
       carbs: 4.45,
       system: true,
+      user_id: null,
     },
     {
       name: 'Перец болгарский красный (свежий)',
@@ -6471,6 +7117,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 2.1,
       carbs: 6.03,
       system: true,
+      user_id: null,
     },
     {
       name: 'Перец душистый (молотый)',
@@ -6481,6 +7128,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 21.6,
       carbs: 72.12,
       system: true,
+      user_id: null,
     },
     {
       name: 'Перец чёрный (молотый)',
@@ -6491,6 +7139,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 25.3,
       carbs: 63.95,
       system: true,
+      user_id: null,
     },
     {
       name: 'Перец чили зелёный острый (свежий)',
@@ -6501,6 +7150,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1.5,
       carbs: 9.46,
       system: true,
+      user_id: null,
     },
     {
       name: 'Перец чили красный острый (свежий)',
@@ -6511,6 +7161,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1.5,
       carbs: 8.81,
       system: true,
+      user_id: null,
     },
     {
       name: 'Перец чили молотый (сухой)',
@@ -6521,6 +7172,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 34.8,
       carbs: 49.7,
       system: true,
+      user_id: null,
     },
     {
       name: 'Перец чили острый (высушенный на солнце)',
@@ -6531,6 +7183,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 28.7,
       carbs: 69.86,
       system: true,
+      user_id: null,
     },
     {
       name: 'Перловка (варёная на воде, перловая каша)',
@@ -6541,6 +7194,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 3.8,
       carbs: 28.22,
       system: true,
+      user_id: null,
     },
     {
       name: 'Перловка (крупа перловая сухая)',
@@ -6551,6 +7205,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 15.6,
       carbs: 77.72,
       system: true,
+      user_id: null,
     },
     {
       name: 'Персик (свежие, без косточек)',
@@ -6561,6 +7216,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1.5,
       carbs: 9.54,
       system: true,
+      user_id: null,
     },
     {
       name: 'Персик вяленый',
@@ -6571,6 +7227,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 8.2,
       carbs: 61.33,
       system: true,
+      user_id: null,
     },
     {
       name: 'Персик сушёный',
@@ -6581,6 +7238,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 83.18,
       system: true,
+      user_id: null,
     },
     {
       name: 'Персики консервированные',
@@ -6591,6 +7249,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1.2,
       carbs: 18.43,
       system: true,
+      user_id: null,
     },
     {
       name: 'Петрушка (свежая)',
@@ -6601,6 +7260,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 3.3,
       carbs: 6.33,
       system: true,
+      user_id: null,
     },
     {
       name: 'Петрушка (сушёная)',
@@ -6611,6 +7271,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 26.7,
       carbs: 50.64,
       system: true,
+      user_id: null,
     },
     {
       name: 'Печень гусиная (сырая)',
@@ -6621,6 +7282,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 6.32,
       system: true,
+      user_id: null,
     },
     {
       name: 'Печень индейки (тушёная)',
@@ -6631,6 +7293,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Печень индейки (сырая)',
@@ -6641,6 +7304,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Печень утиная (сырая)',
@@ -6651,6 +7315,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 3.53,
       system: true,
+      user_id: null,
     },
     {
       name: 'Печенье овсяное',
@@ -6661,6 +7326,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 2.8,
       carbs: 68.7,
       system: true,
+      user_id: null,
     },
     {
       name: 'Пиво (тёмное или светлое)',
@@ -6671,6 +7337,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 3.55,
       system: true,
+      user_id: null,
     },
     {
       name: 'Пита',
@@ -6681,6 +7348,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 2.2,
       carbs: 55.7,
       system: true,
+      user_id: null,
     },
     {
       name: 'Плантаны (приготовленные)',
@@ -6691,6 +7359,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 2.3,
       carbs: 31.15,
       system: true,
+      user_id: null,
     },
     {
       name: 'Плантаны (в свежем виде)',
@@ -6701,6 +7370,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 2.3,
       carbs: 31.89,
       system: true,
+      user_id: null,
     },
     {
       name: 'Плоды кариссы (свежие)',
@@ -6711,6 +7381,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 13.63,
       system: true,
+      user_id: null,
     },
     {
       name: 'Плоды хлебного дерева (свежие)',
@@ -6721,6 +7392,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 4.9,
       carbs: 27.12,
       system: true,
+      user_id: null,
     },
     {
       name: 'Побеги лаконоса (в сыром виде)',
@@ -6731,6 +7403,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1.7,
       carbs: 3.7,
       system: true,
+      user_id: null,
     },
     {
       name: 'Полба (варёная на воде)',
@@ -6741,6 +7414,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 3.9,
       carbs: 26.44,
       system: true,
+      user_id: null,
     },
     {
       name: 'Полба (крупа в сухом виде)',
@@ -6751,6 +7425,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 10.7,
       carbs: 70.19,
       system: true,
+      user_id: null,
     },
     {
       name: 'Помадка',
@@ -6761,6 +7436,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 93.18,
       system: true,
+      user_id: null,
     },
     {
       name: 'Помело (свежее)',
@@ -6771,6 +7447,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1,
       carbs: 9.62,
       system: true,
+      user_id: null,
     },
     {
       name: 'Помидоры (приготовленные)',
@@ -6781,6 +7458,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0.7,
       carbs: 4.01,
       system: true,
+      user_id: null,
     },
     {
       name: 'Помидоры (свежие)',
@@ -6791,6 +7469,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1.2,
       carbs: 3.89,
       system: true,
+      user_id: null,
     },
     {
       name: 'Помидоры жёлтые (свежие)',
@@ -6801,6 +7480,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0.7,
       carbs: 2.98,
       system: true,
+      user_id: null,
     },
     {
       name: 'Помидоры зелёные (в сыром виде)',
@@ -6811,6 +7491,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1.1,
       carbs: 5.1,
       system: true,
+      user_id: null,
     },
     {
       name: 'Помидоры оранжевые (свежие)',
@@ -6821,6 +7502,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0.9,
       carbs: 3.18,
       system: true,
+      user_id: null,
     },
     {
       name: 'Пончики',
@@ -6831,6 +7513,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1.7,
       carbs: 47.06,
       system: true,
+      user_id: null,
     },
     {
       name: 'Попкорн без соли',
@@ -6841,6 +7524,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 15.1,
       carbs: 77.9,
       system: true,
+      user_id: null,
     },
     {
       name: 'Попкорн карамельный',
@@ -6851,6 +7535,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 5.2,
       carbs: 79.1,
       system: true,
+      user_id: null,
     },
     {
       name: 'Попкорн солёный',
@@ -6861,6 +7546,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 14.5,
       carbs: 77.78,
       system: true,
+      user_id: null,
     },
     {
       name: 'Портулак (свежий)',
@@ -6871,6 +7557,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 3.39,
       system: true,
+      user_id: null,
     },
     {
       name: 'Протеин сывороточный (порошок)',
@@ -6881,6 +7568,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 3.1,
       carbs: 6.25,
       system: true,
+      user_id: null,
     },
     {
       name: 'Протеиновые добавки на основе молока (порошок)',
@@ -6891,6 +7579,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 2,
       carbs: 22,
       system: true,
+      user_id: null,
     },
     {
       name: 'Пшеница пророщенная (в свежем виде)',
@@ -6901,6 +7590,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1.1,
       carbs: 42.53,
       system: true,
+      user_id: null,
     },
     {
       name: 'Пшено (варёное на воде)',
@@ -6911,6 +7601,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1.3,
       carbs: 23.67,
       system: true,
+      user_id: null,
     },
     {
       name: 'Пшено (крупа пшённая сухая)',
@@ -6921,6 +7612,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 8.5,
       carbs: 72.85,
       system: true,
+      user_id: null,
     },
     {
       name: 'Радиккьо (свежий)',
@@ -6931,6 +7623,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0.9,
       carbs: 4.48,
       system: true,
+      user_id: null,
     },
     {
       name: 'Раки (варёные)',
@@ -6941,6 +7634,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Раки (сырые)',
@@ -6951,6 +7645,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Рамбутан (консервированный)',
@@ -6961,6 +7656,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0.9,
       carbs: 20.87,
       system: true,
+      user_id: null,
     },
     {
       name: 'Рёбрышки (рёбра) свиные (в сыром виде)',
@@ -6971,6 +7667,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Рёбрышки свиные (кантри) (в сыром виде)',
@@ -6981,6 +7678,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Ревень (стебель в сыром виде)',
@@ -6991,6 +7689,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1.8,
       carbs: 4.54,
       system: true,
+      user_id: null,
     },
     {
       name: 'Редиска (свежая)',
@@ -7001,6 +7700,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1.6,
       carbs: 3.4,
       system: true,
+      user_id: null,
     },
     {
       name: 'Репа (приготовленная)',
@@ -7011,6 +7711,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 2,
       carbs: 5.06,
       system: true,
+      user_id: null,
     },
     {
       name: 'Репа (сырая)',
@@ -7021,6 +7722,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1.8,
       carbs: 6.43,
       system: true,
+      user_id: null,
     },
     {
       name: 'Ржаное зерно (рожь) (в сухом виде)',
@@ -7031,6 +7733,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 15.1,
       carbs: 75.86,
       system: true,
+      user_id: null,
     },
     {
       name: 'Рис (варёный, на воде)',
@@ -7041,6 +7744,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 28.59,
       system: true,
+      user_id: null,
     },
     {
       name: 'Рис (в сухом виде)',
@@ -7051,6 +7755,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 79.34,
       system: true,
+      user_id: null,
     },
     {
       name: 'Рис бурый (варёный)',
@@ -7061,6 +7766,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1.8,
       carbs: 23.51,
       system: true,
+      user_id: null,
     },
     {
       name: 'Рис бурый (в сухом виде)',
@@ -7071,6 +7777,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 3.4,
       carbs: 76.17,
       system: true,
+      user_id: null,
     },
     {
       name: 'Рис бурый длиннозерный (варёный)',
@@ -7081,6 +7788,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1.6,
       carbs: 25.58,
       system: true,
+      user_id: null,
     },
     {
       name: 'Рис бурый длиннозерный (в сухом виде)',
@@ -7091,6 +7799,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 3.6,
       carbs: 76.25,
       system: true,
+      user_id: null,
     },
     {
       name: 'Рис бурый пропаренный (варёный)',
@@ -7101,6 +7810,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1.7,
       carbs: 31.33,
       system: true,
+      user_id: null,
     },
     {
       name: 'Рис бурый пропаренный (в сухом виде)',
@@ -7111,6 +7821,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 3.5,
       carbs: 78.68,
       system: true,
+      user_id: null,
     },
     {
       name: 'Рис дикий (варёный)',
@@ -7121,6 +7832,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1.8,
       carbs: 21.34,
       system: true,
+      user_id: null,
     },
     {
       name: 'Рис дикий (в сухом виде)',
@@ -7131,6 +7843,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 6.2,
       carbs: 74.9,
       system: true,
+      user_id: null,
     },
     {
       name: 'Рис длиннозёрный (в сухом виде)',
@@ -7141,6 +7854,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1.3,
       carbs: 79.95,
       system: true,
+      user_id: null,
     },
     {
       name: 'Рис длиннозёрный (варёный)',
@@ -7151,6 +7865,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0.4,
       carbs: 28.17,
       system: true,
+      user_id: null,
     },
     {
       name: 'Рис клейкий (липкий) (варёный)',
@@ -7161,6 +7876,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1,
       carbs: 21.09,
       system: true,
+      user_id: null,
     },
     {
       name: 'Рис клейкий (липкий) (в сухом виде)',
@@ -7171,6 +7887,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 2.8,
       carbs: 81.68,
       system: true,
+      user_id: null,
     },
     {
       name: 'Рис круглозёрный (варёный)',
@@ -7181,6 +7898,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 28.73,
       system: true,
+      user_id: null,
     },
     {
       name: 'Рис круглозёрный (в сухом виде)',
@@ -7191,6 +7909,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 79.15,
       system: true,
+      user_id: null,
     },
     {
       name: 'Рис пропаренный (варёный)',
@@ -7201,6 +7920,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0.9,
       carbs: 26.05,
       system: true,
+      user_id: null,
     },
     {
       name: 'Рис пропаренный (в сухом виде)',
@@ -7211,6 +7931,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1.8,
       carbs: 80.89,
       system: true,
+      user_id: null,
     },
     {
       name: 'Розмарин (свежий)',
@@ -7221,6 +7942,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 14.1,
       carbs: 20.7,
       system: true,
+      user_id: null,
     },
     {
       name: 'Розмарин (сушёный)',
@@ -7231,6 +7953,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 42.6,
       carbs: 64.06,
       system: true,
+      user_id: null,
     },
     {
       name: 'Ром (40 градусов алкоголя)',
@@ -7241,6 +7964,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Руккола (свежая)',
@@ -7251,6 +7975,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1.6,
       carbs: 3.65,
       system: true,
+      user_id: null,
     },
     {
       name: 'Рыба-меч (запечённая)',
@@ -7261,6 +7986,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Рыба-меч (сырая)',
@@ -7271,6 +7997,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Ряженка',
@@ -7281,6 +8008,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 4.88,
       system: true,
+      user_id: null,
     },
     {
       name: 'Сакэ',
@@ -7291,6 +8019,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 5,
       system: true,
+      user_id: null,
     },
     {
       name: 'Салат айсберг (свежий)',
@@ -7301,6 +8030,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1.2,
       carbs: 2.97,
       system: true,
+      user_id: null,
     },
     {
       name: 'Салат корн (свежий)',
@@ -7311,6 +8041,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 3.6,
       system: true,
+      user_id: null,
     },
     {
       name: 'Салат кочанный (свежий)',
@@ -7321,6 +8052,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1.1,
       carbs: 2.23,
       system: true,
+      user_id: null,
     },
     {
       name: 'Салат латук (свежий)',
@@ -7331,6 +8063,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1.3,
       carbs: 2.87,
       system: true,
+      user_id: null,
     },
     {
       name: 'Салат латук красный (свежий)',
@@ -7341,6 +8074,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0.9,
       carbs: 2.26,
       system: true,
+      user_id: null,
     },
     {
       name: 'Салат римский (свежий)',
@@ -7351,6 +8085,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 2.1,
       carbs: 3.29,
       system: true,
+      user_id: null,
     },
     {
       name: 'Сало свиное (без прослойки) (сырое)',
@@ -7361,6 +8096,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Сало свиное (с прослойкой) (сырое)',
@@ -7371,6 +8107,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Сало свиное топлёное (смалец)',
@@ -7381,6 +8118,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Салями',
@@ -7391,6 +8129,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0.72,
       system: true,
+      user_id: null,
     },
     {
       name: 'Саподилла (плоды свежие)',
@@ -7401,6 +8140,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 5.3,
       carbs: 19.96,
       system: true,
+      user_id: null,
     },
     {
       name: 'Сардина (консервированная в масле)',
@@ -7411,6 +8151,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Сахар (сахарный песок)',
@@ -7421,6 +8162,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 99.98,
       system: true,
+      user_id: null,
     },
     {
       name: 'Сахар коричневый',
@@ -7431,6 +8173,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 98.09,
       system: true,
+      user_id: null,
     },
     {
       name: 'Сахарин (заменитель сахара)',
@@ -7441,6 +8184,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 89.11,
       system: true,
+      user_id: null,
     },
     {
       name: 'Сахарное яблоко (свежее)',
@@ -7451,6 +8195,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 2.4,
       carbs: 25.2,
       system: true,
+      user_id: null,
     },
     {
       name: 'Свекла (консервированная)',
@@ -7461,6 +8206,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1.8,
       carbs: 7.21,
       system: true,
+      user_id: null,
     },
     {
       name: 'Свекла (варёная)',
@@ -7471,6 +8217,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 2,
       carbs: 9.96,
       system: true,
+      user_id: null,
     },
     {
       name: 'Свекла (сырая)',
@@ -7481,6 +8228,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 2.8,
       carbs: 9.56,
       system: true,
+      user_id: null,
     },
     {
       name: 'Свиная печень (жареная или тушёная)',
@@ -7491,6 +8239,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 3.76,
       system: true,
+      user_id: null,
     },
     {
       name: 'Свиная печень (в сыром виде)',
@@ -7501,6 +8250,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 2.47,
       system: true,
+      user_id: null,
     },
     {
       name: 'Свиная поджелудочная железа (приготовленная)',
@@ -7511,6 +8261,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Свиная поджелудочная железа (в сыром виде)',
@@ -7521,6 +8272,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Свиная рулька, голяшка (в сыром виде)',
@@ -7531,6 +8283,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Свиная селезёнка (приготовленная)',
@@ -7541,6 +8294,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Свиная селезёнка (в сыром виде)',
@@ -7551,6 +8305,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Свиная щековина (в сыром виде)',
@@ -7561,6 +8316,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Свинина (в сыром виде, мясо с жиром)',
@@ -7571,6 +8327,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Свинина жареная (приготовленная)',
@@ -7581,6 +8338,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Свинина тушёная (приготовленная)',
@@ -7591,6 +8349,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Свинина, запечённая в духовке (приготовленная)',
@@ -7601,6 +8360,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Свиное лёгкое (варёное)',
@@ -7611,6 +8371,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Свиное лёгкое (в сыром виде)',
@@ -7621,6 +8382,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Свиное сердце (варёное или тушёное)',
@@ -7631,6 +8393,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0.4,
       system: true,
+      user_id: null,
     },
     {
       name: 'Свиное сердце (в сыром виде)',
@@ -7641,6 +8404,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 1.33,
       system: true,
+      user_id: null,
     },
     {
       name: 'Свиной желудок (отварной)',
@@ -7651,6 +8415,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0.09,
       system: true,
+      user_id: null,
     },
     {
       name: 'Свиной желудок (в сыром виде)',
@@ -7661,6 +8426,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Свиной мозг (приготовленный)',
@@ -7671,6 +8437,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Свиной мозг (в сыром виде)',
@@ -7681,6 +8448,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Свиной окорок и кострец (в сыром виде)',
@@ -7691,6 +8459,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Свиной хвост (приготовленный)',
@@ -7701,6 +8470,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Свиной хвост (в сыром виде)',
@@ -7711,6 +8481,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Свиной язык (отварной)',
@@ -7721,6 +8492,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Свиной язык (в сыром виде)',
@@ -7731,6 +8503,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Свиные кишки (приготовленные)',
@@ -7741,6 +8514,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Свиные кишки (в сыром виде)',
@@ -7751,6 +8525,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Свиные ножки (отварные)',
@@ -7761,6 +8536,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Свиные ножки (в сыром виде)',
@@ -7771,6 +8547,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Свиные почки (тушёные)',
@@ -7781,6 +8558,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Свиные почки (в сыром виде)',
@@ -7791,6 +8569,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Свиные уши (варёные)',
@@ -7801,6 +8580,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0.2,
       system: true,
+      user_id: null,
     },
     {
       name: 'Свиные уши (в сыром виде)',
@@ -7811,6 +8591,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0.6,
       system: true,
+      user_id: null,
     },
     {
       name: 'Сельдерей (свежий)',
@@ -7821,6 +8602,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1.6,
       carbs: 2.97,
       system: true,
+      user_id: null,
     },
     {
       name: 'Сельдь (запечённая)',
@@ -7831,6 +8613,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Сельдь (копчёная)',
@@ -7841,6 +8624,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Сельдь (солёная)',
@@ -7851,6 +8635,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 9.64,
       system: true,
+      user_id: null,
     },
     {
       name: 'Сельдь (сырая)',
@@ -7861,6 +8646,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Сёмга (запечённая)',
@@ -7871,6 +8657,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Сёмга (сырая)',
@@ -7881,6 +8668,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Семена аниса',
@@ -7891,6 +8679,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 14.6,
       carbs: 50.02,
       system: true,
+      user_id: null,
     },
     {
       name: 'Семена горчицы (молотая горчица)',
@@ -7901,6 +8690,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 12.2,
       carbs: 28.09,
       system: true,
+      user_id: null,
     },
     {
       name: 'Семена гулявника',
@@ -7911,6 +8701,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 58.26,
       system: true,
+      user_id: null,
     },
     {
       name: 'Семена кориандра',
@@ -7921,6 +8712,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 41.9,
       carbs: 54.99,
       system: true,
+      user_id: null,
     },
     {
       name: 'Семена лотоса',
@@ -7931,6 +8723,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 17.28,
       system: true,
+      user_id: null,
     },
     {
       name: 'Семена люцерны пророщенные (в свежем виде)',
@@ -7941,6 +8734,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1.9,
       carbs: 2.1,
       system: true,
+      user_id: null,
     },
     {
       name: 'Семена мака',
@@ -7951,6 +8745,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 19.5,
       carbs: 28.13,
       system: true,
+      user_id: null,
     },
     {
       name: 'Семена сельдерея',
@@ -7961,6 +8756,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 11.8,
       carbs: 41.35,
       system: true,
+      user_id: null,
     },
     {
       name: 'Семена тыквы (очищенные)',
@@ -7971,6 +8767,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 6,
       carbs: 10.71,
       system: true,
+      user_id: null,
     },
     {
       name: 'Семена укропа',
@@ -7981,6 +8778,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 21.1,
       carbs: 55.17,
       system: true,
+      user_id: null,
     },
     {
       name: 'Семена фенхеля',
@@ -7991,6 +8789,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 39.8,
       carbs: 52.29,
       system: true,
+      user_id: null,
     },
     {
       name: 'Семена чиа',
@@ -8001,6 +8800,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 34.4,
       carbs: 42.12,
       system: true,
+      user_id: null,
     },
     {
       name: 'Семечки подсолнуха (очищенные)',
@@ -8011,6 +8811,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 8.6,
       carbs: 20,
       system: true,
+      user_id: null,
     },
     {
       name: 'Семечки подсолнуха (жареные, очищенные)',
@@ -8021,6 +8822,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 11.1,
       carbs: 24.07,
       system: true,
+      user_id: null,
     },
     {
       name: 'Семя конопляное',
@@ -8031,6 +8833,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 4,
       carbs: 8.67,
       system: true,
+      user_id: null,
     },
     {
       name: 'Семя льняное',
@@ -8041,6 +8844,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 27.3,
       carbs: 28.88,
       system: true,
+      user_id: null,
     },
     {
       name: 'Сердце индейки (приготовленное)',
@@ -8051,6 +8855,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Сердце индейки (сырое)',
@@ -8061,6 +8866,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0.4,
       system: true,
+      user_id: null,
     },
     {
       name: 'Сердцевина пальмы (консервированная)',
@@ -8071,6 +8877,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 2.4,
       carbs: 4.62,
       system: true,
+      user_id: null,
     },
     {
       name: 'Сибас (запечённый)',
@@ -8081,6 +8888,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Сибас (сырой)',
@@ -8091,6 +8899,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Сироп агавы (заменитель сахара, подсластитель)',
@@ -8101,6 +8910,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0.2,
       carbs: 76.37,
       system: true,
+      user_id: null,
     },
     {
       name: 'Скумбрия (запечённая)',
@@ -8111,6 +8921,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Скумбрия (солёная)',
@@ -8121,6 +8932,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Скумбрия (сырая)',
@@ -8131,6 +8943,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Слива (свежая)',
@@ -8141,6 +8954,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1.4,
       carbs: 11.42,
       system: true,
+      user_id: null,
     },
     {
       name: 'Слива сушёная (низкое содержание воды)',
@@ -8151,6 +8965,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 89.07,
       system: true,
+      user_id: null,
     },
     {
       name: 'Сметана',
@@ -8161,6 +8976,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 7.1,
       system: true,
+      user_id: null,
     },
     {
       name: 'Сметанное яблоко (свежее)',
@@ -8171,6 +8987,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 3.3,
       carbs: 16.84,
       system: true,
+      user_id: null,
     },
     {
       name: 'Сметена обезжиренная',
@@ -8181,6 +8998,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 15.6,
       system: true,
+      user_id: null,
     },
     {
       name: 'Смородина красная или белая (свежая)',
@@ -8191,6 +9009,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 4.3,
       carbs: 13.8,
       system: true,
+      user_id: null,
     },
     {
       name: 'Смородина чёрная (свежая)',
@@ -8201,6 +9020,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 15.38,
       system: true,
+      user_id: null,
     },
     {
       name: 'Соевое молоко',
@@ -8211,6 +9031,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0.4,
       carbs: 3.45,
       system: true,
+      user_id: null,
     },
     {
       name: 'Соевые бобы (варёные, зрелые)',
@@ -8221,6 +9042,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 6,
       carbs: 8.36,
       system: true,
+      user_id: null,
     },
     {
       name: 'Соевые бобы (зрелые, в сухом виде)',
@@ -8231,6 +9053,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 9.3,
       carbs: 30.16,
       system: true,
+      user_id: null,
     },
     {
       name: 'Соевые бобы пророщенные (в свежем виде)',
@@ -8241,6 +9064,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1.1,
       carbs: 9.57,
       system: true,
+      user_id: null,
     },
     {
       name: 'Соевый жмых',
@@ -8251,6 +9075,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 35.89,
       system: true,
+      user_id: null,
     },
     {
       name: 'Соевый протеин (порошок)',
@@ -8261,6 +9086,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 6.7,
       carbs: 28.89,
       system: true,
+      user_id: null,
     },
     {
       name: 'Соевый протеин (изолят) (порошок)',
@@ -8271,6 +9097,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Соевый протеин (концентрат) (порошок)',
@@ -8281,6 +9108,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 5.5,
       carbs: 25.41,
       system: true,
+      user_id: null,
     },
     {
       name: 'Соевый соус (shoyu, из сои и пшеницы)',
@@ -8291,6 +9119,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0.8,
       carbs: 4.93,
       system: true,
+      user_id: null,
     },
     {
       name: 'Соевый соус (гидролизованный)',
@@ -8301,6 +9130,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0.5,
       carbs: 7.84,
       system: true,
+      user_id: null,
     },
     {
       name: 'Соевый соус (тамари, tamari)',
@@ -8311,6 +9141,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0.8,
       carbs: 5.57,
       system: true,
+      user_id: null,
     },
     {
       name: 'Соевый сыр тофу (сухой)',
@@ -8321,6 +9152,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1,
       carbs: 1.18,
       system: true,
+      user_id: null,
     },
     {
       name: 'Сок абрикосовый (нектар) (консервированный)',
@@ -8331,6 +9163,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0.6,
       carbs: 14.39,
       system: true,
+      user_id: null,
     },
     {
       name: 'Сок ананасовый (консервированный)',
@@ -8341,6 +9174,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0.2,
       carbs: 12.87,
       system: true,
+      user_id: null,
     },
     {
       name: 'Сок апельсиновый (консервированный)',
@@ -8351,6 +9185,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0.3,
       carbs: 11.01,
       system: true,
+      user_id: null,
     },
     {
       name: 'Сок апельсиновый (свежевыжатый)',
@@ -8361,6 +9196,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0.2,
       carbs: 10.4,
       system: true,
+      user_id: null,
     },
     {
       name: 'Сок виноградный (консервированный)',
@@ -8371,6 +9207,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0.2,
       carbs: 14.77,
       system: true,
+      user_id: null,
     },
     {
       name: 'Сок гранатовый (консервированный)',
@@ -8381,6 +9218,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0.1,
       carbs: 13.13,
       system: true,
+      user_id: null,
     },
     {
       name: 'Сок грейпфрутовый (свежий)',
@@ -8391,6 +9229,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 9.2,
       system: true,
+      user_id: null,
     },
     {
       name: 'Сок грушевый (нектар) (консервированный)',
@@ -8401,6 +9240,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0.6,
       carbs: 15.76,
       system: true,
+      user_id: null,
     },
     {
       name: 'Сок ежевичный (консервированный)',
@@ -8411,6 +9251,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0.1,
       carbs: 7.8,
       system: true,
+      user_id: null,
     },
     {
       name: 'Сок лайма (свежий)',
@@ -8421,6 +9262,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0.4,
       carbs: 8.42,
       system: true,
+      user_id: null,
     },
     {
       name: 'Сок лимонный (свежий)',
@@ -8431,6 +9273,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0.3,
       carbs: 6.9,
       system: true,
+      user_id: null,
     },
     {
       name: 'Сок манго (нектар) (консервированный)',
@@ -8441,6 +9284,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0.3,
       carbs: 13.12,
       system: true,
+      user_id: null,
     },
     {
       name: 'Сок мандариновый (свежий)',
@@ -8451,6 +9295,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0.2,
       carbs: 10.1,
       system: true,
+      user_id: null,
     },
     {
       name: 'Сок морковный (консервированный)',
@@ -8461,6 +9306,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0.8,
       carbs: 9.28,
       system: true,
+      user_id: null,
     },
     {
       name: 'Сок папайи (нектар) (консервированный)',
@@ -8471,6 +9317,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0.6,
       carbs: 14.51,
       system: true,
+      user_id: null,
     },
     {
       name: 'Сок персиковый (нектар) (консервированный)',
@@ -8481,6 +9328,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0.6,
       carbs: 13.92,
       system: true,
+      user_id: null,
     },
     {
       name: 'Сок сметанного яблока (нектар) (консервированный)',
@@ -8491,6 +9339,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0.1,
       carbs: 14.93,
       system: true,
+      user_id: null,
     },
     {
       name: 'Сок томатный (консервированный, без соли)',
@@ -8501,6 +9350,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0.4,
       carbs: 3.53,
       system: true,
+      user_id: null,
     },
     {
       name: 'Сок яблочный (консервированный)',
@@ -8511,6 +9361,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0.2,
       carbs: 11.3,
       system: true,
+      user_id: null,
     },
     {
       name: 'Соль столовая',
@@ -8521,6 +9372,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Сом (жареный)',
@@ -8531,6 +9383,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Сом (сырой)',
@@ -8541,6 +9394,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Сорго (крупа в сухом виде)',
@@ -8551,6 +9405,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 6.7,
       carbs: 72.09,
       system: true,
+      user_id: null,
     },
     {
       name: 'Сосиски',
@@ -8561,6 +9416,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 2.42,
       system: true,
+      user_id: null,
     },
     {
       name: 'Сосиски молочные',
@@ -8571,6 +9427,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 1.92,
       system: true,
+      user_id: null,
     },
     {
       name: 'Спаржа (консервированная)',
@@ -8581,6 +9438,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1.6,
       carbs: 2.46,
       system: true,
+      user_id: null,
     },
     {
       name: 'Спаржа (варёная)',
@@ -8591,6 +9449,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 2,
       carbs: 4.11,
       system: true,
+      user_id: null,
     },
     {
       name: 'Спаржа (замороженная)',
@@ -8601,6 +9460,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1.9,
       carbs: 4.1,
       system: true,
+      user_id: null,
     },
     {
       name: 'Спаржа (в сыром виде)',
@@ -8611,6 +9471,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 2.1,
       carbs: 3.88,
       system: true,
+      user_id: null,
     },
     {
       name: 'Спирулина (сушёная, в виде порошка)',
@@ -8621,6 +9482,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 3.6,
       carbs: 23.9,
       system: true,
+      user_id: null,
     },
     {
       name: 'Спирулина (в сыром виде)',
@@ -8631,6 +9493,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0.4,
       carbs: 2.42,
       system: true,
+      user_id: null,
     },
     {
       name: 'Ставрида (консервированная)',
@@ -8641,6 +9504,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Старфрут (карамбола) (свежий)',
@@ -8651,6 +9515,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 2.8,
       carbs: 6.73,
       system: true,
+      user_id: null,
     },
     {
       name: 'Стевия (сахарозаменитель) (заменитель сахара)',
@@ -8661,6 +9526,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 100,
       system: true,
+      user_id: null,
     },
     {
       name: 'Страусиное мясо (сырое, вырезка)',
@@ -8671,6 +9537,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Судак (запечённый)',
@@ -8681,6 +9548,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Судак (сырой)',
@@ -8691,6 +9559,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Сукралоза (заменитель сахара)',
@@ -8701,6 +9570,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 91.17,
       system: true,
+      user_id: null,
     },
     {
       name: 'Сурими (сырой)',
@@ -8711,6 +9581,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 6.85,
       system: true,
+      user_id: null,
     },
     {
       name: 'Суринамская вишня (свежая)',
@@ -8721,6 +9592,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 7.49,
       system: true,
+      user_id: null,
     },
     {
       name: 'Сухари из хлеба',
@@ -8731,6 +9603,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 4.1,
       carbs: 66.36,
       system: true,
+      user_id: null,
     },
     {
       name: 'Сухари панировочные',
@@ -8741,6 +9614,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 4.5,
       carbs: 71.98,
       system: true,
+      user_id: null,
     },
     {
       name: 'Сыр cливочный',
@@ -8751,6 +9625,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 5.52,
       system: true,
+      user_id: null,
     },
     {
       name: 'Сыр Бри',
@@ -8761,6 +9636,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0.45,
       system: true,
+      user_id: null,
     },
     {
       name: 'Сыр Брюнуст',
@@ -8771,6 +9647,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 42.65,
       system: true,
+      user_id: null,
     },
     {
       name: 'Сыр Гауда',
@@ -8781,6 +9658,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 2.22,
       system: true,
+      user_id: null,
     },
     {
       name: 'Сыр Грюйер',
@@ -8791,6 +9669,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0.36,
       system: true,
+      user_id: null,
     },
     {
       name: 'Сыр Камамбер',
@@ -8801,6 +9680,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0.46,
       system: true,
+      user_id: null,
     },
     {
       name: 'Сыр Кесо Фреско',
@@ -8811,6 +9691,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 2.98,
       system: true,
+      user_id: null,
     },
     {
       name: 'Сыр козий',
@@ -8821,6 +9702,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0.12,
       system: true,
+      user_id: null,
     },
     {
       name: 'Сыр Колби',
@@ -8831,6 +9713,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 2.57,
       system: true,
+      user_id: null,
     },
     {
       name: 'Сыр Лимбургер',
@@ -8841,6 +9724,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0.49,
       system: true,
+      user_id: null,
     },
     {
       name: 'Сыр мексиканский Аньехо',
@@ -8851,6 +9735,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 4.63,
       system: true,
+      user_id: null,
     },
     {
       name: 'Сыр мексиканский Кесо Чихуахуа',
@@ -8861,6 +9746,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 5.56,
       system: true,
+      user_id: null,
     },
     {
       name: 'Сыр мексиканский Котиха',
@@ -8871,6 +9757,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 3.97,
       system: true,
+      user_id: null,
     },
     {
       name: 'Сыр мексиканский Оахака',
@@ -8881,6 +9768,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 2.87,
       system: true,
+      user_id: null,
     },
     {
       name: 'Сыр Монтерей',
@@ -8891,6 +9779,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0.68,
       system: true,
+      user_id: null,
     },
     {
       name: 'Сыр Моцарелла',
@@ -8901,6 +9790,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 5.58,
       system: true,
+      user_id: null,
     },
     {
       name: 'Сыр Мюнстер',
@@ -8911,6 +9801,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 1.12,
       system: true,
+      user_id: null,
     },
     {
       name: 'Сыр Нёшатель',
@@ -8921,6 +9812,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 3.59,
       system: true,
+      user_id: null,
     },
     {
       name: 'Сыр Пармезан',
@@ -8931,6 +9823,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 3.22,
       system: true,
+      user_id: null,
     },
     {
       name: 'Сыр Пекорино Романо',
@@ -8941,6 +9834,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 3.63,
       system: true,
+      user_id: null,
     },
     {
       name: 'Сыр плавленый',
@@ -8951,6 +9845,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 3.5,
       system: true,
+      user_id: null,
     },
     {
       name: 'Сыр Пор-Салю',
@@ -8961,6 +9856,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0.57,
       system: true,
+      user_id: null,
     },
     {
       name: 'Сыр Проволоне',
@@ -8971,6 +9867,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 2.14,
       system: true,
+      user_id: null,
     },
     {
       name: 'Сыр Рикотта',
@@ -8981,6 +9878,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 5.14,
       system: true,
+      user_id: null,
     },
     {
       name: 'Сыр Рокфор',
@@ -8991,6 +9889,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 2,
       system: true,
+      user_id: null,
     },
     {
       name: 'Сыр Тильзитер',
@@ -9001,6 +9900,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 1.88,
       system: true,
+      user_id: null,
     },
     {
       name: 'Сыр тофу твердый (полотняный)',
@@ -9011,6 +9911,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0.9,
       carbs: 2.85,
       system: true,
+      user_id: null,
     },
     {
       name: 'Сыр тофу ферментированный (fuyu)',
@@ -9021,6 +9922,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 4.38,
       system: true,
+      user_id: null,
     },
     {
       name: 'Сыр фета',
@@ -9031,6 +9933,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 4.09,
       system: true,
+      user_id: null,
     },
     {
       name: 'Сыр Филадельфия',
@@ -9041,6 +9944,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 7.66,
       system: true,
+      user_id: null,
     },
     {
       name: 'Сыр Фонтина',
@@ -9051,6 +9955,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 1.55,
       system: true,
+      user_id: null,
     },
     {
       name: 'Сыр Чеддер',
@@ -9061,6 +9966,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 3.09,
       system: true,
+      user_id: null,
     },
     {
       name: 'Сыр Чешир',
@@ -9071,6 +9977,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 4.78,
       system: true,
+      user_id: null,
     },
     {
       name: 'Сыр швейцарский',
@@ -9081,6 +9988,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 1.44,
       system: true,
+      user_id: null,
     },
     {
       name: 'Сыр Эдам',
@@ -9091,6 +9999,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 1.43,
       system: true,
+      user_id: null,
     },
     {
       name: 'Сыры с плесенью',
@@ -9101,6 +10010,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 2.34,
       system: true,
+      user_id: null,
     },
     {
       name: 'Тамаринд (свежий)',
@@ -9111,6 +10021,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 5.1,
       carbs: 62.5,
       system: true,
+      user_id: null,
     },
     {
       name: 'Тапиока (в сухом виде)',
@@ -9121,6 +10032,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0.9,
       carbs: 88.69,
       system: true,
+      user_id: null,
     },
     {
       name: 'Таро (приготовленные клубни)',
@@ -9131,6 +10043,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 5.1,
       carbs: 34.6,
       system: true,
+      user_id: null,
     },
     {
       name: 'Таро (клубни в сыром виде)',
@@ -9141,6 +10054,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 4.1,
       carbs: 26.46,
       system: true,
+      user_id: null,
     },
     {
       name: 'Творог 2% жирности',
@@ -9151,6 +10065,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 4.76,
       system: true,
+      user_id: null,
     },
     {
       name: 'Телятина (приготовленная)',
@@ -9161,6 +10076,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Телятина (сырая)',
@@ -9171,6 +10087,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Темпе',
@@ -9181,6 +10098,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 7.64,
       system: true,
+      user_id: null,
     },
     {
       name: 'Терпуг (запечённый)',
@@ -9191,6 +10109,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Терпуг (сырой)',
@@ -9201,6 +10120,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Теф (приготовленный)',
@@ -9211,6 +10131,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 2.8,
       carbs: 19.86,
       system: true,
+      user_id: null,
     },
     {
       name: 'Тилапия (запечённая)',
@@ -9221,6 +10142,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Тилапия (сырая)',
@@ -9231,6 +10153,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Тимьян (свежий)',
@@ -9241,6 +10164,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 14,
       carbs: 24.45,
       system: true,
+      user_id: null,
     },
     {
       name: 'Тимьян (сушёный)',
@@ -9251,6 +10175,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 37,
       carbs: 63.94,
       system: true,
+      user_id: null,
     },
     {
       name: 'Тмин (семена)',
@@ -9261,6 +10186,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 38,
       carbs: 49.9,
       system: true,
+      user_id: null,
     },
     {
       name: 'Томатная паста (консервированная)',
@@ -9271,6 +10197,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 4.1,
       carbs: 18.91,
       system: true,
+      user_id: null,
     },
     {
       name: 'Топинамбур (в сыром виде)',
@@ -9281,6 +10208,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1.6,
       carbs: 17.44,
       system: true,
+      user_id: null,
     },
     {
       name: 'Тортилья',
@@ -9291,6 +10219,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 6.7,
       carbs: 63.49,
       system: true,
+      user_id: null,
     },
     {
       name: 'Треска (запечённая)',
@@ -9301,6 +10230,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Треска (сырая)',
@@ -9311,6 +10241,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Тритикале (неприготовленная (зерно))',
@@ -9321,6 +10252,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 72.13,
       system: true,
+      user_id: null,
     },
     {
       name: 'Тунец (консервированный в собственном соку)',
@@ -9331,6 +10263,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Тыква (варёная или запечённая)',
@@ -9341,6 +10274,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1.1,
       carbs: 4.9,
       system: true,
+      user_id: null,
     },
     {
       name: 'Тыква (в сыром виде)',
@@ -9351,6 +10285,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0.5,
       carbs: 6.5,
       system: true,
+      user_id: null,
     },
     {
       name: 'Тыква Акорн (в сыром виде)',
@@ -9361,6 +10296,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1.5,
       carbs: 10.42,
       system: true,
+      user_id: null,
     },
     {
       name: 'Тыква Баттернат (в сыром виде)',
@@ -9371,6 +10307,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 2,
       carbs: 11.69,
       system: true,
+      user_id: null,
     },
     {
       name: 'Тыква Крукнек (кривошейка) (в сыром виде)',
@@ -9381,6 +10318,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1,
       carbs: 3.88,
       system: true,
+      user_id: null,
     },
     {
       name: 'Тыква Спагетти (в сыром виде)',
@@ -9391,6 +10329,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1.5,
       carbs: 6.91,
       system: true,
+      user_id: null,
     },
     {
       name: 'Тыква Хаббард (в сыром виде)',
@@ -9401,6 +10340,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 3.9,
       carbs: 8.7,
       system: true,
+      user_id: null,
     },
     {
       name: 'Угорь (запечённый или копчёный)',
@@ -9411,6 +10351,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Угорь (сырой)',
@@ -9421,6 +10362,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Укроп (свежий)',
@@ -9431,6 +10373,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 2.1,
       carbs: 7.02,
       system: true,
+      user_id: null,
     },
     {
       name: 'Укроп (сушёный)',
@@ -9441,6 +10384,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 13.6,
       carbs: 55.82,
       system: true,
+      user_id: null,
     },
     {
       name: 'Уксус',
@@ -9451,6 +10395,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0.04,
       system: true,
+      user_id: null,
     },
     {
       name: 'Уксус бальзамический',
@@ -9461,6 +10406,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 17.03,
       system: true,
+      user_id: null,
     },
     {
       name: 'Уксус винный (красный)',
@@ -9471,6 +10417,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0.27,
       system: true,
+      user_id: null,
     },
     {
       name: 'Уксус яблочный',
@@ -9481,6 +10428,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0.93,
       system: true,
+      user_id: null,
     },
     {
       name: 'Улитки (сырые)',
@@ -9491,6 +10439,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 2,
       system: true,
+      user_id: null,
     },
     {
       name: 'Устрицы (запечённые)',
@@ -9501,6 +10450,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 4.23,
       system: true,
+      user_id: null,
     },
     {
       name: 'Устрицы (сырые)',
@@ -9511,6 +10461,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 2.72,
       system: true,
+      user_id: null,
     },
     {
       name: 'Утка (мясо утиное) (запечённая, мясо без кожи)',
@@ -9521,6 +10472,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Утка (мясо утиное) (сырое мясо, без кожи)',
@@ -9531,6 +10483,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0.94,
       system: true,
+      user_id: null,
     },
     {
       name: 'Фазан (приготовленный)',
@@ -9541,6 +10494,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Фарш говяжий (сырой, 20% жира)',
@@ -9551,6 +10505,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Фарш свиной (приготовленный, 20% жира)',
@@ -9561,6 +10516,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Фарш свиной (сырой, 20% жира)',
@@ -9571,6 +10527,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Фасоль Адзуки (варёная)',
@@ -9581,6 +10538,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 7.3,
       carbs: 24.77,
       system: true,
+      user_id: null,
     },
     {
       name: 'Фасоль Адзуки (сухая)',
@@ -9591,6 +10549,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 12.7,
       carbs: 62.9,
       system: true,
+      user_id: null,
     },
     {
       name: 'Фасоль белая (консервированная)',
@@ -9601,6 +10560,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 5.1,
       carbs: 20.45,
       system: true,
+      user_id: null,
     },
     {
       name: 'Фасоль белая (варёная)',
@@ -9611,6 +10571,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 10.5,
       carbs: 26.05,
       system: true,
+      user_id: null,
     },
     {
       name: 'Фасоль белая (сухая)',
@@ -9621,6 +10582,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 15.3,
       carbs: 60.75,
       system: true,
+      user_id: null,
     },
     {
       name: 'Фасоль красная (Кидни) (консервированная)',
@@ -9631,6 +10593,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 4.3,
       carbs: 14.5,
       system: true,
+      user_id: null,
     },
     {
       name: 'Фасоль красная (Кидни) (варёная)',
@@ -9641,6 +10604,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 6.4,
       carbs: 22.8,
       system: true,
+      user_id: null,
     },
     {
       name: 'Фасоль красная (Кидни) (сухая)',
@@ -9651,6 +10615,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 24.9,
       carbs: 60.01,
       system: true,
+      user_id: null,
     },
     {
       name: 'Фасоль красная (Кидни) пророщенная (в свежем виде)',
@@ -9661,6 +10626,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 4.1,
       system: true,
+      user_id: null,
     },
     {
       name: 'Фасоль Лима (варёная)',
@@ -9671,6 +10637,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 7,
       carbs: 20.88,
       system: true,
+      user_id: null,
     },
     {
       name: 'Фасоль Лима (сухая)',
@@ -9681,6 +10648,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 19,
       carbs: 63.38,
       system: true,
+      user_id: null,
     },
     {
       name: 'Фасоль пёстрая (Пинто) (варёная)',
@@ -9691,6 +10659,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 9,
       carbs: 26.22,
       system: true,
+      user_id: null,
     },
     {
       name: 'Фасоль пёстрая (Пинто) (сухая)',
@@ -9701,6 +10670,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 15.5,
       carbs: 62.55,
       system: true,
+      user_id: null,
     },
     {
       name: 'Фасоль пёстрая (Пинто) пророщенная (в свежем виде)',
@@ -9711,6 +10681,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 11.6,
       system: true,
+      user_id: null,
     },
     {
       name: 'Фасоль розовая (варёная)',
@@ -9721,6 +10692,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 5.3,
       carbs: 27.91,
       system: true,
+      user_id: null,
     },
     {
       name: 'Фасоль розовая (сухая)',
@@ -9731,6 +10703,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 12.7,
       carbs: 64.19,
       system: true,
+      user_id: null,
     },
     {
       name: 'Фасоль стручковая (варёная, спаржевая)',
@@ -9741,6 +10714,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 3.2,
       carbs: 7.88,
       system: true,
+      user_id: null,
     },
     {
       name: 'Фасоль стручковая (замороженная, спаржевая)',
@@ -9751,6 +10725,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 2.6,
       carbs: 7.54,
       system: true,
+      user_id: null,
     },
     {
       name: 'Фасоль стручковая (в сыром виде, спаржевая)',
@@ -9761,6 +10736,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 2.7,
       carbs: 6.97,
       system: true,
+      user_id: null,
     },
     {
       name: 'Фасоль чёрная (варёная)',
@@ -9771,6 +10747,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 8.7,
       carbs: 23.71,
       system: true,
+      user_id: null,
     },
     {
       name: 'Фасоль чёрная (сухая)',
@@ -9781,6 +10758,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 15.5,
       carbs: 62.36,
       system: true,
+      user_id: null,
     },
     {
       name: 'Фасоль черноглазая (варёная)',
@@ -9791,6 +10769,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 6.5,
       carbs: 20.76,
       system: true,
+      user_id: null,
     },
     {
       name: 'Фасоль черноглазая (сухая)',
@@ -9801,6 +10780,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 10.6,
       carbs: 60.03,
       system: true,
+      user_id: null,
     },
     {
       name: 'Фейхоа (свежая)',
@@ -9811,6 +10791,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 6.4,
       carbs: 15.21,
       system: true,
+      user_id: null,
     },
     {
       name: 'Фенхель (в сыром виде (плод или корень))',
@@ -9821,6 +10802,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 3.1,
       carbs: 7.3,
       system: true,
+      user_id: null,
     },
     {
       name: 'Физалис (свежий)',
@@ -9831,6 +10813,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 11.2,
       system: true,
+      user_id: null,
     },
     {
       name: 'Физалис овощной (свежий)',
@@ -9841,6 +10824,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1.9,
       carbs: 5.84,
       system: true,
+      user_id: null,
     },
     {
       name: 'Филе куриной грудки (сырое мясо, без кожи)',
@@ -9851,6 +10835,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Филе свиное (приготовленное)',
@@ -9861,6 +10846,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Финики Деглет нур',
@@ -9871,6 +10857,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 8,
       carbs: 75.03,
       system: true,
+      user_id: null,
     },
     {
       name: 'Финики Маджуль',
@@ -9881,6 +10868,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 6.7,
       carbs: 74.97,
       system: true,
+      user_id: null,
     },
     {
       name: 'Фисташки (жареные солёные)',
@@ -9891,6 +10879,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 10.3,
       carbs: 27.55,
       system: true,
+      user_id: null,
     },
     {
       name: 'Фисташки (жареные, без соли)',
@@ -9901,6 +10890,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 10.3,
       carbs: 28.28,
       system: true,
+      user_id: null,
     },
     {
       name: 'Фисташки (свежие)',
@@ -9911,6 +10901,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 10.6,
       carbs: 27.17,
       system: true,
+      user_id: null,
     },
     {
       name: 'Фокачча',
@@ -9921,6 +10912,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1.8,
       carbs: 35.82,
       system: true,
+      user_id: null,
     },
     {
       name: 'Форель (запечённая)',
@@ -9931,6 +10923,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Форель (сырая)',
@@ -9941,6 +10934,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Французская зеленая фасоль (варёная)',
@@ -9951,6 +10945,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 9.4,
       carbs: 24.02,
       system: true,
+      user_id: null,
     },
     {
       name: 'Французская зеленая фасоль (свежая)',
@@ -9961,6 +10956,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 25.2,
       carbs: 64.11,
       system: true,
+      user_id: null,
     },
     {
       name: 'Фруктоза (заменитель сахара)',
@@ -9971,6 +10967,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 100,
       system: true,
+      user_id: null,
     },
     {
       name: 'Фуа-гра (консервированное)',
@@ -9981,6 +10978,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 4.67,
       system: true,
+      user_id: null,
     },
     {
       name: 'Фундук (свежий)',
@@ -9991,6 +10989,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 9.7,
       carbs: 16.7,
       system: true,
+      user_id: null,
     },
     {
       name: 'Фундук (жареный)',
@@ -10001,6 +11000,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 9.4,
       carbs: 17.6,
       system: true,
+      user_id: null,
     },
     {
       name: 'Халва',
@@ -10011,6 +11011,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 4.5,
       carbs: 60.49,
       system: true,
+      user_id: null,
     },
     {
       name: 'Хлеб белый пшеничный',
@@ -10021,6 +11022,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 4,
       carbs: 47.54,
       system: true,
+      user_id: null,
     },
     {
       name: 'Хлеб из овсяных отрубей',
@@ -10031,6 +11033,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 4.5,
       carbs: 39.8,
       system: true,
+      user_id: null,
     },
     {
       name: 'Хлеб из пророщенной пшеницы',
@@ -10041,6 +11044,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 5.3,
       carbs: 33.88,
       system: true,
+      user_id: null,
     },
     {
       name: 'Хлеб из пшеничных отрубей',
@@ -10051,6 +11055,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 4,
       carbs: 47.8,
       system: true,
+      user_id: null,
     },
     {
       name: 'Хлеб из рисовых отрубей',
@@ -10061,6 +11066,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 4.9,
       carbs: 43.5,
       system: true,
+      user_id: null,
     },
     {
       name: 'Хлеб мультизерновой',
@@ -10071,6 +11077,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 7.4,
       carbs: 43.34,
       system: true,
+      user_id: null,
     },
     {
       name: 'Хлеб овсяный',
@@ -10081,6 +11088,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 4,
       carbs: 48.5,
       system: true,
+      user_id: null,
     },
     {
       name: 'Хлеб пшеничный цельнозерновой',
@@ -10091,6 +11099,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 6,
       carbs: 42.71,
       system: true,
+      user_id: null,
     },
     {
       name: 'Хлеб ржаной',
@@ -10101,6 +11110,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 5.8,
       carbs: 48.3,
       system: true,
+      user_id: null,
     },
     {
       name: 'Хлебцы мультизерновые',
@@ -10111,6 +11121,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 10.2,
       carbs: 66.3,
       system: true,
+      user_id: null,
     },
     {
       name: 'Хлебцы ржаные',
@@ -10121,6 +11132,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 16.5,
       carbs: 82.2,
       system: true,
+      user_id: null,
     },
     {
       name: 'Хот-дог',
@@ -10131,6 +11143,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 18.4,
       system: true,
+      user_id: null,
     },
     {
       name: 'Хрен (столовый, готовый к употреблению)',
@@ -10141,6 +11154,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 3.3,
       carbs: 11.29,
       system: true,
+      user_id: null,
     },
     {
       name: 'Хурма (свежая)',
@@ -10151,6 +11165,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 33.5,
       system: true,
+      user_id: null,
     },
     {
       name: 'Хурма черная (сапота) (свежая)',
@@ -10161,6 +11176,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 5.4,
       carbs: 32.1,
       system: true,
+      user_id: null,
     },
     {
       name: 'Цветная капуста (варёная)',
@@ -10171,6 +11187,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 2.3,
       carbs: 4.11,
       system: true,
+      user_id: null,
     },
     {
       name: 'Цветная капуста (замороженная)',
@@ -10181,6 +11198,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 2.3,
       carbs: 4.68,
       system: true,
+      user_id: null,
     },
     {
       name: 'Цветная капуста (свежая)',
@@ -10191,6 +11209,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 2,
       carbs: 4.97,
       system: true,
+      user_id: null,
     },
     {
       name: 'Цедра апельсина (кожура) (свежая)',
@@ -10201,6 +11220,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 10.6,
       carbs: 25,
       system: true,
+      user_id: null,
     },
     {
       name: 'Цедра лимона (кожура) (свежая)',
@@ -10211,6 +11231,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 10.6,
       carbs: 16,
       system: true,
+      user_id: null,
     },
     {
       name: 'Цикорий (растворимый (кофе в готовом виде))',
@@ -10221,6 +11242,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0.75,
       system: true,
+      user_id: null,
     },
     {
       name: 'Чабер (молотый)',
@@ -10231,6 +11253,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 45.7,
       carbs: 68.73,
       system: true,
+      user_id: null,
     },
     {
       name: 'Чавыча (запечённая)',
@@ -10241,6 +11264,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Чавыча (сырая)',
@@ -10251,6 +11275,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Чай Nestea (чёрный с лимоном)',
@@ -10261,6 +11286,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 9.09,
       system: true,
+      user_id: null,
     },
     {
       name: 'Чай зелёный (без сахара, приготовленный)',
@@ -10271,6 +11297,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Чай зелёный (с сахаром, приготовленный)',
@@ -10281,6 +11308,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 6.2,
       system: true,
+      user_id: null,
     },
     {
       name: 'Чай чёрный (без сахара, приготовленный)',
@@ -10291,6 +11319,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Чай чёрный (с сахаром и лимоном, приготовленный)',
@@ -10301,6 +11330,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 10.8,
       system: true,
+      user_id: null,
     },
     {
       name: 'Чайот (в сыром виде)',
@@ -10311,6 +11341,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1.7,
       carbs: 4.51,
       system: true,
+      user_id: null,
     },
     {
       name: 'Черимойя (свежий)',
@@ -10321,6 +11352,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 3,
       carbs: 17.71,
       system: true,
+      user_id: null,
     },
     {
       name: 'Чернослив',
@@ -10331,6 +11363,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 3.1,
       carbs: 28.08,
       system: true,
+      user_id: null,
     },
     {
       name: 'Чёрный орех',
@@ -10341,6 +11374,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 6.8,
       carbs: 9.58,
       system: true,
+      user_id: null,
     },
     {
       name: 'Чеснок (в сыром виде)',
@@ -10351,6 +11385,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 2.1,
       carbs: 33.06,
       system: true,
+      user_id: null,
     },
     {
       name: 'Чеснок сушёный',
@@ -10361,6 +11396,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 9,
       carbs: 72.73,
       system: true,
+      user_id: null,
     },
     {
       name: 'Чечевица (варёная на воде)',
@@ -10371,6 +11407,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 7.9,
       carbs: 20.13,
       system: true,
+      user_id: null,
     },
     {
       name: 'Чечевица (сухая)',
@@ -10381,6 +11418,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 10.7,
       carbs: 63.35,
       system: true,
+      user_id: null,
     },
     {
       name: 'Чечевица (красная или розовая) (сухая)',
@@ -10391,6 +11429,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 10.8,
       carbs: 63.1,
       system: true,
+      user_id: null,
     },
     {
       name: 'Чечевица пророщенная (в свежем виде)',
@@ -10401,6 +11440,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 22.14,
       system: true,
+      user_id: null,
     },
     {
       name: 'Чизбургер (Макдоналдс)',
@@ -10411,6 +11451,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1.1,
       carbs: 27.81,
       system: true,
+      user_id: null,
     },
     {
       name: 'Чизкейк',
@@ -10421,6 +11462,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0.4,
       carbs: 25.5,
       system: true,
+      user_id: null,
     },
     {
       name: 'Чипсы картофельные (без соли)',
@@ -10431,6 +11473,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 6.1,
       carbs: 67.8,
       system: true,
+      user_id: null,
     },
     {
       name: 'Чипсы кукурузные (начос) (без соли)',
@@ -10441,6 +11484,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 4.4,
       carbs: 57.4,
       system: true,
+      user_id: null,
     },
     {
       name: 'Шалфей (молотый)',
@@ -10451,6 +11495,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 40.3,
       carbs: 60.73,
       system: true,
+      user_id: null,
     },
     {
       name: 'Шампиньоны (консервированные)',
@@ -10461,6 +11506,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 2.4,
       carbs: 5.09,
       system: true,
+      user_id: null,
     },
     {
       name: 'Шампиньоны (варёные или тушёные)',
@@ -10471,6 +11517,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 2.2,
       carbs: 5.29,
       system: true,
+      user_id: null,
     },
     {
       name: 'Шампиньоны (сырые)',
@@ -10481,6 +11528,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1,
       carbs: 3.26,
       system: true,
+      user_id: null,
     },
     {
       name: 'Шампиньоны (жареные)',
@@ -10491,6 +11539,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1.8,
       carbs: 4.04,
       system: true,
+      user_id: null,
     },
     {
       name: 'Шампиньоны коричневые (сырые)',
@@ -10501,6 +11550,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0.6,
       carbs: 4.3,
       system: true,
+      user_id: null,
     },
     {
       name: 'Шафран (специя)',
@@ -10511,6 +11561,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 3.9,
       carbs: 65.37,
       system: true,
+      user_id: null,
     },
     {
       name: 'Шейка свиная (шея) (в сыром виде)',
@@ -10521,6 +11572,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Шелковица (свежая)',
@@ -10531,6 +11583,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1.7,
       carbs: 9.8,
       system: true,
+      user_id: null,
     },
     {
       name: 'Шея индейки (отварная или тушёная)',
@@ -10541,6 +11594,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Шея индейки (сырая)',
@@ -10551,6 +11605,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Шнитт-лук (свежий)',
@@ -10561,6 +11616,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 2.5,
       carbs: 4.35,
       system: true,
+      user_id: null,
     },
     {
       name: 'Шоколад Dove (молочный)',
@@ -10571,6 +11627,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 2.4,
       carbs: 59.78,
       system: true,
+      user_id: null,
     },
     {
       name: 'Шоколад Dove (тёмный)',
@@ -10581,6 +11638,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 7.6,
       carbs: 59.4,
       system: true,
+      user_id: null,
     },
     {
       name: 'Шоколад белый',
@@ -10591,6 +11649,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0.2,
       carbs: 59.24,
       system: true,
+      user_id: null,
     },
     {
       name: 'Шоколад молочный',
@@ -10601,6 +11660,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 3.4,
       carbs: 59.4,
       system: true,
+      user_id: null,
     },
     {
       name: 'Шоколад тёмный (45-59% какао)',
@@ -10611,6 +11671,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 7,
       carbs: 61.17,
       system: true,
+      user_id: null,
     },
     {
       name: 'Шоколад тёмный (60-69% какао)',
@@ -10621,6 +11682,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 8,
       carbs: 52.42,
       system: true,
+      user_id: null,
     },
     {
       name: 'Шоколад тёмный (70-85% какао)',
@@ -10631,6 +11693,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 10.9,
       carbs: 45.9,
       system: true,
+      user_id: null,
     },
     {
       name: 'Шоколадный батончик KitKat',
@@ -10641,6 +11704,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1,
       carbs: 64.59,
       system: true,
+      user_id: null,
     },
     {
       name: 'Шоколадный батончик Mars (миндальный)',
@@ -10651,6 +11715,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 2,
       carbs: 62.7,
       system: true,
+      user_id: null,
     },
     {
       name: 'Шоколадный батончик Milky Way',
@@ -10661,6 +11726,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1,
       carbs: 71.17,
       system: true,
+      user_id: null,
     },
     {
       name: 'Шоколадный батончик Snickers',
@@ -10671,6 +11737,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 2.3,
       carbs: 61.51,
       system: true,
+      user_id: null,
     },
     {
       name: 'Шоколадный батончик Twix',
@@ -10681,6 +11748,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1.1,
       carbs: 64.8,
       system: true,
+      user_id: null,
     },
     {
       name: 'Шпинат (консервированный)',
@@ -10691,6 +11759,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 2.4,
       carbs: 3.4,
       system: true,
+      user_id: null,
     },
     {
       name: 'Шпинат (варёный)',
@@ -10701,6 +11770,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 2.4,
       carbs: 3.75,
       system: true,
+      user_id: null,
     },
     {
       name: 'Шпинат (замороженный)',
@@ -10711,6 +11781,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 2.9,
       carbs: 4.21,
       system: true,
+      user_id: null,
     },
     {
       name: 'Шпинат (свежий)',
@@ -10721,6 +11792,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 2.2,
       carbs: 3.63,
       system: true,
+      user_id: null,
     },
     {
       name: 'Шпинат горчичный (свежий)',
@@ -10731,6 +11803,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 2.8,
       carbs: 3.9,
       system: true,
+      user_id: null,
     },
     {
       name: 'Шпинат новозеландский (свежий)',
@@ -10741,6 +11814,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1.5,
       carbs: 2.5,
       system: true,
+      user_id: null,
     },
     {
       name: 'Щавель (свежий)',
@@ -10751,6 +11825,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 2.9,
       carbs: 3.2,
       system: true,
+      user_id: null,
     },
     {
       name: 'Щербет',
@@ -10761,6 +11836,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 1.3,
       carbs: 30.4,
       system: true,
+      user_id: null,
     },
     {
       name: 'Щука (приготовленная)',
@@ -10771,6 +11847,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Щука (сырая)',
@@ -10781,6 +11858,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0,
       system: true,
+      user_id: null,
     },
     {
       name: 'Эдамаме (приготовленные)',
@@ -10791,6 +11869,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 5.2,
       carbs: 8.91,
       system: true,
+      user_id: null,
     },
     {
       name: 'Эдамаме (замороженные)',
@@ -10801,6 +11880,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 4.8,
       carbs: 7.61,
       system: true,
+      user_id: null,
     },
     {
       name: 'Экстракт имбиря (порошок)',
@@ -10811,6 +11891,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 14.1,
       carbs: 71.62,
       system: true,
+      user_id: null,
     },
     {
       name: 'Эндивий (свежий)',
@@ -10821,6 +11902,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 3.1,
       carbs: 3.35,
       system: true,
+      user_id: null,
     },
     {
       name: 'Энергетический напиток Monster Energy',
@@ -10831,6 +11913,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 1.38,
       system: true,
+      user_id: null,
     },
     {
       name: 'Энергетический напиток Red Bull',
@@ -10841,6 +11924,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 10.23,
       system: true,
+      user_id: null,
     },
     {
       name: 'Эскариоль (приготовленный)',
@@ -10851,6 +11935,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 2.8,
       carbs: 3.07,
       system: true,
+      user_id: null,
     },
     {
       name: 'Эстрагон (сушёный)',
@@ -10861,6 +11946,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 7.4,
       carbs: 50.22,
       system: true,
+      user_id: null,
     },
     {
       name: 'Ююба (китайский финик) (свежий)',
@@ -10871,6 +11957,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 20.23,
       system: true,
+      user_id: null,
     },
     {
       name: 'Яблоки (свежие)',
@@ -10881,6 +11968,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 2.4,
       carbs: 13.81,
       system: true,
+      user_id: null,
     },
     {
       name: 'Яблоки (запечённые)',
@@ -10891,6 +11979,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 2.8,
       carbs: 14.41,
       system: true,
+      user_id: null,
     },
     {
       name: 'Яблоки (сушёные)',
@@ -10901,6 +11990,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 12.4,
       carbs: 93.53,
       system: true,
+      user_id: null,
     },
     {
       name: 'Яблоки (вяленые)',
@@ -10911,6 +12001,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 8.7,
       carbs: 65.89,
       system: true,
+      user_id: null,
     },
     {
       name: 'Яблоки Голден (свежие)',
@@ -10921,6 +12012,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 2.4,
       carbs: 13.6,
       system: true,
+      user_id: null,
     },
     {
       name: 'Яблоки зелёные (Гренни Смит) (свежие)',
@@ -10931,6 +12023,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 2.8,
       carbs: 13.61,
       system: true,
+      user_id: null,
     },
     {
       name: 'Яблоки красные (свежие)',
@@ -10941,6 +12034,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 2.3,
       carbs: 14.06,
       system: true,
+      user_id: null,
     },
     {
       name: 'Яблочное варенье (консервированное)',
@@ -10951,6 +12045,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 2,
       carbs: 16.84,
       system: true,
+      user_id: null,
     },
     {
       name: 'Яванское яблоко (свежее)',
@@ -10961,6 +12056,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 5.7,
       system: true,
+      user_id: null,
     },
     {
       name: 'Ягоды годжи (сушёные)',
@@ -10971,6 +12067,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 13,
       carbs: 77.06,
       system: true,
+      user_id: null,
     },
     {
       name: 'Яичный белок (в сыром виде)',
@@ -10981,6 +12078,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0.73,
       system: true,
+      user_id: null,
     },
     {
       name: 'Яичный желток (в сыром виде)',
@@ -10991,6 +12089,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 3.59,
       system: true,
+      user_id: null,
     },
     {
       name: 'Яйцо гусиное (сырое)',
@@ -11001,6 +12100,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 1.35,
       system: true,
+      user_id: null,
     },
     {
       name: 'Яйцо индейки (сырое)',
@@ -11011,6 +12111,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 1.15,
       system: true,
+      user_id: null,
     },
     {
       name: 'Яйцо куриное (жареное)',
@@ -11021,6 +12122,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0.83,
       system: true,
+      user_id: null,
     },
     {
       name: 'Яйцо куриное (варёное, вкрутую)',
@@ -11031,6 +12133,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 1.12,
       system: true,
+      user_id: null,
     },
     {
       name: 'Яйцо куриное (сырое)',
@@ -11041,6 +12144,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0.72,
       system: true,
+      user_id: null,
     },
     {
       name: 'Яйцо перепелиное (сырое)',
@@ -11051,6 +12155,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 0.41,
       system: true,
+      user_id: null,
     },
     {
       name: 'Яйцо утиное (сырое)',
@@ -11061,6 +12166,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 0,
       carbs: 1.45,
       system: true,
+      user_id: null,
     },
     {
       name: 'Ямс (приготовленный)',
@@ -11071,6 +12177,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 3.9,
       carbs: 27.48,
       system: true,
+      user_id: null,
     },
     {
       name: 'Ямс (сырой)',
@@ -11081,6 +12188,7 @@ export async function up(knex: Knex): Promise<void> {
       fiber: 4.1,
       carbs: 27.88,
       system: true,
+      user_id: null,
     },
   ]);
 }
