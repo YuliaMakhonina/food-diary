@@ -1,17 +1,17 @@
 import * as Knex from 'knex';
 
 export async function up(knex: Knex): Promise<void> {
-  await knex.schema.createTable('diary_food', function(table) {
+  await knex.schema.createTable('diary_feelings', function(table) {
     table
       .uuid('uuid')
       .primary()
       .defaultTo(knex.raw('(gen_random_uuid())'));
-    table.uuid('food_id').notNullable();
+    table.uuid('feeling_id').notNullable();
     table
-      .foreign('food_id')
-      .references('food.uuid')
-      .onDelete('CASCADE')
-      .onUpdate('CASCADE');
+      .foreign('feeling_id')
+      .references('feelings.uuid')
+      .onUpdate('CASCADE')
+      .onDelete('CASCADE');
     table.uuid('user_id').notNullable();
     table
       .foreign('user_id')
@@ -26,5 +26,5 @@ export async function up(knex: Knex): Promise<void> {
 }
 
 export async function down(knex: Knex): Promise<void> {
-  await knex.schema.dropTable('diary_food');
+  await knex.schema.dropTable('diary_feelings');
 }

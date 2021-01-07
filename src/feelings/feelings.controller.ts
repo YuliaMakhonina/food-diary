@@ -13,7 +13,7 @@ import { FeelingsDto } from './dto/feelings.dto';
 export class FeelingsController {
   constructor(private feelingsService: FeelingsService) {}
 
-  @Post('/feelings/add')
+  @Post('feelings/add')
   async addFeelings(
     @Body()
     data: FeelingsDto,

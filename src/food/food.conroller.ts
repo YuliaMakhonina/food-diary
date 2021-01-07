@@ -13,7 +13,7 @@ import { FoodDto } from './dto/food.dto';
 export class FoodController {
   constructor(private foodService: FoodService) {}
 
-  @Post('/food/add')
+  @Post('food/add')
   async addFood(
     @Body()
     data: FoodDto,

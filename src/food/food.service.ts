@@ -36,9 +36,19 @@ export class FoodService {
   }
 
   async checkFoodExisting(userId: string, foodName: string): Promise<boolean> {
+    if (
+      await this.knex
+        .first('uuid')
+        .from('food')
+        .where('name', foodName)
+        .andWhere('system', true)
+    ) {
+      return true;
+    }
     return this.knex
       .first('uuid')
       .from('food')
-      .where('name', foodName);
+      .where('name', foodName)
+      .andWhere('user_id', userId);
   }
 }
