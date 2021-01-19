@@ -12,6 +12,7 @@ export class DiaryController {
   async addFoodToDiary(@Body() data: DiaryFoodDto, @Req() req: Request) {
     const diaryFoodEntry = await this.diaryService.addFoodToDiary(
       data.food_id,
+      data.date,
       req.userId,
     );
     return { food_entry: diaryFoodEntry };
@@ -21,6 +22,7 @@ export class DiaryController {
   async addFeelingToDiary(@Body() data: DiaryFeelingDto, @Req() req: Request) {
     const diaryFeelingEntry = await this.diaryService.addFeelingToDiary(
       data.feeling_id,
+      data.date,
       req.userId,
     );
     return { feeling_entry: diaryFeelingEntry };

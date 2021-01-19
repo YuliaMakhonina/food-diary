@@ -4,6 +4,7 @@ import {
   Controller,
   Post,
   Req,
+  Get,
 } from '@nestjs/common';
 import { Request } from 'express';
 import { FeelingsService } from './feelings.service';
@@ -38,5 +39,11 @@ export class FeelingsController {
     } else {
       throw new BadRequestException('wrong_data', 'wrong data');
     }
+  }
+
+  @Get('feelings/all')
+  async getAllFeelings(@Req() req: Request) {
+    const feelingsList = await this.feelingsService.getAllFeelings(req.userId);
+    return { feelings_list: feelingsList };
   }
 }

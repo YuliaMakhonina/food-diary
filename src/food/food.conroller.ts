@@ -4,6 +4,7 @@ import {
   Controller,
   Post,
   Req,
+  Get,
 } from '@nestjs/common';
 import { FoodService } from './food.service';
 import { Request } from 'express';
@@ -44,5 +45,11 @@ export class FoodController {
     } else {
       throw new BadRequestException('wrong_data', 'wrong data');
     }
+  }
+
+  @Get('food/all')
+  async getAllFood(@Req() req: Request) {
+    const foodList = await this.foodService.getAllFood(req.userId);
+    return { food_list: foodList };
   }
 }

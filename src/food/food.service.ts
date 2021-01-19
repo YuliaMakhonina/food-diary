@@ -1,6 +1,18 @@
 import { Inject, Injectable } from '@nestjs/common';
 import Knex from 'knex';
 
+export interface Food {
+  food_id: string;
+  name: string;
+  calories: number;
+  proteins: number;
+  fats: number;
+  carbs: number;
+  sugar: number;
+  fiber: number;
+  system: boolean;
+}
+
 @Injectable()
 export class FoodService {
   constructor(@Inject('knex') private knex: Knex) {}
@@ -50,5 +62,25 @@ export class FoodService {
       .from('food')
       .where('name', foodName)
       .andWhere('user_id', userId);
+  }
+
+  async getAllFood(userId: string): Promise<Food[]> {
+    const foodList: Food[] = await this.knex
+      .select(
+        'name',
+        'uuid as food_id',
+        'calories',
+        'proteins',
+        'fats',
+        'carbs',
+        'fiber',
+        'sugar',
+        'system',
+      )
+      .from('food')
+      .where('user_id', userId)
+      .orWhere('system', true)
+      .orderBy('name');
+    return foodList;
   }
 }

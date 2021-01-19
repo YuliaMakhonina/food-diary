@@ -34,14 +34,16 @@ export class DiaryService {
 
   async addFoodToDiary(
     foodId: string,
+    date: string,
     userId: string,
   ): Promise<DiaryFoodEntry> {
     await this.knex('diary_food').insert({
       user_id: userId,
+      date: date,
       food_id: foodId,
     });
-    const diaryFoodEntries: DiaryFoodEntry[] = await this.knex
-      .select(
+    const diaryFoodEntrie: DiaryFoodEntry = await this.knex
+      .first(
         this.knex.raw(`'food' as type`),
         'diary_food.date as date',
         this.knex.raw(
@@ -51,20 +53,22 @@ export class DiaryService {
       .from('diary_food')
       .innerJoin('food', 'food.uuid', 'diary_food.food_id')
       .where('diary_food.user_id', userId)
-      .orderBy('diary_food.date', 'desc');
-    return diaryFoodEntries[0];
+      .andWhere('diary_food.date', date);
+    return diaryFoodEntrie;
   }
 
   async addFeelingToDiary(
     feelingId: string,
+    date: string,
     userId: string,
   ): Promise<DiaryFeelingEntry> {
     await this.knex('diary_feelings').insert({
       user_id: userId,
+      date: date,
       feeling_id: feelingId,
     });
-    const diaryFeelingEntries: DiaryFeelingEntry[] = await this.knex
-      .select(
+    const diaryFeelingEntrie: DiaryFeelingEntry = await this.knex
+      .first(
         this.knex.raw(`'feeling' as type`),
         'diary_feelings.date as date',
         this.knex.raw(
@@ -74,8 +78,9 @@ export class DiaryService {
       .from('diary_feelings')
       .innerJoin('feelings', 'feelings.uuid', 'diary_feelings.feeling_id')
       .where('diary_feelings.user_id', userId)
+      .andWhere('diary_feelings.date', date)
       .orderBy('diary_feelings.date', 'desc');
-    return diaryFeelingEntries[0];
+    return diaryFeelingEntrie;
   }
 
   async getDiary(
