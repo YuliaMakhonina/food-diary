@@ -9,12 +9,14 @@ import {
 import { FoodService } from './food.service';
 import { Request } from 'express';
 import { FoodDto } from './dto/food.dto';
+import { ApiTags } from '@nestjs/swagger';
 
-@Controller()
+@ApiTags('food')
+@Controller('food')
 export class FoodController {
   constructor(private foodService: FoodService) {}
 
-  @Post('food/add')
+  @Post()
   async addFood(
     @Body()
     data: FoodDto,
@@ -47,7 +49,7 @@ export class FoodController {
     }
   }
 
-  @Get('food/all')
+  @Get()
   async getAllFood(@Req() req: Request) {
     const foodList = await this.foodService.getAllFood(req.userId);
     return { food_list: foodList };

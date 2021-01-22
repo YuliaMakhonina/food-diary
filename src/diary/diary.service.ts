@@ -1,32 +1,7 @@
 import { Inject, Injectable } from '@nestjs/common';
 import Knex from 'knex';
-
-export interface DiaryFoodEntry {
-  id: string;
-  type: 'food';
-  date: Date;
-  value: {
-    food_id: string;
-    name: string;
-    calories: number;
-    proteins: number;
-    fats: number;
-    carbs: number;
-    sugar: number;
-    fiber: number;
-    system: boolean;
-  };
-}
-
-export interface DiaryFeelingEntry {
-  type: 'feeling';
-  date: Date;
-  feeling_id: string;
-  value: {
-    name: string;
-    system: boolean;
-  };
-}
+import { DiaryFeelingEntryDto } from './dto/diary.feeling.entry.dto';
+import { DiaryFoodEntryDto } from './dto/diary.food.entry.dto';
 
 @Injectable()
 export class DiaryService {
@@ -36,16 +11,17 @@ export class DiaryService {
     foodId: string,
     date: string,
     userId: string,
-  ): Promise<DiaryFoodEntry> {
+  ): Promise<DiaryFoodEntryDto> {
     await this.knex('diary_food').insert({
       user_id: userId,
       date: date,
       food_id: foodId,
     });
-    const diaryFoodEntrie: DiaryFoodEntry = await this.knex
+    const diaryFoodEntrie: DiaryFoodEntryDto = await this.knex
       .first(
         this.knex.raw(`'food' as type`),
         'diary_food.date as date',
+        'diary_food.uuid as id',
         this.knex.raw(
           `json_build_object('name', food.name, 'calories', food.calories, 'proteins', food.proteins, 'fats', food.fats, 'carbs', food.carbs, 'sugar', food.sugar, 'fiber', food.fiber, 'system', food.system) as value`,
         ),
@@ -61,16 +37,17 @@ export class DiaryService {
     feelingId: string,
     date: string,
     userId: string,
-  ): Promise<DiaryFeelingEntry> {
+  ): Promise<DiaryFeelingEntryDto> {
     await this.knex('diary_feelings').insert({
       user_id: userId,
       date: date,
       feeling_id: feelingId,
     });
-    const diaryFeelingEntrie: DiaryFeelingEntry = await this.knex
+    const diaryFeelingEntrie: DiaryFeelingEntryDto = await this.knex
       .first(
         this.knex.raw(`'feeling' as type`),
         'diary_feelings.date as date',
+        'diary_feelings.uuid as id',
         this.knex.raw(
           `json_build_object('name', feelings.name, 'system', feelings.system) as value`,
         ),
@@ -85,12 +62,13 @@ export class DiaryService {
 
   async getDiary(
     userId: string,
-  ): Promise<DiaryFoodEntry | DiaryFeelingEntry[]> {
+  ): Promise<(DiaryFoodEntryDto | DiaryFeelingEntryDto)[]> {
     return await this.knex(
       this.knex
         .select(
           this.knex.raw(`'food' as type`),
           'diary_food.date as date',
+          'diary_food.uuid as id',
           this.knex.raw(
             `json_build_object('name', food.name, 'calories', food.calories, 'proteins', food.proteins, 'fats', food.fats, 'carbs', food.carbs, 'sugar', food.sugar, 'fiber', food.fiber, 'system', food.system) as value`,
           ),
@@ -103,6 +81,7 @@ export class DiaryService {
             .select(
               this.knex.raw(`'feeling' as type`),
               'diary_feelings.date as date',
+              'diary_feelings.uuid as id',
               this.knex.raw(
                 `json_build_object('name', feelings.name, 'system', feelings.system) as value`,
               ),

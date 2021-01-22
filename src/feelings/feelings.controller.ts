@@ -9,12 +9,14 @@ import {
 import { Request } from 'express';
 import { FeelingsService } from './feelings.service';
 import { FeelingsDto } from './dto/feelings.dto';
+import { ApiTags } from '@nestjs/swagger';
 
-@Controller()
+@ApiTags('feelings')
+@Controller('feelings')
 export class FeelingsController {
   constructor(private feelingsService: FeelingsService) {}
 
-  @Post('feelings/add')
+  @Post()
   async addFeelings(
     @Body()
     data: FeelingsDto,
@@ -41,7 +43,7 @@ export class FeelingsController {
     }
   }
 
-  @Get('feelings/all')
+  @Get()
   async getAllFeelings(@Req() req: Request) {
     const feelingsList = await this.feelingsService.getAllFeelings(req.userId);
     return { feelings_list: feelingsList };
