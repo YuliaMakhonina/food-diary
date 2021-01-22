@@ -1,5 +1,5 @@
-import { FoodDto } from '../../food/dto/food.dto';
 import { ApiExtraModels, ApiProperty } from '@nestjs/swagger';
+import { FoodEntryDto } from '../../food/dto/food.entry.dto';
 
 @ApiExtraModels()
 export class DiaryFoodEntryDto {
@@ -7,5 +7,5 @@ export class DiaryFoodEntryDto {
   @ApiProperty({ type: 'string' })
   type: 'food';
   date: Date;
-  value: FoodDto;
+  value: FoodEntryDto;
 }

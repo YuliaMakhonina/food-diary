@@ -23,7 +23,7 @@ export class DiaryService {
         'diary_food.date as date',
         'diary_food.uuid as id',
         this.knex.raw(
-          `json_build_object('name', food.name, 'calories', food.calories, 'proteins', food.proteins, 'fats', food.fats, 'carbs', food.carbs, 'sugar', food.sugar, 'fiber', food.fiber, 'system', food.system) as value`,
+          `json_build_object('id', food.uuid, 'name', food.name, 'calories', food.calories, 'proteins', food.proteins, 'fats', food.fats, 'carbs', food.carbs, 'sugar', food.sugar, 'fiber', food.fiber, 'system', food.system) as value`,
         ),
       )
       .from('diary_food')
@@ -49,7 +49,7 @@ export class DiaryService {
         'diary_feelings.date as date',
         'diary_feelings.uuid as id',
         this.knex.raw(
-          `json_build_object('name', feelings.name, 'system', feelings.system) as value`,
+          `json_build_object('id', feelings.uuid, 'name', feelings.name, 'system', feelings.system) as value`,
         ),
       )
       .from('diary_feelings')
@@ -70,7 +70,7 @@ export class DiaryService {
           'diary_food.date as date',
           'diary_food.uuid as id',
           this.knex.raw(
-            `json_build_object('name', food.name, 'calories', food.calories, 'proteins', food.proteins, 'fats', food.fats, 'carbs', food.carbs, 'sugar', food.sugar, 'fiber', food.fiber, 'system', food.system) as value`,
+            `json_build_object('id', food.uuid, 'name', food.name, 'calories', food.calories, 'proteins', food.proteins, 'fats', food.fats, 'carbs', food.carbs, 'sugar', food.sugar, 'fiber', food.fiber, 'system', food.system) as value`,
           ),
         )
         .from('diary_food')
@@ -83,7 +83,7 @@ export class DiaryService {
               'diary_feelings.date as date',
               'diary_feelings.uuid as id',
               this.knex.raw(
-                `json_build_object('name', feelings.name, 'system', feelings.system) as value`,
+                `json_build_object('id', feelings.uuid, 'name', feelings.name, 'system', feelings.system) as value`,
               ),
             )
             .from('diary_feelings')

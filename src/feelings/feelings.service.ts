@@ -1,5 +1,6 @@
 import { Inject, Injectable } from '@nestjs/common';
 import Knex from 'knex';
+import { FeelingsEntryDto } from './dto/feelings.entry.dto';
 
 export interface Feeling {
   feeling_id: string;
@@ -11,19 +12,22 @@ export interface Feeling {
 export class FeelingsService {
   constructor(@Inject('knex') private knex: Knex) {}
 
-  async addFeeling(userId: string, feelingName: string): Promise<string> {
+  async addFeeling(
+    userId: string,
+    feelingName: string,
+  ): Promise<FeelingsEntryDto> {
     await this.knex('feelings').insert({
       name: feelingName,
       system: false,
       user_id: userId,
     });
 
-    const feelingUuid = await this.knex
-      .first('uuid')
+    const feeling = await this.knex
+      .first('uuid as id', 'name', 'system')
       .from('feelings')
       .where('name', feelingName)
       .andWhere('user_id', userId);
-    return feelingUuid.uuid.toString();
+    return feeling;
   }
 
   async checkFeelingExisting(
@@ -45,13 +49,13 @@ export class FeelingsService {
       .where('name', feelingName)
       .andWhere('user_id', userId);
   }
-  async getAllFeelings(userId: string): Promise<Feeling[]> {
-    const feelingsList: Feeling[] = await this.knex
-      .select('uuid as feeling_id', 'name', 'system')
+  async getAllFeelings(userId: string): Promise<FeelingsEntryDto[]> {
+    const feelings: FeelingsEntryDto[] = await this.knex
+      .select('uuid as id', 'name', 'system')
       .from('feelings')
       .where('user_id', userId)
       .orWhere('system', true)
       .orderBy('name');
-    return feelingsList;
+    return feelings;
   }
 }

@@ -9,7 +9,8 @@ import {
 import { FoodService } from './food.service';
 import { Request } from 'express';
 import { FoodDto } from './dto/food.dto';
-import { ApiTags } from '@nestjs/swagger';
+import { ApiCreatedResponse, ApiTags } from '@nestjs/swagger';
+import { FoodEntryDto } from './dto/food.entry.dto';
 
 @ApiTags('food')
 @Controller('food')
@@ -17,11 +18,12 @@ export class FoodController {
   constructor(private foodService: FoodService) {}
 
   @Post()
+  @ApiCreatedResponse({ type: FoodEntryDto })
   async addFood(
     @Body()
     data: FoodDto,
     @Req() req: Request,
-  ) {
+  ): Promise<FoodEntryDto> {
     const foodExists = await this.foodService.checkFoodExisting(
       req.userId,
       data.food_name,
@@ -32,7 +34,7 @@ export class FoodController {
         `this food already exists at user list`,
       );
     }
-    const foodUuid = await this.foodService.addFood(
+    const foodEntry = await this.foodService.addFood(
       req.userId,
       data.food_name,
       data.calories,
@@ -42,16 +44,17 @@ export class FoodController {
       data.fiber,
       data.sugar,
     );
-    if (foodUuid) {
-      return { food_id: foodUuid };
+    if (foodEntry) {
+      return foodEntry;
     } else {
       throw new BadRequestException('wrong_data', 'wrong data');
     }
   }
 
   @Get()
-  async getAllFood(@Req() req: Request) {
-    const foodList = await this.foodService.getAllFood(req.userId);
-    return { food_list: foodList };
+  @ApiCreatedResponse({ type: FoodEntryDto })
+  async getAllFood(@Req() req: Request): Promise<FoodEntryDto[]> {
+    const foodEntries = await this.foodService.getAllFood(req.userId);
+    return foodEntries;
   }
 }

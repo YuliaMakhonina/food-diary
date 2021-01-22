@@ -9,7 +9,8 @@ import {
 import { Request } from 'express';
 import { FeelingsService } from './feelings.service';
 import { FeelingsDto } from './dto/feelings.dto';
-import { ApiTags } from '@nestjs/swagger';
+import { ApiCreatedResponse, ApiTags } from '@nestjs/swagger';
+import { FeelingsEntryDto } from './dto/feelings.entry.dto';
 
 @ApiTags('feelings')
 @Controller('feelings')
@@ -21,7 +22,7 @@ export class FeelingsController {
     @Body()
     data: FeelingsDto,
     @Req() req: Request,
-  ) {
+  ): Promise<FeelingsEntryDto> {
     const feelingExists = await this.feelingsService.checkFeelingExisting(
       req.userId,
       data.feeling_name,
@@ -32,20 +33,23 @@ export class FeelingsController {
         `this feeling already exists at user list`,
       );
     }
-    const feelingUuid = await this.feelingsService.addFeeling(
+    const feelingEntry = await this.feelingsService.addFeeling(
       req.userId,
       data.feeling_name,
     );
-    if (feelingUuid) {
-      return { feeling_id: feelingUuid };
+    if (feelingEntry) {
+      return feelingEntry;
     } else {
       throw new BadRequestException('wrong_data', 'wrong data');
     }
   }
 
   @Get()
-  async getAllFeelings(@Req() req: Request) {
-    const feelingsList = await this.feelingsService.getAllFeelings(req.userId);
-    return { feelings_list: feelingsList };
+  @ApiCreatedResponse({ type: FeelingsEntryDto })
+  async getAllFeelings(@Req() req: Request): Promise<FeelingsEntryDto[]> {
+    const feelingsEntries = await this.feelingsService.getAllFeelings(
+      req.userId,
+    );
+    return feelingsEntries;
   }
 }

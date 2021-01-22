@@ -1,5 +1,5 @@
-import { FeelingsDto } from '../../feelings/dto/feelings.dto';
 import { ApiExtraModels, ApiProperty } from '@nestjs/swagger';
+import { FeelingsEntryDto } from '../../feelings/dto/feelings.entry.dto';
 
 @ApiExtraModels()
 export class DiaryFeelingEntryDto {
@@ -7,5 +7,5 @@ export class DiaryFeelingEntryDto {
   @ApiProperty({ type: 'string' })
   type: 'feeling';
   date: Date;
-  value: FeelingsDto;
+  value: FeelingsEntryDto;
 }
