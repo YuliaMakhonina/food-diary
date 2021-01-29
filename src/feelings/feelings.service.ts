@@ -34,15 +34,6 @@ export class FeelingsService {
     userId: string,
     feelingName: string,
   ): Promise<boolean> {
-    if (
-      await this.knex
-        .first('uuid')
-        .from('feelings')
-        .where('name', feelingName)
-        .andWhere('system', true)
-    ) {
-      return true;
-    }
     return this.knex
       .first('uuid')
       .from('feelings')
