@@ -1,4 +1,4 @@
-import { IsBoolean, IsNotEmpty, IsString } from 'class-validator';
+import { IsBoolean, IsNotEmpty, IsNumber, IsString } from 'class-validator';
 
 export class FoodEntryDto {
   @IsString()
@@ -9,27 +9,27 @@ export class FoodEntryDto {
   @IsNotEmpty()
   name: string;
 
-  @IsString()
+  @IsNumber()
   @IsNotEmpty()
   calories: number;
 
-  @IsString()
+  @IsNumber()
   @IsNotEmpty()
   proteins: number;
 
-  @IsString()
+  @IsNumber()
   @IsNotEmpty()
   fats: number;
 
-  @IsString()
+  @IsNumber()
   @IsNotEmpty()
   carbs: number;
 
-  @IsString()
+  @IsNumber()
   @IsNotEmpty()
   sugar: number;
 
-  @IsString()
+  @IsNumber()
   @IsNotEmpty()
   fiber: number;
 
