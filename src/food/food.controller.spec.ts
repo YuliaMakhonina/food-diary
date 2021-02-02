@@ -1,14 +1,12 @@
-import { testGot } from '../test/got';
-
 import * as faker from 'faker';
 import { registerUser } from '../test/test.helpers';
 
 describe('FoodController', () => {
-  describe('add', () => {
+  describe('food', () => {
     it('responds with bad data error if food name not provided', async () => {
       const authorizedGot = await registerUser();
       await expect(
-        authorizedGot.post('food/add', {
+        authorizedGot.post('food', {
           json: {
             calories: 45.0,
           },
@@ -19,7 +17,7 @@ describe('FoodController', () => {
     it('responds with bad data error if calories not provided', async () => {
       const authorizedGot = await registerUser();
       await expect(
-        authorizedGot.post('food/add', {
+        authorizedGot.post('food', {
           json: {
             food_name: faker.internet.userName(),
           },
@@ -30,7 +28,7 @@ describe('FoodController', () => {
     it('responds with bad request error if proteins is not a number', async () => {
       const authorizedGot = await registerUser();
       await expect(
-        authorizedGot.post('food/add', {
+        authorizedGot.post('food', {
           json: {
             food_name: faker.internet.userName(),
             proteins: 'randomName',
@@ -44,7 +42,7 @@ describe('FoodController', () => {
     it('responds with bad request error if fats is not a number', async () => {
       const authorizedGot = await registerUser();
       await expect(
-        authorizedGot.post('food/add', {
+        authorizedGot.post('food', {
           json: {
             food_name: faker.internet.userName(),
             fats: 'randomName',
@@ -58,7 +56,7 @@ describe('FoodController', () => {
     it('responds with bad request error if fiber is not a number', async () => {
       const authorizedGot = await registerUser();
       await expect(
-        authorizedGot.post('food/add', {
+        authorizedGot.post('food', {
           json: {
             food_name: faker.internet.userName(),
             fiber: 'randomName',
@@ -72,7 +70,7 @@ describe('FoodController', () => {
     it('responds with bad request error if carbs is not a number', async () => {
       const authorizedGot = await registerUser();
       await expect(
-        authorizedGot.post('food/add', {
+        authorizedGot.post('food', {
           json: {
             food_name: faker.internet.userName(),
             carbs: 'randomName',
@@ -86,7 +84,7 @@ describe('FoodController', () => {
     it('responds with bad request error if sugar is not a number', async () => {
       const authorizedGot = await registerUser();
       await expect(
-        authorizedGot.post('food/add', {
+        authorizedGot.post('food', {
           json: {
             food_name: faker.internet.userName(),
             sugar: 'randomName',
@@ -100,14 +98,14 @@ describe('FoodController', () => {
     it('responds an error if this food is already in users list', async () => {
       const authorizedGot = await registerUser();
       const randomName = faker.internet.userName();
-      await authorizedGot.post('food/add', {
+      await authorizedGot.post('food', {
         json: {
           food_name: randomName,
           calories: 45.0,
         },
       });
       await expect(
-        authorizedGot.post('food/add', {
+        authorizedGot.post('food', {
           json: {
             food_name: randomName,
             calories: 45.0,
@@ -116,10 +114,10 @@ describe('FoodController', () => {
       ).rejects.toThrowError('this food already exists at user list');
     });
 
-    it('responds food uuid if provided data correct', async () => {
+    it('responds food dto if provided data correct', async () => {
       const authorizedGot = await registerUser();
       const res = await authorizedGot
-        .post('food/add', {
+        .post('food', {
           json: {
             food_name: faker.internet.password(),
             calories: 45.0,
@@ -128,8 +126,35 @@ describe('FoodController', () => {
         .json();
 
       expect(res).toEqual({
-        food_id: expect.any(String),
+        id: expect.any(String),
+        name: expect.any(String),
+        proteins: expect.any(Number),
+        fats: expect.any(Number),
+        carbs: expect.any(Number),
+        fiber: expect.any(Number),
+        sugar: expect.any(Number),
+        calories: expect.any(Number),
+        system: false,
       });
+    });
+
+    it('responds food-list dto if provided data correct', async () => {
+      const authorizedGot = await registerUser();
+      const res = await authorizedGot.get('food').json();
+      expect(res).toEqual(
+        expect.arrayContaining([
+          expect.objectContaining({
+            calories: 171,
+            carbs: 1.15,
+            fats: 11.88,
+            fiber: 0,
+            name: 'Яйцо индейки (сырое)',
+            proteins: 13.68,
+            sugar: 0,
+            system: true,
+          }),
+        ]),
+      );
     });
   });
 });

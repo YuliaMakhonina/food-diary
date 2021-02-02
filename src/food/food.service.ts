@@ -1,5 +1,6 @@
 import { Inject, Injectable } from '@nestjs/common';
 import Knex from 'knex';
+import { FoodEntryDto } from './dto/food.entry.dto';
 
 @Injectable()
 export class FoodService {
@@ -14,7 +15,7 @@ export class FoodService {
     carbs: number,
     fiber: number,
     sugar: number,
-  ): Promise<string> {
+  ): Promise<FoodEntryDto> {
     await this.knex('food').insert({
       name: foodName,
       calories: calories,
@@ -28,17 +29,48 @@ export class FoodService {
     });
 
     const foodUuid = await this.knex
-      .first('uuid')
+      .first(
+        'name',
+        'uuid as id',
+        'calories',
+        'proteins',
+        'fats',
+        'carbs',
+        'fiber',
+        'sugar',
+        'system',
+      )
       .from('food')
       .where('name', foodName)
       .andWhere('user_id', userId);
-    return foodUuid.uuid.toString();
+    return foodUuid;
   }
 
   async checkFoodExisting(userId: string, foodName: string): Promise<boolean> {
     return this.knex
       .first('uuid')
       .from('food')
-      .where('name', foodName);
+      .where('name', foodName)
+      .andWhere('user_id', userId);
+  }
+
+  async getAllFood(userId: string): Promise<FoodEntryDto[]> {
+    const foodList: FoodEntryDto[] = await this.knex
+      .select(
+        'name',
+        'uuid as id',
+        'calories',
+        'proteins',
+        'fats',
+        'carbs',
+        'fiber',
+        'sugar',
+        'system',
+      )
+      .from('food')
+      .where('user_id', userId)
+      .orWhere('system', true)
+      .orderBy('name');
+    return foodList;
   }
 }
