@@ -1,6 +1,5 @@
 import * as faker from 'faker';
 import { registerUser } from '../test/test.helpers';
-import { FoodEntryDto } from './dto/food.entry.dto';
 
 describe('FoodController', () => {
   describe('food', () => {

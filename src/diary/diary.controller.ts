@@ -19,12 +19,11 @@ export class DiaryController {
     @Body() data: DiaryFoodDto,
     @Req() req: Request,
   ): Promise<DiaryFoodEntryDto> {
-    const diaryFoodEntry = await this.diaryService.addFoodToDiary(
+    return await this.diaryService.addFoodToDiary(
       data.food_id,
       data.date,
       req.userId,
     );
-    return diaryFoodEntry;
   }
 
   @Post('feelings')
@@ -33,20 +32,16 @@ export class DiaryController {
     @Body() data: DiaryFeelingDto,
     @Req() req: Request,
   ): Promise<DiaryFeelingEntryDto> {
-    const diaryFeelingEntry: DiaryFeelingEntryDto = await this.diaryService.addFeelingToDiary(
+    return await this.diaryService.addFeelingToDiary(
       data.feeling_id,
       data.date,
       req.userId,
     );
-    return diaryFeelingEntry;
   }
 
   @Get()
-  async getDiaryList(@Req() req: Request): Promise<DiaryDto> {
-    const diary: (
-      | DiaryFoodEntryDto
-      | DiaryFeelingEntryDto
-    )[] = await this.diaryService.getDiary(req.userId);
-    return { entries: diary };
+  @ApiCreatedResponse({ type: DiaryDto })
+  async getDiaryList(@Req() req: Request): Promise<DiaryDto[]> {
+    return this.diaryService.getDiary(req.userId);
   }
 }

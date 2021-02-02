@@ -1,9 +1,5 @@
-import * as faker from 'faker';
 import { registerUser } from '../test/test.helpers';
 import { FeelingsEntryDto } from '../feelings/dto/feelings.entry.dto';
-import { ApiProperty } from '@nestjs/swagger';
-import objectContaining = jasmine.objectContaining;
-import exp from 'constants';
 import { FoodEntryDto } from '../food/dto/food.entry.dto';
 import { DiaryFeelingEntryDto } from './dto/diary.feeling.entry.dto';
 
@@ -44,17 +40,9 @@ describe('DiaryController', () => {
         id: expect.any(String),
         type: 'food',
         date: expect.any(String),
-        value: {
+        value: expect.objectContaining({
           id: foodList[0].id,
-          name: expect.any(String),
-          system: expect.any(Boolean),
-          proteins: expect.any(Number),
-          fats: expect.any(Number),
-          carbs: expect.any(Number),
-          sugar: expect.any(Number),
-          fiber: expect.any(Number),
-          calories: expect.any(Number),
-        },
+        }),
       });
     });
   });
@@ -119,9 +107,7 @@ describe('DiaryController', () => {
         })
         .json();
       const res = await authorizedGot.get('diary').json();
-      expect(res).toEqual({
-        entries: expect.arrayContaining([diaryEntry]),
-      });
+      expect(res).toEqual(expect.arrayContaining([diaryEntry]));
     });
   });
 });
