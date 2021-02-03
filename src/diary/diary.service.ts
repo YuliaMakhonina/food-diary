@@ -84,8 +84,13 @@ export class DiaryService {
       .innerJoin('feelings', 'feelings.uuid', 'diary_feelings.feeling_id');
   }
 
-  async getDiary(userId: string): Promise<DiaryDto[]> {
-    return await this.knex(
+  async getDiary(
+    userId: string,
+    dateMin: string | null,
+    dateMax: string | null,
+    timezone: string,
+  ): Promise<DiaryDto[]> {
+    let query = this.knex(
       this.getFoodDiaryQuery()
         .where('diary_food.user_id', userId)
         .unionAll([
@@ -93,7 +98,31 @@ export class DiaryService {
         ])
         .as('diary_table'),
     )
-      .select('diary_table.*')
+      .select(
+        'diary_table.type as type',
+        'diary_table.id as id',
+        this.knex.raw(`diary_table.date at time zone '${timezone}' as date`),
+        'diary_table.value as value',
+      )
       .orderBy('diary_table.date', 'desc');
+    if (dateMax) {
+      query = query
+        .select(this.knex.raw(`date at time zone '${timezone}'`))
+        .where(
+          this.knex.raw(
+            `(date at time zone '${timezone}')::date <= '${dateMax}'`,
+          ),
+        );
+    }
+    if (dateMin) {
+      query = query
+        .select(this.knex.raw(`date at time zone '${timezone}'`))
+        .where(
+          this.knex.raw(
+            `(date at time zone '${timezone}')::date >= '${dateMin}'`,
+          ),
+        );
+    }
+    return await query;
   }
 }

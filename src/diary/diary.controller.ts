@@ -1,4 +1,4 @@
-import { Body, Controller, Get, Post, Req } from '@nestjs/common';
+import { Body, Controller, Get, Post, Query, Req } from '@nestjs/common';
 import { DiaryService } from './diary.service';
 import { DiaryFoodDto } from './dto/diary.food.dto';
 import { Request } from 'express';
@@ -7,6 +7,7 @@ import { DiaryFeelingEntryDto } from './dto/diary.feeling.entry.dto';
 import { DiaryFoodEntryDto } from './dto/diary.food.entry.dto';
 import { ApiCreatedResponse, ApiTags } from '@nestjs/swagger';
 import { DiaryDto } from './dto/diary.dto';
+import { DiaryQueryDto } from './dto/diary.query.dto';
 
 @ApiTags('diary')
 @Controller('diary')
@@ -41,7 +42,15 @@ export class DiaryController {
 
   @Get()
   @ApiCreatedResponse({ type: DiaryDto })
-  async getDiaryList(@Req() req: Request): Promise<DiaryDto[]> {
-    return this.diaryService.getDiary(req.userId);
+  async getDiaryList(
+    @Query() query: DiaryQueryDto,
+    @Req() req: Request,
+  ): Promise<DiaryDto[]> {
+    return this.diaryService.getDiary(
+      req.userId,
+      query.date_min,
+      query.date_max,
+      query.timezone,
+    );
   }
 }
