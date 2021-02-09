@@ -3,6 +3,7 @@ import Knex, { QueryBuilder } from 'knex';
 import { DiaryFeelingEntryDto } from './dto/diary.feeling.entry.dto';
 import { DiaryFoodEntryDto } from './dto/diary.food.entry.dto';
 import { DiaryDto } from './dto/diary.dto';
+import { DiaryQueryDto } from './dto/diary.query.dto';
 
 @Injectable()
 export class DiaryService {
@@ -86,9 +87,7 @@ export class DiaryService {
 
   async getDiary(
     userId: string,
-    dateMin: string | null,
-    dateMax: string | null,
-    timezone: string,
+    datesAndTimezone: DiaryQueryDto,
   ): Promise<DiaryDto[]> {
     let query = this.knex(
       this.getFoodDiaryQuery()
@@ -101,27 +100,23 @@ export class DiaryService {
       .select(
         'diary_table.type as type',
         'diary_table.id as id',
-        this.knex.raw(`diary_table.date at time zone '${timezone}' as date`),
+        this.knex.raw(`diary_table.date at time zone ? as date`, [
+          datesAndTimezone.timezone,
+        ]),
         'diary_table.value as value',
       )
       .orderBy('diary_table.date', 'desc');
-    if (dateMax) {
-      query = query
-        .select(this.knex.raw(`date at time zone '${timezone}'`))
-        .where(
-          this.knex.raw(
-            `(date at time zone '${timezone}')::date <= '${dateMax}'`,
-          ),
-        );
+    if (datesAndTimezone.date_max) {
+      query = query.whereRaw(`(date at time zone ?)::date <= ?`, [
+        datesAndTimezone.timezone,
+        datesAndTimezone.date_max,
+      ]);
     }
-    if (dateMin) {
-      query = query
-        .select(this.knex.raw(`date at time zone '${timezone}'`))
-        .where(
-          this.knex.raw(
-            `(date at time zone '${timezone}')::date >= '${dateMin}'`,
-          ),
-        );
+    if (datesAndTimezone.date_min) {
+      query = query.whereRaw(`(date at time zone ?)::date >= ?`, [
+        datesAndTimezone.timezone,
+        datesAndTimezone.date_min,
+      ]);
     }
     return await query;
   }

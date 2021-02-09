@@ -46,11 +46,6 @@ export class DiaryController {
     @Query() query: DiaryQueryDto,
     @Req() req: Request,
   ): Promise<DiaryDto[]> {
-    return this.diaryService.getDiary(
-      req.userId,
-      query.date_min,
-      query.date_max,
-      query.timezone,
-    );
+    return this.diaryService.getDiary(req.userId, query);
   }
 }

@@ -108,12 +108,12 @@ describe('DiaryController', () => {
         .post('diary/feelings', {
           json: {
             feeling_id: feelingsList[0].id,
-            date: '2021-01-01 00:51:40',
+            date: '2021-01-01',
           },
         })
         .json();
       const res = await authorizedGot
-        .get('diary/?timezone=Europe/Moscow')
+        .get('diary', { searchParams: { timezone: 'Europe/Moscow' } })
         .json();
       expect(res).toEqual(
         expect.arrayContaining([
@@ -160,9 +160,13 @@ describe('DiaryController', () => {
         })
         .json();
       const res = await authorizedGot
-        .get(
-          'diary/?date_min=2021-01-02&date_max=2021-01-03&timezone=Europe/Moscow',
-        )
+        .get('diary', {
+          searchParams: {
+            timezone: 'Europe/Moscow',
+            date_min: '2021-01-02',
+            date_max: '2021-01-03',
+          },
+        })
         .json();
       expect(res).toEqual([
         expect.objectContaining({ id: diaryEntry3.id }),
@@ -191,7 +195,12 @@ describe('DiaryController', () => {
         })
         .json();
       const res = await authorizedGot
-        .get('diary/?date_min=2021-01-02&timezone=Europe/Moscow')
+        .get('diary', {
+          searchParams: {
+            timezone: 'Europe/Moscow',
+            date_min: '2021-01-02',
+          },
+        })
         .json();
       expect(res).toEqual([expect.objectContaining({ id: diaryEntry2.id })]);
     });
@@ -217,7 +226,12 @@ describe('DiaryController', () => {
         })
         .json();
       const res = await authorizedGot
-        .get('diary/?date_max=2021-01-02&timezone=Europe/Moscow')
+        .get('diary', {
+          searchParams: {
+            timezone: 'Europe/Moscow',
+            date_max: '2021-01-02',
+          },
+        })
         .json();
       expect(res).toEqual([expect.objectContaining({ id: diaryEntry1.id })]);
     });
