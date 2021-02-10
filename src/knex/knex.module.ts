@@ -9,6 +9,7 @@ const knexFactory = {
       client: 'postgresql',
       connection: {
         connectionString: config.get('db.url'),
+        ssl: Boolean(config.get('db.ssl')),
       },
       pool: {
         min: 2,

@@ -10,5 +10,6 @@ module.exports = {
     url:
       process.env.DATABASE_URL ||
       'postgres://docker:docker@localhost:15432/food-diary',
+    ssl: false,
   },
 };
