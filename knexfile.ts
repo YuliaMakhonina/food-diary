@@ -3,10 +3,7 @@ import * as config from 'config';
 module.exports = {
   client: 'postgresql',
   connection: {
-    port: config.get('db.port'),
-    database: config.get('db.name'),
-    user: config.get('db.user'),
-    password: config.get('db.pass'),
+    connectionString: config.get('db.url'),
   },
   pool: {
     min: 2,
