@@ -1,1 +1,2 @@
-web: npm run start:heroku
+release: npm run migrate:latest
+web: npm run start:prod
