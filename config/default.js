@@ -1,6 +1,6 @@
 module.exports = {
   app: {
-    port: 3000,
+    port: process.env.PORT || 3000,
     secretKey: 'food-diary-secret-number-one',
     bcryptCircles: 1,
     algorithm: 'HS512',
