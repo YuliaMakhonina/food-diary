@@ -26,7 +26,7 @@
     "migrate:latest": "knex migrate:latest"
   },
   "dependencies": {
-    "@nestjs/common": "^7.0.0",
+    "@nestjs/common": "^7.6.15",
     "@nestjs/core": "^7.0.0",
     "@nestjs/platform-express": "^7.0.0",
     "@nestjs/swagger": "^4.7.5",
@@ -34,7 +34,7 @@
     "@types/body-parser": "^1.19.0",
     "@types/connect": "^3.4.33",
     "@types/express-session": "^1.17.3",
-    "@types/jsonwebtoken": "^8.5.0",
+    "@types/jsonwebtoken": "^8.5.1",
     "@types/prettier": "^2.1.5",
     "@types/uuid": "^8.3.0",
     "bcrypt": "^5.0.0",
@@ -57,11 +57,11 @@
     "rxjs": "^6.5.4",
     "sqlite3": "^5.0.0",
     "swagger-ui-express": "^4.1.5",
-    "uuid": "^8.3.1",
-    "ts-node": "9.0.0",
-    "typescript": "^3.7.4",
     "ts-loader": "^6.2.1",
-    "tsconfig-paths": "^3.9.0"
+    "ts-node": "9.0.0",
+    "tsconfig-paths": "^3.9.0",
+    "typescript": "^3.7.4",
+    "uuid": "^8.3.1"
   },
   "devDependencies": {
     "@nestjs/cli": "^7.0.0",

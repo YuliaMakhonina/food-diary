@@ -1,16 +1,11 @@
 import {
-  BadRequestException,
-  GatewayTimeoutException,
   ValidationPipe,
 } from '@nestjs/common';
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
 import { SwaggerModule, DocumentBuilder } from '@nestjs/swagger';
-import { Response, Request, NextFunction } from 'express';
-import * as jwt from 'jsonwebtoken';
 import * as bodyParser from 'body-parser';
 import * as config from 'config';
-import { isJWT } from 'class-validator';
 
 export async function bootstrap() {
   const app = await NestFactory.create(AppModule);
@@ -30,37 +25,9 @@ export async function bootstrap() {
   const jsonParser = bodyParser.json();
   app.use(jsonParser);
 
-  app.use(getUserIdMiddleware);
+  app.use(await app.get('token.middleware'));
 
   await app.listen(config.get('app.port'));
 
   return app;
-}
-
-async function getUserIdMiddleware(
-  req: Request,
-  res: Response,
-  next: NextFunction,
-) {
-  if (req.url === '/auth/register' || req.url === '/auth/login') {
-    next();
-    return;
-  }
-  if (!req.header('access_token')) {
-    next(new BadRequestException('wrong_data', 'access_token was not passed'));
-  }
-  if (!isJWT(req.header('access_token'))) {
-    next(new BadRequestException('wrong_data', 'invalid token'));
-  }
-
-  try {
-    const token = await jwt.verify(
-      req.header('access_token'),
-      config.get('app.secretKey'),
-    );
-    req.userId = token.sub;
-    next();
-  } catch (err) {
-    next(new GatewayTimeoutException('wrong_data', 'token expired'));
-  }
 }
